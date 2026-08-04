@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "90e0dc8362aa3621",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3627abf435fe624",
+        "type": "tabs",
+        "dimension": 40,
+        "children": [
+          {
+            "id": "c1182c27e153feaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dashboard/Home.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home.md"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c882ec8aafc11eee",
+        "type": "tabs",
+        "dimension": 60,
+        "children": [
+          {
+            "id": "33aa1f028f91a719",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5304592660d6a44a",
+    "type": "split",
+    "children": [
+      {
+        "id": "249b4b9288a67689",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "999ff7cc44b4a35f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b7cd6934c1c01560",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "66b006b8cfa331bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "43eb8b18aa35ced5",
+    "type": "split",
+    "children": [
+      {
+        "id": "337d462fba9ce754",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a4f3e3da215bc2e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Templates/Trading Day Template.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "e788436beb637df7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Templates/Trading Day Template.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "0e7166c34494252c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "44ffcc85b249d326",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "95c4badfd2fee5c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Templates/Trading Day Template.md.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "33aa1f028f91a719",
+  "lastOpenFiles": [
+    "Dashboard/Home.md.md",
+    "Templates/Trading Day Template.md.md",
+    "Templates/Monthly Review Template.md.md",
+    "Templates/Weekly Review Template.md.md",
+    "Templates/Daily Note Template.md.md",
+    "Templates/Trade Journal Template.md.md",
+    "Templates/Backtesting Template.md.md",
+    "Templates/Research Template.md.md",
+    "Templates/Decision Template.md.md",
+    "Templates/SOP Template.md.md",
+    "Templates/Strategy Template.md.md",
+    "Templates/Trade Review Template.md.md",
+    "Strategies/Matrix Exit.md.md",
+    "Strategies/Breakout.md.md",
+    "Strategies/EMA20-50 Pullback.md.md",
+    "SOPs/Backtesting SOP.md.md",
+    "SOPs/Monthly Review SOP.md.md",
+    "SOPs/Weekly Review SOP.md.md",
+    "SOPs/Post-Market Review SOP.md.md",
+    "SOPs/Swing SOP.md.md",
+    "Trading System/Trading OS.md.md",
+    "SOPs/BTST SOP.md.md",
+    "SOPs/Intraday SOP.md.md",
+    "SOPs/Daily Pre-Market SOP.md.md",
+    "Trading System/Halal Rules.md.md",
+    "Trading System/Market Filters.md.md",
+    "Archive",
+    "Assets",
+    "Templates",
+    "Automation",
+    "Decision Log",
+    "Research",
+    "Psychology",
+    "Trade Journal",
+    "Backtesting",
+    "Strategies"
+  ]
+}
