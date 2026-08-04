@@ -1,33 +1,51 @@
-# Halal Trading OS Dashboard
+# Halal Trading OS
 
-## Quick Navigation
+## 🚀 Start Here
+- [[Trading System]]
+- [[Daily Pre-Market SOP]]
+- [[Trading Journal]]
 
-- [[Trading OS]]
+---
+
+## 📚 Trading System
+- [[Trading System]]
+- [[Risk Management]]
+- [[Position Sizing]]
+- [[Market Filters]]
+- [[Halal Rules]]
+
+---
+
+## 📈 Strategies
+- [[EMA20-50 Pullback]]
+- [[Breakout]]
+- [[VWAP]]
+- [[ORB]]
+
+---
+
+## 📖 SOPs
 - [[Daily Pre-Market SOP]]
 - [[Intraday SOP]]
 - [[BTST SOP]]
+- [[Post-Market Review SOP]]
 
-## Strategies
+---
 
-- [[EMA20 Pullback]]
-- [[EMA20-50 Pullback]]
-- [[VWAP]]
-- [[ORB]]
-- [[Matrix Exit]]
-- [[Breakout]]
+## 📊 Journal
+- [[Trading Journal]]
 
-## Journal
+---
 
-- [[06 Trade Journal]]
+## 🧠 Research
+- [[Research]]
 
-## Research
+---
 
-- [[08 Research]]
+## 📋 Decision Log
+- [[Decision Log]]
+----
 
-## Decision Log
+## Project
 
-- [[09 Decision Log]]
-
-## Automation
-
-- [[10 Automation]]
+- [[Vault Roadmap]]

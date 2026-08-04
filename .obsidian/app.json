@@ -1,5 +1,7 @@
 {
   "newFileLocation": "current",
   "newLinkFormat": "relative",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "openBehavior": "file:Dashboard/Home.md.md",
+  "attachmentFolderPath": "Attachments"
 }
