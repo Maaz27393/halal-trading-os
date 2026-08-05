@@ -32,4 +32,12 @@
 ---
 
 ## 💡 Current Goal
-- Build Halal Trading OS v2.0
+- Build Halal Trading OS v1.1
+-## 🚀 Projects
+
+- [ ] Trading OS v1.1
+- [ ] Backtesting
+- [ ] Scanner Development
+- [ ] Pine Script
+- [ ] Claude Knowledge Base
+- [ ] AI Experiments
