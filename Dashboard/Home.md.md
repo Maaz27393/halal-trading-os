@@ -1,51 +1,35 @@
 # 🏠 Halal Trading OS
 
-> Welcome to your Trading Operating System.
+## 📊 Today's Focus
+- [ ] Pre-Market SOP
+- [ ] Scan stocks
+- [ ] Review watchlist
+- [ ] Execute trades
+- [ ] Post-market review
 
 ---
 
-# 🎯 Quick Access
-
+## 🚀 Quick Access
 - [[Trading System]]
 - [[Daily Pre-Market SOP]]
-- [[Trading Journal]]
+- [[Intraday SOP]]
+- [[BTST SOP]]
+- [[Trade Journal]]
 - [[Decision Log]]
+- [[Research]]
 - [[Vault Roadmap]]
 
 ---
 
-# 📂 Core Areas
-
-## Trading System
-- [[Trading System]]
-
-## SOPs
-- [[Daily Pre-Market SOP]]
-- [[Intraday SOP]]
-- [[BTST SOP]]
-
-## Strategies
+## 📈 Active Strategy
 - [[EMA20-50 Pullback]]
-- [[Breakout]]
-- [[VWAP]]
-- [[ORB]]
-
-## Journal
-- [[Trading Journal]]
-
-## Research
-- [[Research]]
-
-## Templates
-- [[Templates]]
 
 ---
 
-# ✅ Today's Focus
+## 📝 Latest Journal
+- [[Trading Journal]]
 
-- [ ] Pre-Market Analysis
-- [ ] Watchlist Ready
-- [ ] Execute Trades
-- [ ] Journal Today's Trades
-- [ ] Post-Market Review
-- [ ] Commit & Push to GitHub
+---
+
+## 💡 Current Goal
+- Build Halal Trading OS v2.0

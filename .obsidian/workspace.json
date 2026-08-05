@@ -11,6 +11,30 @@
             "id": "538bfabdccbc4da9",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dashboard/Home.md.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Home.md"
+            }
+          },
+          {
+            "id": "f02e66c98b05df57",
+            "type": "leaf",
+            "state": {
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
