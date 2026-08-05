@@ -4,107 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "0da8e564d5673c5c",
+        "id": "87d7092a06a9040b",
         "type": "tabs",
         "children": [
           {
-            "id": "538bfabdccbc4da9",
+            "id": "22cfe3a2ed8cc5de",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dashboard/Home.md.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Home.md"
-            }
-          },
-          {
-            "id": "f02e66c98b05df57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Decision Log/Decision Log.md.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Decision Log.md"
-            }
-          },
-          {
-            "id": "9ea9db1a7f6f8dac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Strategies/EMA20-50 Pullback.md.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "EMA20-50 Pullback.md"
-            }
-          },
-          {
-            "id": "9e65748c32b200f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dashboard/Home.md.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Home.md"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -281,18 +194,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "9e65748c32b200f4",
+  "active": "22cfe3a2ed8cc5de",
   "lastOpenFiles": [
+    "Templates/Untitled.md",
+    "Templates/Decision Log Template.md.md",
+    "Templates/Post -Trade Review Template.md.md",
+    "Templates/Market Condition Template.md.md",
+    "Templates/Strategy Template.md.md",
+    "Templates/Trade Journal Template.md.md",
+    "Dashboard/Link Relationship.md",
+    "Dashboard/Trading Knowledge Graph Schema.md",
+    "Strategies/EMA20-50 Pullback.md.md",
+    "Decision Log/Decision Log.md.md",
+    "Dashboard/Home.md.md",
     "Trading System/Trading System.md.md",
     "Trading System/Risk Management.md.md",
-    "Strategies/EMA20-50 Pullback.md.md",
     "Trading System/Position Sizing.md.md",
     "Trading System/[[Exit Rules]].md",
     "Trading System/[[Entry Rules]].md",
-    "Decision Log/Decision Log.md.md",
     "Trade Journal/2026-08-06.md.md",
-    "Templates/Trade Journal Template.md.md",
-    "Dashboard/Home.md.md",
     "Automation/AI Workspace/Claude Instructions.md.md",
     "Automation/Archive",
     "Automation/AI Workspace/AI Decisions.md.md",
@@ -310,13 +230,6 @@
     "test.md.md",
     "Templates/Trading Day Template.md.md",
     "Templates/Monthly Review Template.md.md",
-    "Templates/Weekly Review Template.md.md",
-    "Templates/Daily Note Template.md.md",
-    "Templates/Backtesting Template.md.md",
-    "Templates/Research Template.md.md",
-    "Templates/Decision Template.md.md",
-    "Templates/SOP Template.md.md",
-    "Templates/Strategy Template.md.md",
     "Archive",
     "Assets",
     "Templates",
