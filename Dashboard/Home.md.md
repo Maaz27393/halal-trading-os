@@ -1,12 +1,23 @@
 # 🏠 Halal Trading OS
 
 ## 📊 Today's Focus
-- [ ] Pre-Market SOP
-- [ ] Scan stocks
-- [ ] Review watchlist
-- [ ] Execute trades
-- [ ] Post-market review
 
+### Pre-Market
+- [ ] Check market breadth
+- [ ] Check India VIX
+- [ ] Run Chartink scanners
+- [ ] Finalize watchlist
+
+### During Market
+- [ ] Follow Trading SOP
+- [ ] Log every trade
+
+### Post-Market
+- [ ] Complete Trade Review
+- [ ] Update Decision Log
+- [ ] Commit & Push to GitHub
+-Today's Journal:
+[[2026-08-06]]
 ---
 
 ## 🚀 Quick Access

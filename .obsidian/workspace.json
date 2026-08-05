@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Automation/AI Workspace/Claude Instructions.md.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Claude Instructions.md"
+              "title": "Home.md"
             }
           },
           {
@@ -41,7 +41,8 @@
               "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,15 +210,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "538bfabdccbc4da9",
+  "active": "f02e66c98b05df57",
   "lastOpenFiles": [
+    "Dashboard/Home.md.md",
+    "Trade Journal/2026-08-06.md.md",
+    "Automation/AI Workspace/Claude Instructions.md.md",
     "Automation/Archive",
     "Automation/AI Workspace/AI Decisions.md.md",
-    "Automation/AI Workspace/Claude Instructions.md.md",
     "Automation/AI Workspace/Prompts.md.md",
     "Automation/AI Workspace/Draft.md.md",
     "Automation/AI Workspace/Inbox.md.md",
-    "Dashboard/Home.md.md",
     "Automation/AI Workspace",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
@@ -249,7 +251,6 @@
     "Templates",
     "Automation",
     "Decision Log",
-    "Research",
-    "Psychology"
+    "Research"
   ]
 }
