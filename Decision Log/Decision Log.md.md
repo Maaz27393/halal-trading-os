@@ -1,4 +1,9 @@
-# Decision 001
+---
+type: decision
+date:
+status:
+strategy:
+---# Decision 001
 
 Date:
 

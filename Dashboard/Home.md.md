@@ -1,54 +1,83 @@
 # 🏠 Halal Trading OS
 
-## 📊 Today's Focus
-
-### Pre-Market
-- [ ] Check market breadth
-- [ ] Check India VIX
-- [ ] Run Chartink scanners
-- [ ] Finalize watchlist
-
-### During Market
-- [ ] Follow Trading SOP
-- [ ] Log every trade
-
-### Post-Market
-- [ ] Complete Trade Review
-- [ ] Update Decision Log
-- [ ] Commit & Push to GitHub
--Today's Journal:
-[[2026-08-06]]
 ---
 
-## 🚀 Quick Access
-- [[Trading System]]
-- [[Daily Pre-Market SOP]]
-- [[Intraday SOP]]
-- [[BTST SOP]]
-- [[Trade Journal]]
-- [[Decision Log]]
-- [[Research]]
-- [[Vault Roadmap]]
+# 📅 Today's Trading
+
+```dataview
+TABLE file.mtime AS "Last Updated"
+FROM "Trade Journal"
+SORT file.mtime DESC
+LIMIT 1
+```
 
 ---
 
-## 📈 Active Strategy
-- [[EMA20-50 Pullback]]
+# 📈 Recent Trades
+
+```dataview
+TABLE
+strategy,
+status,
+date
+FROM "Trade Journal"
+SORT date DESC
+LIMIT 10
+```
 
 ---
 
-## 📝 Latest Journal
-- [[Trading Journal]]
+# 📜 Latest Decisions
+
+```dataview
+TABLE
+status,
+date
+FROM "Decision Log"
+SORT file.mtime DESC
+LIMIT 5
+```
 
 ---
 
-## 💡 Current Goal
-- Build Halal Trading OS v1.1
--## 🚀 Projects
+# 📚 Active Strategies
 
-- [ ] Trading OS v1.1
-- [ ] Backtesting
-- [ ] Scanner Development
-- [ ] Pine Script
-- [ ] Claude Knowledge Base
-- [ ] AI Experiments
+```dataview
+TABLE
+status,
+version
+FROM "Strategies"
+SORT file.name
+```
+
+---
+
+# 🔬 Recent Research
+
+```dataview
+TABLE
+file.mtime AS Updated
+FROM "Research"
+SORT file.mtime DESC
+LIMIT 5
+```
+
+---
+
+# 📖 SOP Library
+
+```dataview
+LIST
+FROM "SOPs"
+SORT file.name
+```
+
+---
+
+# ⚙️ Trading Rules
+
+```dataview
+LIST
+FROM "Trading System"
+SORT file.name
+```

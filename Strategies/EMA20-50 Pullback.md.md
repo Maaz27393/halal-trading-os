@@ -1,9 +1,16 @@
-# EMA20-50 Pullback Strategy
 
-## Status
-🟢 Active
 
-Version: 1.1
+---
+---
+id: STRAT-001
+type: strategy
+status: Active
+version: 1.1
+created: 2026-08-06
+updated: 2026-08-06
+owner: Mohammed
+---
+---
 
 ---
 
