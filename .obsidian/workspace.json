@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "Automation/AI Workspace/Claude Instructions.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Claude Instructions.md"
             }
           },
           {
@@ -211,7 +211,14 @@
   },
   "active": "538bfabdccbc4da9",
   "lastOpenFiles": [
+    "Automation/Archive",
+    "Automation/AI Workspace/AI Decisions.md.md",
+    "Automation/AI Workspace/Claude Instructions.md.md",
+    "Automation/AI Workspace/Prompts.md.md",
+    "Automation/AI Workspace/Draft.md.md",
+    "Automation/AI Workspace/Inbox.md.md",
     "Dashboard/Home.md.md",
+    "Automation/AI Workspace",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
@@ -237,18 +244,12 @@
     "SOPs/Backtesting SOP.md.md",
     "SOPs/Monthly Review SOP.md.md",
     "SOPs/Weekly Review SOP.md.md",
-    "SOPs/Post-Market Review SOP.md.md",
-    "SOPs/Swing SOP.md.md",
-    "Trading System/Trading OS.md.md",
-    "SOPs/BTST SOP.md.md",
-    "SOPs/Intraday SOP.md.md",
     "Archive",
     "Assets",
     "Templates",
     "Automation",
     "Decision Log",
     "Research",
-    "Psychology",
-    "Trade Journal"
+    "Psychology"
   ]
 }
