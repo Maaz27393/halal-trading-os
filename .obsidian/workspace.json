@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test A.md.md",
+                "file": "Trading System/Entry Rules.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -38,7 +38,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Test A.md"
+              "title": "Entry Rules.md"
+            }
+          },
+          {
+            "id": "5132041c794ebd3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trading System/Risk Management.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Risk Management"
             }
           },
           {
@@ -243,10 +267,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "6d139162a029659f",
+  "active": "5132041c794ebd3a",
   "lastOpenFiles": [
-    "Backlink Test B.md",
+    "Trading System/Entry Rules.md.md",
+    "Trading System/Risk Management.md",
+    "Trading System/Risk Management.md.md",
     "Test A.md.md",
+    "Backlink Test B.md",
     "Test B.md.md",
     "Strategies/EMA20-50 Pullback.md.md",
     "Research/Research.md.md",
@@ -258,7 +285,6 @@
     "Strategies/Matrix Exit.md.md",
     "Templates/Strategy Template.md.md",
     "Trading System/Exit Rules.md.md",
-    "Trading System/Entry Rules.md.md",
     "Dashboard/Home.md.md",
     "Dashboard/Test Dashboard.md.md",
     "Dashboard/Reviews.md.md",
@@ -269,8 +295,6 @@
     "Dashboard/Decisions.md.md",
     "Templates/Untitled.md",
     "Templates/Decision Log Template.md.md",
-    "Templates/Post -Trade Review Template.md.md",
-    "Templates/Market Condition Template.md.md",
     "Automation/Archive",
     "Automation/AI Workspace",
     "Untitled 3.canvas",

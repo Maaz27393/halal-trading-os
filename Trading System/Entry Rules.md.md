@@ -8,4 +8,4 @@ Strategy:
 
 SOP:
 - [[Intraday SOP]]
--
+-See [[Risk Management]]
