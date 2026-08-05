@@ -16,8 +16,57 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "666a6485b7fae9f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Test A.md.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Test A.md"
+            }
+          },
+          {
+            "id": "6d139162a029659f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backlink Test B.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Backlink Test B"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,10 +243,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "e6635e917987b839",
+  "active": "6d139162a029659f",
   "lastOpenFiles": [
-    "Test B.md.md",
+    "Backlink Test B.md",
     "Test A.md.md",
+    "Test B.md.md",
     "Strategies/EMA20-50 Pullback.md.md",
     "Research/Research.md.md",
     "Templates/Research Template.md.md",
@@ -221,7 +271,6 @@
     "Templates/Decision Log Template.md.md",
     "Templates/Post -Trade Review Template.md.md",
     "Templates/Market Condition Template.md.md",
-    "Dashboard/Link Relationship.md",
     "Automation/Archive",
     "Automation/AI Workspace",
     "Untitled 3.canvas",
