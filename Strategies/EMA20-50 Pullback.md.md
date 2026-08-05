@@ -67,4 +67,18 @@ Every trade using this strategy should link back here.
 
 # Improvements
 
--
+-## References
+
+Rules:
+- [[Entry Rules]]
+- [[Exit Rules]]
+- [[Risk Management]]
+
+SOP:
+- [[Intraday SOP]]
+
+Journal:
+- [[Trade Journal]]
+
+Decisions:
+- [[Decision Log]]

@@ -1,36 +1,18 @@
-# Decision Log
+# Decision 001
 
-Every permanent change to the Trading OS is recorded here.
+Date:
 
----
+Related Strategy:
+[[EMA20-50 Pullback]]
 
-## Decision Template
+Related SOP:
+[[Intraday SOP]]
 
-### Date
-YYYY-MM-DD
+Reason
 
-### Decision
-...
+Outcome
 
-### Why
-...
-
-### Evidence
-Backtest / Live Trade / Research
-
-### Affected Files
-- [[Trading System]]
-- [[Entry Rules]]
-- [[Exit Rules]]
-
-### Status
-- Proposed
-- Testing
-- Active
-- Retired
-
----
-
+Action Taken
 # Decisions
 Related:
 

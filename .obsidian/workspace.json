@@ -78,9 +78,33 @@
               "icon": "lucide-file",
               "title": "EMA20-50 Pullback.md"
             }
+          },
+          {
+            "id": "9e65748c32b200f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trading System/Risk Management.md.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": true,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Risk Management.md"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -227,14 +251,23 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
+          },
+          {
+            "id": "a7c37d81db8ccd0c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 233.66668701171875,
-    "collapsed": true
+    "width": 233.66668701171875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,12 +281,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "9ea9db1a7f6f8dac",
+  "active": "9e65748c32b200f4",
   "lastOpenFiles": [
+    "Trading System/Trading System.md.md",
+    "Trading System/Risk Management.md.md",
+    "Strategies/EMA20-50 Pullback.md.md",
+    "Trading System/Position Sizing.md.md",
+    "Trading System/[[Exit Rules]].md",
+    "Trading System/[[Entry Rules]].md",
     "Decision Log/Decision Log.md.md",
+    "Trade Journal/2026-08-06.md.md",
     "Templates/Trade Journal Template.md.md",
     "Dashboard/Home.md.md",
-    "Trade Journal/2026-08-06.md.md",
     "Automation/AI Workspace/Claude Instructions.md.md",
     "Automation/Archive",
     "Automation/AI Workspace/AI Decisions.md.md",
@@ -278,12 +317,6 @@
     "Templates/Decision Template.md.md",
     "Templates/SOP Template.md.md",
     "Templates/Strategy Template.md.md",
-    "Templates/Trade Review Template.md.md",
-    "Strategies/Matrix Exit.md.md",
-    "Strategies/Breakout.md.md",
-    "Strategies/EMA20-50 Pullback.md.md",
-    "SOPs/Backtesting SOP.md.md",
-    "SOPs/Monthly Review SOP.md.md",
     "Archive",
     "Assets",
     "Templates",
