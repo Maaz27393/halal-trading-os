@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge Base/Indicators/VWAP.md.md",
+                "file": "Knowledge Base/Indicators/Bollinger Bands.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,7 +86,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "VWAP.md"
+              "title": "Bollinger Bands.md"
             }
           }
         ],
@@ -269,9 +269,11 @@
   },
   "active": "6d139162a029659f",
   "lastOpenFiles": [
+    "Knowledge Base/Indicators/MACD.md.md",
+    "Knowledge Base/Indicators/Bollinger Bands.md.md",
+    "Knowledge Base/Indicators/ATR.md.md",
     "Knowledge Base/Indicators/RSI.md.md",
     "Knowledge Base/Indicators/VWAP.md.md",
-    "Knowledge Base/Indicators/ATR.md.md",
     "Knowledge Base/Indicators/EMA.md.md",
     "Backlink Test B.md",
     "Knowledge Base/Risk",
@@ -303,8 +305,6 @@
     "Templates/Research Template.md.md",
     "Decision Log/Decision Log.md.md",
     "Trade Journal/2026-08-06.md.md",
-    "Templates/Trade Journal Template.md.md",
-    "Strategies/Breakout.md.md",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
