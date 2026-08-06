@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trading System/Risk Management.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Risk Management"
+              "title": "Home.md"
             }
           },
           {
@@ -148,7 +148,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -270,12 +271,12 @@
   "active": "5132041c794ebd3a",
   "lastOpenFiles": [
     "Trading System/Entry Rules.md.md",
+    "Strategies/EMA20-50 Pullback.md.md",
     "Trading System/Risk Management.md",
     "Trading System/Risk Management.md.md",
     "Test A.md.md",
     "Backlink Test B.md",
     "Test B.md.md",
-    "Strategies/EMA20-50 Pullback.md.md",
     "Research/Research.md.md",
     "Templates/Research Template.md.md",
     "Decision Log/Decision Log.md.md",

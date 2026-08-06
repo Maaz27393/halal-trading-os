@@ -2,67 +2,69 @@
 
 ---
 ---
+---
 id: STRAT-001
 type: strategy
 status: Active
-version: 1.1
+version: 2.0
 created: 2026-08-06
 updated: 2026-08-06
 owner: Mohammed
+
+style: Intraday
+timeframe: 5m
+market: NSE
+asset: Equity
+halal: true
+
+risk_per_trade: 1%
+target: 1.5R
+---
 ---
 ---
 
 ---
+# EMA20-50 Pullback
 
-# Objective
+## Objective
 
 ...
 
 ---
 
-# Entry Rules
+## Rules
 
-See:
-- [[Entry Rules]]
+![[Entry Rules]]
 
----
+![[Exit Rules]]
 
-# Exit Rules
+![[Risk Management]]
 
-See:
-- [[Exit Rules]]
+![[Market Filters]]
 
 ---
 
-# Risk Management
+## SOP
 
-See:
-- [[Risk Management]]
-
----
-
-# SOPs
-
-- [[Daily Pre-Market SOP]]
-- [[Intraday SOP]]
+![[Intraday SOP]]
 
 ---
 
-# Backtesting
+## Trade History
 
-- [[Backtesting]]
-
----
-
-# Research
-
-- [[Research]]
-
+```dataview
+TABLE Date, Result, R
+FROM "Trade Journal"
+WHERE contains(Strategy, this.file.name)
+SORT Date DESC
 ---
 
 # Decision History
+TABLE Date, Decision
+FROM "Decision Log"
+WHERE contains(Strategy, this.file.name)
+SORT Date DESC
 
-- [[Decision Log]]
 
 ---
 
