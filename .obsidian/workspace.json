@@ -71,7 +71,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Backlink Test B.md",
+                "file": "Knowledge Base/Indicators/VWAP.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -86,11 +86,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Backlink Test B"
+              "title": "VWAP.md"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -148,8 +148,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -268,14 +267,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "5132041c794ebd3a",
+  "active": "6d139162a029659f",
   "lastOpenFiles": [
+    "Knowledge Base/Indicators/RSI.md.md",
+    "Knowledge Base/Indicators/VWAP.md.md",
+    "Knowledge Base/Indicators/ATR.md.md",
+    "Knowledge Base/Indicators/EMA.md.md",
+    "Backlink Test B.md",
+    "Knowledge Base/Risk",
+    "Knowledge Base/Statistics",
+    "Knowledge Base/Statistics.md",
+    "Knowledge Base/Psychology",
+    "Knowledge Base/Psychology.md",
+    "Knowledge Base/Price Action",
+    "Knowledge Base/Price Action.md",
+    "Knowledge Base/Patterns",
+    "Knowledge Base/Patterns.md",
+    "Knowledge Base/Market Structure",
+    "Knowledge Base/Market Structure.md",
+    "Knowledge Base/Glossary",
+    "Knowledge Base/Glossary.md",
+    "Knowledge Base/Candlesticks",
+    "Knowledge Base/Candlesticks.md",
+    "Knowledge Base/Indicators",
+    "Knowledge Base/Indicators.md",
+    "Knowledge Base",
+    "Dashboard/Home.md.md",
     "Trading System/Entry Rules.md.md",
     "Strategies/EMA20-50 Pullback.md.md",
     "Trading System/Risk Management.md",
     "Trading System/Risk Management.md.md",
     "Test A.md.md",
-    "Backlink Test B.md",
     "Test B.md.md",
     "Research/Research.md.md",
     "Templates/Research Template.md.md",
@@ -283,32 +305,9 @@
     "Trade Journal/2026-08-06.md.md",
     "Templates/Trade Journal Template.md.md",
     "Strategies/Breakout.md.md",
-    "Strategies/Matrix Exit.md.md",
-    "Templates/Strategy Template.md.md",
-    "Trading System/Exit Rules.md.md",
-    "Dashboard/Home.md.md",
-    "Dashboard/Test Dashboard.md.md",
-    "Dashboard/Reviews.md.md",
-    "Dashboard/Research.md.md",
-    "Dashboard/Trade Journal.md.md",
-    "Dashboard/Market.md.md",
-    "Dashboard/Strategies.md.md",
-    "Dashboard/Decisions.md.md",
-    "Templates/Untitled.md",
-    "Templates/Decision Log Template.md.md",
-    "Automation/Archive",
-    "Automation/AI Workspace",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "Untitled.base",
-    "Attachments",
-    "Archive",
-    "Assets",
-    "Templates",
-    "Automation",
-    "Decision Log",
-    "Research"
+    "Untitled.canvas"
   ]
 }
