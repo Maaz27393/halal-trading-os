@@ -1,17 +1,9 @@
-# 📊 Reviews
-
-- [[Post-Market Review SOP]]
-- [[Weekly Review]]
-- [[Monthly Review]]
-
----
-
-## Recent Trade Reviews
-
-- Trade Reviews Folder
-
----
-
-## Improvements
-
-- [[Decision Log]]
+TABLE
+    date AS Date,
+    symbol AS Symbol,
+    result AS Result,
+    review_status AS Status,
+    trade AS Trade
+FROM "Trade Journal/Post-Trade Reviews"
+WHERE type = "review"
+SORT date DESC

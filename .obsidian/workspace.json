@@ -1295,7 +1295,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trade Journal/Trade Intelligence Dashboard.md.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -1310,7 +1310,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Trade Intelligence Dashboard.md"
+              "title": "Home.md"
             }
           }
         ],
@@ -1493,8 +1493,17 @@
   },
   "active": "9bd94e07f6a9d5c4",
   "lastOpenFiles": [
-    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
+    "Dashboard/Research.md.md",
+    "Dashboard/Reviews.md.md",
+    "Dashboard/Trade Journal.md.md",
+    "Dashboard/Strategies.md.md",
+    "Dashboard/Vault Roadmap.md",
+    "Dashboard/Test Dashboard.md.md",
+    "Dashboard/Trading Knowledge Graph Schema.md",
+    "Dashboard/Market.md.md",
+    "Dashboard/Link Relationship.md",
     "Trade Journal/Trade Intelligence Dashboard.md.md",
+    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Trade Journal/2026/August/TRADE-20260803-GABRIEL.md.md",
     "Templates/Decision Log Template.md.md",
     "Trade Journal/Post-Trade Reviews",
@@ -1520,15 +1529,6 @@
     "Trading System/Risk Management.md",
     "Knowledge Base/Glossary/Glossary.md.md",
     "Dashboard/Home.md.md",
-    "Knowledge Base/Indicators/VWAP.md.md",
-    "Knowledge Base/Volume Analysis/VolumeAnalysis.md.md",
-    "Knowledge Base/Institutional Concepts/InstitutionalConcepts.md.md",
-    "Knowledge Base/Price Action/PriceAction.md.md",
-    "Knowledge Base/Support&Resistance/SupportAndResistance.md.md",
-    "Knowledge Base/Trend Analysis/TrendAnalysis.md.md",
-    "Knowledge Base/Indicators/EMA.md.md",
-    "Knowledge Base/Market Concepts & Structure/MarketStructure.md.md",
-    "Knowledge Base/Statistics/Statistics.md.md",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
