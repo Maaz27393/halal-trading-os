@@ -7,3 +7,4 @@ TABLE
 FROM "Trade Journal/Post-Trade Reviews"
 WHERE type = "review"
 SORT date DESC
+
