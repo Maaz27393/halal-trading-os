@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "SOPs/Swing SOP.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Swing SOP.md"
             }
           },
           {
@@ -259,6 +259,10 @@
   },
   "active": "e6635e917987b839",
   "lastOpenFiles": [
+    "SOPs/BTST SOP.md.md",
+    "SOPs/Swing SOP.md.md",
+    "SOPs/Intraday SOP.md.md",
+    "Dashboard/Home.md.md",
     "Trading System/Trading System.md.md",
     "README.md",
     "Trading System/Trading OS.md.md",
@@ -269,13 +273,11 @@
     "Trading System/Exit Rules.md.md",
     "Trading System/Entry Rules.md.md",
     "Dashboard/Market.md.md",
-    "Dashboard/Home.md.md",
     "Templates/Backtesting Template.md.md",
     "Strategies/Breakout.md.md",
     "Strategies/Matrix Exit.md.md",
     "Strategies/EMA20-50 Pullback.md.md",
     "SOPs/Daily Pre-Market SOP.md.md",
-    "SOPs/BTST SOP.md.md",
     "SOPs/Backtesting SOP.md.md",
     "Automation/AI Workspace/Claude Instructions.md.md",
     "Dashboard/Vault Roadmap.md",
@@ -283,8 +285,6 @@
     "Dashboard/Research.md.md",
     "Templates/Research Experiment Template.md.md",
     "Research/Hypotheses/RES-20260807-VWAP-PIVOT-001.md.md",
-    "Templates/Research Item Templet.md.md",
-    "Knowledge Base/Indicators/ATR.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
