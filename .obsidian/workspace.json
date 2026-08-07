@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "Templates/Backtesting Template.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Backtesting Template.md"
             }
           }
         ],
@@ -246,6 +246,14 @@
   },
   "active": "2574e0040405f862",
   "lastOpenFiles": [
+    "Strategies/Breakout.md.md",
+    "Strategies/Matrix Exit.md.md",
+    "Strategies/EMA20-50 Pullback.md.md",
+    "SOPs/Daily Pre-Market SOP.md.md",
+    "SOPs/BTST SOP.md.md",
+    "SOPs/Backtesting SOP.md.md",
+    "Automation/AI Workspace/Claude Instructions.md.md",
+    "Dashboard/Home.md.md",
     "Dashboard/Vault Roadmap.md",
     "Research/Research Dashboard.md.md",
     "Dashboard/Research.md.md",
@@ -253,7 +261,6 @@
     "Research/Hypotheses/RES-20260807-VWAP-PIVOT-001.md.md",
     "Templates/Research Item Templet.md.md",
     "Trading System/Entry Rules.md.md",
-    "Dashboard/Home.md.md",
     "Knowledge Base/Indicators/ATR.md.md",
     "Knowledge Base/Indicators/EMA.md.md",
     "Knowledge Base/Indicators/MACD.md.md",
@@ -265,13 +272,6 @@
     "Knowledge Base/Market Concepts & Structure/MarketConcepts.md.md",
     "Knowledge Base/Market Concepts & Structure/MarketStructure.md.md",
     "Knowledge Base/Performance Metrics/PerformanceMetrics.md.md",
-    "Knowledge Base/Price Action/PriceAction.md.md",
-    "Knowledge Base/Statistics/Statistics.md.md",
-    "Knowledge Base/Support&Resistance/SupportAndResistance.md.md",
-    "Knowledge Base/Trading Psychology/TradingPsychology.md.md",
-    "Knowledge Base/Trend Analysis/TrendAnalysis.md.md",
-    "Knowledge Base/Volume Analysis/VolumeAnalysis.md.md",
-    "Dashboard/Decisions.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
