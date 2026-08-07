@@ -1295,7 +1295,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trade Journal/2026/August/2026-08-06.md.md",
+                "file": "Trade Journal/Trade Intelligence Dashboard.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -1310,7 +1310,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-08-06.md"
+              "title": "Trade Intelligence Dashboard.md"
             }
           }
         ],
@@ -1493,8 +1493,9 @@
   },
   "active": "9bd94e07f6a9d5c4",
   "lastOpenFiles": [
+    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
+    "Trade Journal/2026/August/TRADE-20260803-GABRIEL.md.md",
     "Trade Journal/Trade Intelligence Dashboard.md.md",
-    "Trade Journal/2026/August/2026-08-06.md.md",
     "Templates/Decision Log Template.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
@@ -1528,7 +1529,6 @@
     "Knowledge Base/Indicators/EMA.md.md",
     "Knowledge Base/Market Concepts & Structure/MarketStructure.md.md",
     "Knowledge Base/Statistics/Statistics.md.md",
-    "Knowledge Base/Trading Psychology/TradingPsychology.md.md",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
