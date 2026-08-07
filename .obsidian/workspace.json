@@ -11,10 +11,24 @@
             "id": "e6635e917987b839",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Dashboard/Home.md.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Home.md"
             }
           },
           {
@@ -65,8 +79,7 @@
               "title": "Backtesting Template.md"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -244,8 +257,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "2574e0040405f862",
+  "active": "e6635e917987b839",
   "lastOpenFiles": [
+    "Templates/Backtesting Template.md.md",
     "Strategies/Breakout.md.md",
     "Strategies/Matrix Exit.md.md",
     "Strategies/EMA20-50 Pullback.md.md",
@@ -271,7 +285,6 @@
     "Knowledge Base/Glossary/Glossary.md.md",
     "Knowledge Base/Market Concepts & Structure/MarketConcepts.md.md",
     "Knowledge Base/Market Concepts & Structure/MarketStructure.md.md",
-    "Knowledge Base/Performance Metrics/PerformanceMetrics.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
