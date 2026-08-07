@@ -1,5 +1,0 @@
----
-type: research
-status:
-priority:
----

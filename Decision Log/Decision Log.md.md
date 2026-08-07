@@ -30,3 +30,38 @@ Related:
 [[EMA20-50 Pullback]]
 
 [[Breakout]]
+
+# Research Decisions
+
+```dataview
+TABLE
+status AS "Status",
+strategy AS "Strategy",
+decision_date AS "Date",
+file.link AS "Research"
+FROM "Research"
+WHERE type = "research"
+AND decision != null
+SORT decision_date DESC
+
+
+---
+
+### 2. Update `Research Promotion.md`
+
+Replace the current **Decision Record** section with:
+
+```markdown
+## 10. Decision Record
+
+### Decision Required
+
+- [ ] Continue research
+- [ ] Reject
+- [ ] Accept for Paper Trading
+- [ ] Accept for Validation
+- [ ] Recommend for Trading System consideration
+
+### Decision Log
+
+[[Decision Log]]

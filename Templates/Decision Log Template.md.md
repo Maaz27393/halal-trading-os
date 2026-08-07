@@ -16,7 +16,9 @@ review:
 
 status: Accepted
 ---
-
+decision:
+decision_date:
+decision_log:
 # Decision
 
 ## Observation

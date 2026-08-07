@@ -1271,7 +1271,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "Templates/Research Experiment Template.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -1286,11 +1286,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Research Experiment Template.md"
+            }
+          },
+          {
+            "id": "9bd94e07f6a9d5c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trade Journal/2026/August/2026-08-06.md.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2026-08-06.md"
             }
           }
         ],
-        "currentTab": 53
+        "currentTab": 54
       }
     ],
     "direction": "vertical"
@@ -1467,8 +1491,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "ce3bafed5c730b12",
+  "active": "9bd94e07f6a9d5c4",
   "lastOpenFiles": [
+    "Trade Journal/Trade Intelligence Dashboard.md.md",
+    "Trade Journal/2026/August/2026-08-06.md.md",
+    "Templates/Decision Log Template.md.md",
+    "Trade Journal/Post-Trade Reviews",
+    "Trade Journal/2026/August",
+    "Trade Journal/2026",
+    "Decision Log/Decision Log.md.md",
+    "Templates/Decision Log.md",
+    "Templates/Research Promotion.md.md",
+    "Research/Research Dashboard.md.md",
+    "Research/Ideas/TEST - Research Pipeline.md.md",
+    "Templates/Research Experiment Template.md.md",
+    "Research/Archive",
+    "Research/Rejected",
+    "Research/Accepted",
+    "Research/Validation",
+    "Research/Paper Trading",
+    "Research/Hypotheses",
+    "Research/Hypotheses.md",
+    "Research/Backtests",
+    "Trading System/Market Filters.md.md",
+    "Trading System/Position Sizing.md.md",
+    "Trading System/Risk Management.md.md",
+    "Trading System/Risk Management.md",
+    "Knowledge Base/Glossary/Glossary.md.md",
+    "Dashboard/Home.md.md",
     "Knowledge Base/Indicators/VWAP.md.md",
     "Knowledge Base/Volume Analysis/VolumeAnalysis.md.md",
     "Knowledge Base/Institutional Concepts/InstitutionalConcepts.md.md",
@@ -1479,32 +1529,6 @@
     "Knowledge Base/Market Concepts & Structure/MarketStructure.md.md",
     "Knowledge Base/Statistics/Statistics.md.md",
     "Knowledge Base/Trading Psychology/TradingPsychology.md.md",
-    "Knowledge Base/Performance Metrics/PerformanceMetrics.md.md",
-    "Knowledge Base/Risk/Risk.md.md",
-    "Knowledge Base/Price Action/Risk.md.md",
-    "Knowledge Base/Price Action/Risk.md 1.md",
-    "Knowledge Base/Market Concepts & Structure/MarketConcepts.md.md",
-    "Knowledge Base/Glossary/Glossary.md.md",
-    "Knowledge Base/Indicators/BollingerBands.md.md",
-    "Knowledge Base/Chart Patterns/Patterns.md.md",
-    "Knowledge Base/Candlesticks/Candlesticks.md.md",
-    "Knowledge Base/Indicators/RSI.md.md",
-    "Knowledge Base/Indicators/MACD.md.md",
-    "Knowledge Base/Indicators/ATR.md.md",
-    "Knowledge Base/Indicators/BollingerBands.md",
-    "Knowledge Base/Institutional Concepts",
-    "Knowledge Base/Performance Metrics",
-    "Knowledge Base/Trend Analysis",
-    "Knowledge Base/Support&Resistance",
-    "Knowledge Base/Volume Analysis",
-    "Knowledge Base/Chart Patterns/Desending.md.md",
-    "Automation/AI Workspace/Draft.md.md",
-    "Dashboard/Home.md.md",
-    "Knowledge Base/Risk",
-    "Knowledge Base/Statistics",
-    "Knowledge Base/Trading Psychology",
-    "Knowledge Base/Price Action",
-    "Knowledge Base/Chart Patterns",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
