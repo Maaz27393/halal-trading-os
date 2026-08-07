@@ -1271,7 +1271,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge Base/Institutional Concepts/InstitutionalConcepts.md.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -1286,7 +1286,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "InstitutionalConcepts.md"
+              "title": "Home.md"
             }
           }
         ],
