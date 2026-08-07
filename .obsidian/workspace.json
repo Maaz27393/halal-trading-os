@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "Trading System/Trading System.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Trading System.md"
             }
           },
           {
@@ -257,8 +257,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "e6635e917987b839",
+  "active": "999ff7cc44b4a35f",
   "lastOpenFiles": [
+    "Trading System/Risk Management.md.md",
+    "Trading System/Position Sizing.md.md",
+    "Trading System/Market Filters.md.md",
+    "Trading System/Halal Rules.md.md",
+    "Trading System/Exit Rules.md.md",
+    "Trading System/Trading System.md.md",
+    "Trading System/Entry Rules.md.md",
+    "Dashboard/Market.md.md",
+    "Dashboard/Home.md.md",
     "Templates/Backtesting Template.md.md",
     "Strategies/Breakout.md.md",
     "Strategies/Matrix Exit.md.md",
@@ -267,24 +276,15 @@
     "SOPs/BTST SOP.md.md",
     "SOPs/Backtesting SOP.md.md",
     "Automation/AI Workspace/Claude Instructions.md.md",
-    "Dashboard/Home.md.md",
     "Dashboard/Vault Roadmap.md",
     "Research/Research Dashboard.md.md",
     "Dashboard/Research.md.md",
     "Templates/Research Experiment Template.md.md",
     "Research/Hypotheses/RES-20260807-VWAP-PIVOT-001.md.md",
     "Templates/Research Item Templet.md.md",
-    "Trading System/Entry Rules.md.md",
     "Knowledge Base/Indicators/ATR.md.md",
     "Knowledge Base/Indicators/EMA.md.md",
     "Knowledge Base/Indicators/MACD.md.md",
-    "Knowledge Base/Indicators/RSI.md.md",
-    "Knowledge Base/Indicators/VWAP.md.md",
-    "Knowledge Base/Candlesticks/Candlesticks.md.md",
-    "Knowledge Base/Chart Patterns/Patterns.md.md",
-    "Knowledge Base/Glossary/Glossary.md.md",
-    "Knowledge Base/Market Concepts & Structure/MarketConcepts.md.md",
-    "Knowledge Base/Market Concepts & Structure/MarketStructure.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
