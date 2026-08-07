@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Research Experiment Template.md.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Research Experiment Template.md"
+              "title": "Home.md"
             }
           }
         ],
@@ -246,7 +246,10 @@
   },
   "active": "2574e0040405f862",
   "lastOpenFiles": [
+    "Dashboard/Vault Roadmap.md",
+    "Research/Research Dashboard.md.md",
     "Dashboard/Research.md.md",
+    "Templates/Research Experiment Template.md.md",
     "Research/Hypotheses/RES-20260807-VWAP-PIVOT-001.md.md",
     "Templates/Research Item Templet.md.md",
     "Trading System/Entry Rules.md.md",
@@ -268,10 +271,7 @@
     "Knowledge Base/Trading Psychology/TradingPsychology.md.md",
     "Knowledge Base/Trend Analysis/TrendAnalysis.md.md",
     "Knowledge Base/Volume Analysis/VolumeAnalysis.md.md",
-    "Templates/Research Experiment Template.md.md",
     "Dashboard/Decisions.md.md",
-    "Research/Research Dashboard.md.md",
-    "Dashboard/Vault Roadmap.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",

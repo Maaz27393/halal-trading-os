@@ -76,6 +76,7 @@
 - [x] Recent Decisions
 
 ### Research / Decision
+- [x] Research pipeline and stage tracking
 - [ ] Research Required automation
 - [x] Decision Change Register
 - [x] Decision Dashboard connection

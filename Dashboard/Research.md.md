@@ -17,6 +17,22 @@ AND status != "Closed"
 SORT priority DESC, date DESC
 ```
 
+## Active Experiments
+
+```dataview
+TABLE
+    date AS Date,
+    title AS Experiment,
+    status AS Status,
+    research AS Research,
+    strategy AS Strategy,
+    evidence_status AS Evidence,
+    file.link AS Experiment
+FROM "Research/Experiments"
+WHERE type = "research"
+SORT date DESC
+```
+
 ## Research Requiring Decision
 
 ```dataview
