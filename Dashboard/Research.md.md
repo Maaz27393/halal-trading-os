@@ -1,9 +1,34 @@
+# Research Queue
+
+## Open Research
+
+```dataview
 TABLE
+    id AS ID,
     date AS Date,
-    symbol AS Symbol,
-    trade AS Trade,
-    strategy AS Strategy
-FROM "Trade Journal/Post-Trade Reviews"
-WHERE type = "review"
-AND contains(file.text, "Research required")
+    title AS Research,
+    priority AS Priority,
+    evidence_status AS Evidence,
+    related_strategy AS Strategy,
+    file.link AS Research
+FROM "Research"
+WHERE type = "research"
+AND status != "Closed"
+SORT priority DESC, date DESC
+```
+
+## Research Requiring Decision
+
+```dataview
+TABLE
+    id AS ID,
+    date AS Date,
+    title AS Research,
+    evidence_status AS Evidence,
+    related_strategy AS Strategy,
+    file.link AS Research
+FROM "Research"
+WHERE type = "research"
+AND decision_required = true
 SORT date DESC
+```

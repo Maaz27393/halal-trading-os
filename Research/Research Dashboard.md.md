@@ -148,3 +148,17 @@ file.link AS "Research"
 FROM "Research/99 Archive"
 SORT file.mtime DESC
 ```
+
+
+## Research Items Linked to Trading OS
+
+```dataview
+TABLE
+    file.link AS Research,
+    status AS Status,
+    priority AS Priority,
+    related_strategy AS Strategy
+FROM "Research"
+WHERE type = "research"
+SORT priority DESC
+```

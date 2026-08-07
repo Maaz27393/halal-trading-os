@@ -1295,7 +1295,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Trade Journal.md.md",
+                "file": "Dashboard/Decisions.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -1310,7 +1310,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Trade Journal.md"
+              "title": "Decisions.md"
             }
           }
         ],
@@ -1477,7 +1477,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.66668701171875
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -1493,16 +1494,19 @@
   },
   "active": "9bd94e07f6a9d5c4",
   "lastOpenFiles": [
+    "Templates/Research Item Templet.md.md",
+    "Dashboard/Research.md.md",
+    "Research/Research Dashboard.md.md",
+    "Dashboard/Vault Roadmap.md",
+    "Dashboard/Decisions.md.md",
+    "Dashboard/Trade Journal.md.md",
     "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Templates/Post -Trade Review Template.md.md",
     "Trade Journal/2026/August/TRADE-20260803-GABRIEL.md.md",
-    "Dashboard/Trade Journal.md.md",
     "Trade Journal/Trade Intelligence Dashboard.md.md",
     "Dashboard/Reviews.md.md",
     "Dashboard/Strategies.md.md",
-    "Dashboard/Research.md.md",
     "Dashboard/Home.md.md",
-    "Dashboard/Vault Roadmap.md",
     "Dashboard/Test Dashboard.md.md",
     "Dashboard/Trading Knowledge Graph Schema.md",
     "Dashboard/Market.md.md",
@@ -1514,7 +1518,6 @@
     "Decision Log/Decision Log.md.md",
     "Templates/Decision Log.md",
     "Templates/Research Promotion.md.md",
-    "Research/Research Dashboard.md.md",
     "Research/Ideas/TEST - Research Pipeline.md.md",
     "Templates/Research Experiment Template.md.md",
     "Research/Archive",
@@ -1527,8 +1530,6 @@
     "Research/Backtests",
     "Trading System/Market Filters.md.md",
     "Trading System/Position Sizing.md.md",
-    "Trading System/Risk Management.md.md",
-    "Trading System/Risk Management.md",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
