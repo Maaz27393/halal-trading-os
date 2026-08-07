@@ -1,23 +1,34 @@
 ---
 type: review
 
+date:
+symbol:
+
 trade:
-  - [[2026-08-06-TCS]]
-
 strategy:
-  - [[EMA20-50 Pullback]]
+market_condition:
+index:
+sector:
 
-market:
-  - [[India VIX]]
+result:
+review_status: Pending
+research_required: false
 
 decision:
-  - [[Decision Log]]
-
-tags:
-  - review
 ---
-
 # Trade Review
+
+## Trade
+
+[[Trade Note]]
+
+## Strategy
+
+[[Strategy Note]]
+
+## Market Context
+
+[[Market Condition]]
 
 ## What Worked
 
@@ -27,14 +38,31 @@ tags:
 
 ...
 
+## Rule Adherence
+
+...
+
+## Psychology
+
+...
+
+## Execution Errors
+
+...
+
+## Lessons
+
+...
+
 ## Improvements
 
 ...
 
-## New Rule?
+## Research Required
 
-Yes / No
+- [ ] No
+- [ ] Yes
 
-If Yes:
+## Decision
 
-→ [[Decision Log]]
+[[Decision Log]]

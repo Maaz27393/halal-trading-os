@@ -89,3 +89,6 @@ Pre-market: NSE A/D favorable, India VIX 11.94, Nifty trend positive, Stock EMA2
 
 decision:
   - "[[Decision Log]]"
+
+research_required: true
+

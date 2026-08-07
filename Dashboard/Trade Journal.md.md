@@ -71,7 +71,9 @@ WHERE type = "trade" AND sector
 GROUP BY sector
 SORT "Total R" DESC
 ```
-## Research Required
+
+
+
 
 ```dataview
 TABLE
@@ -83,6 +85,6 @@ TABLE
     file.link AS Review
 FROM "Trade Journal/Post-Trade Reviews"
 WHERE type = "review"
-AND contains(file.text, "Research required")
+AND research_required = true
 SORT date DESC
 ```
