@@ -84,11 +84,11 @@ Pre-market: NSE A/D favorable, India VIX 11.94, Nifty trend positive, Stock EMA2
 ## Decision Required?
 
 - [ ] No
-- [x] Research required
+- [ ] Research required
 - [ ] Decision Log required
 
 decision:
   - "[[Decision Log]]"
 
-research_required: true
+research_required: false
 

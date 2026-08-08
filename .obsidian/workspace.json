@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trading System/Trading System.md.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Trading System.md"
+              "title": "Home.md"
             }
           }
         ],
@@ -284,6 +284,12 @@
   },
   "active": "9c92e12529ca8c34",
   "lastOpenFiles": [
+    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
+    "Dashboard/Trade Journal.md.md",
+    "Templates/Post -Trade Review Template.md.md",
+    "Knowledge Base/Candlesticks/Candlesticks.md.md",
+    "README.md",
+    "Trading System/Trading System.md.md",
     "Trading System/Trading OS.md.md",
     "Dashboard/Home.md.md",
     "Dashboard/Vault Roadmap.md",
@@ -295,21 +301,15 @@
     "SOPs/Daily Pre-Market SOP.md.md",
     "SOPs/BTST SOP.md.md",
     "SOPs/Backtesting SOP.md.md",
-    "Dashboard/Trade Journal.md.md",
     "Dashboard/Strategies.md.md",
     "Dashboard/Market.md.md",
     "Dashboard/Decisions.md.md",
     "Dashboard/Research.md.md",
     "Templates/Research Experiment Template.md.md",
-    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Dashboard/Reviews.md.md",
     "Templates/Daily Note Template.md.md",
     "Templates/Trading Day Template.md.md",
     "Templates/Trade Journal Template.md.md",
-    "Templates/Backtesting Template.md.md",
-    "Templates/Monthly Review Template.md.md",
-    "Templates/Weekly Review Template.md.md",
-    "Templates/Market Condition Template.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
