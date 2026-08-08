@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Vault Roadmap.md",
+                "file": "Automation/AI Workspace/Inbox.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Vault Roadmap"
+              "title": "Inbox.md"
             }
           }
         ],
@@ -284,6 +284,13 @@
   },
   "active": "9c92e12529ca8c34",
   "lastOpenFiles": [
+    "Automation/AI Workspace/Draft.md.md",
+    "Automation/AI Workspace/Inbox.md.md",
+    "Automation/AI Workspace/Prompts.md.md",
+    "Automation/AI Workspace/AI Decisions.md.md",
+    "Automation/AI Workspace/Claude Instructions.md.md",
+    "Templates/Research Item Templet.md.md",
+    "Dashboard/Vault Roadmap.md",
     "Dashboard/Trade Journal.md.md",
     "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Dashboard/Home.md.md",
@@ -292,7 +299,6 @@
     "README.md",
     "Trading System/Trading System.md.md",
     "Trading System/Trading OS.md.md",
-    "Dashboard/Vault Roadmap.md",
     "SOPs/Weekly Review SOP.md.md",
     "SOPs/Swing SOP.md.md",
     "SOPs/Post-Market Review SOP.md.md",
@@ -304,12 +310,6 @@
     "Dashboard/Strategies.md.md",
     "Dashboard/Market.md.md",
     "Dashboard/Decisions.md.md",
-    "Dashboard/Research.md.md",
-    "Templates/Research Experiment Template.md.md",
-    "Dashboard/Reviews.md.md",
-    "Templates/Daily Note Template.md.md",
-    "Templates/Trading Day Template.md.md",
-    "Templates/Trade Journal Template.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
