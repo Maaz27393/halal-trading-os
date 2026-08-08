@@ -1,24 +1,15 @@
 ---
+id: DEC-{{date}}
 type: decision
-
-strategy:
-  - [[EMA20-50 Pullback]]
-
-affected_rules:
-  - [[Entry Rules]]
-  - [[Risk Management]]
-
-affected_trades:
-  - [[2026-08-06-TCS]]
-
-review:
-  - [[Trade Review - TCS - 2026-08-06]]
-
-status: Accepted
----
+status: Draft
+version: 1.0
+created: {{date}}
+updated: {{date}}
+owner: Mohammed
 decision:
-decision_date:
+decision_date: {{date}}
 decision_log:
+---
 # Decision
 
 ## Observation
@@ -35,4 +26,4 @@ decision_log:
 
 ## Effective From
 
-2026-08-07
+{{date}}

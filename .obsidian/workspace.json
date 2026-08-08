@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Decision Log Template.md.md",
+                "file": "Templates/Monthly Review Template.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Decision Log Template.md"
+              "title": "Monthly Review Template.md"
             }
           },
           {
@@ -259,11 +259,15 @@
   },
   "active": "e6635e917987b839",
   "lastOpenFiles": [
+    "Templates/Market Condition Template.md.md",
+    "Templates/Trading Day Template.md.md",
+    "Templates/Trade Journal Template.md.md",
+    "Templates/Decision Log Template.md.md",
+    "Templates/Daily Note Template.md.md",
     "Templates/Research Promotion.md.md",
     "Templates/Research Item Templet.md.md",
     "Templates/Research Experiment Template.md.md",
     "Templates/Backtesting Template.md.md",
-    "Templates/Trade Journal Template.md.md",
     "Templates/SOP Template.md.md",
     "Templates/Strategy Template.md.md",
     "Trading System/Trading System.md.md",
@@ -276,15 +280,11 @@
     "Trading System/Entry Rules.md.md",
     "Templates/Post -Trade Review Template.md.md",
     "Templates/Monthly Review Template.md.md",
-    "Templates/Market Condition Template.md.md",
-    "Templates/Decision Log Template.md.md",
-    "Templates/Daily Note Template.md.md",
     "Strategies/Breakout.md.md",
     "Strategies/EMA20-50 Pullback.md.md",
     "SOPs/Monthly Review SOP.md.md",
     "SOPs/Weekly Review SOP.md.md",
     "SOPs/Post-Market Review SOP.md.md",
-    "SOPs/Backtesting SOP.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
