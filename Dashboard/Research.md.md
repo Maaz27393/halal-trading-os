@@ -28,19 +28,22 @@ SORT priority DESC, date DESC
 
 ## Active Experiments
 
+
 ```dataview
 TABLE
-    date AS Date,
-    title AS Experiment,
+    file.link AS Experiment,
     status AS Status,
-    research AS Research,
+    created AS Created,
     strategy AS Strategy,
-    evidence_status AS Evidence,
-    file.link AS Experiment
+    sector AS Sector,
+    market_condition AS Market Condition,
+    hypothesis AS Hypothesis
 FROM "Research/Experiments"
 WHERE type = "research"
-SORT date DESC
+SORT created DESC
 ```
+
+
 
 ## Research Requiring Decision
 

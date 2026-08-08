@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
+                "file": "Dashboard/Strategies.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Post-Trade Review - GABRIEL - 2026-08-03.md"
+              "title": "Strategies.md"
             }
           },
           {
@@ -259,13 +259,15 @@
   },
   "active": "e6635e917987b839",
   "lastOpenFiles": [
+    "Dashboard/Market.md.md",
+    "Dashboard/Decisions.md.md",
+    "Dashboard/Research.md.md",
+    "Templates/Research Experiment Template.md.md",
+    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Dashboard/Vault Roadmap.md",
     "Dashboard/Trade Journal.md.md",
     "Dashboard/Strategies.md.md",
     "Dashboard/Reviews.md.md",
-    "Dashboard/Research.md.md",
-    "Dashboard/Market.md.md",
-    "Dashboard/Decisions.md.md",
     "Dashboard/Home.md.md",
     "Templates/Daily Note Template.md.md",
     "Templates/Trading Day Template.md.md",
@@ -277,14 +279,12 @@
     "Templates/Decision Log Template.md.md",
     "Templates/Research Promotion.md.md",
     "Templates/Research Item Templet.md.md",
-    "Templates/Research Experiment Template.md.md",
     "Templates/SOP Template.md.md",
     "Templates/Strategy Template.md.md",
     "Trading System/Trading System.md.md",
     "Trading System/Trading OS.md.md",
     "Trading System/Risk Management.md.md",
     "Trading System/Position Sizing.md.md",
-    "Trading System/Market Filters.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",

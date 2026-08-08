@@ -11,13 +11,13 @@ owner: Mohammed
 
 ```dataview
 TABLE
-    date AS Date,
+    decision_date AS Date,
     id AS ID,
     status AS Status,
     file.link AS Decision
-FROM "Decisions"
+FROM "Decision Log"
 WHERE type = "decision"
-SORT date DESC
+SORT decision_date DESC
 LIMIT 10
 ```
 
