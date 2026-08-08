@@ -78,8 +78,33 @@
               "icon": "lucide-file",
               "title": "Backtesting Template.md"
             }
+          },
+          {
+            "id": "9c92e12529ca8c34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dashboard/Home.md.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Home.md"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -257,8 +282,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "e6635e917987b839",
+  "active": "9c92e12529ca8c34",
   "lastOpenFiles": [
+    "Dashboard/Strategies.md.md",
     "Dashboard/Market.md.md",
     "Dashboard/Decisions.md.md",
     "Dashboard/Research.md.md",
@@ -266,7 +292,6 @@
     "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Dashboard/Vault Roadmap.md",
     "Dashboard/Trade Journal.md.md",
-    "Dashboard/Strategies.md.md",
     "Dashboard/Reviews.md.md",
     "Dashboard/Home.md.md",
     "Templates/Daily Note Template.md.md",

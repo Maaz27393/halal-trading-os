@@ -13,7 +13,7 @@ owner: Mohammed
 
 - [[EMA20-50 Pullback]]
 - [[Breakout]]
-- [[VWAP]]
+
 
 ---
 
