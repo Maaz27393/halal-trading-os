@@ -215,13 +215,13 @@ WHERE type = "trade"
 
 ```dataview
 TABLE
-    date AS Date,
-    decision_type AS Type,
+    decision_date AS Date,
+    decision AS Decision,
     status AS Status,
-    summary AS Summary,
-    file.link AS Decision
-FROM "Decisions"
-SORT date DESC
+    file.link AS Record
+FROM "Decision Log"
+WHERE type = "decision"
+SORT decision_date DESC
 LIMIT 10
 ```
 
