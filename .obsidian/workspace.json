@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "Dashboard/Vault Roadmap.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Vault Roadmap"
             }
           }
         ],
@@ -284,14 +284,14 @@
   },
   "active": "9c92e12529ca8c34",
   "lastOpenFiles": [
-    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Dashboard/Trade Journal.md.md",
+    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
+    "Dashboard/Home.md.md",
     "Templates/Post -Trade Review Template.md.md",
     "Knowledge Base/Candlesticks/Candlesticks.md.md",
     "README.md",
     "Trading System/Trading System.md.md",
     "Trading System/Trading OS.md.md",
-    "Dashboard/Home.md.md",
     "Dashboard/Vault Roadmap.md",
     "SOPs/Weekly Review SOP.md.md",
     "SOPs/Swing SOP.md.md",
