@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Monthly Review Template.md.md",
+                "file": "Dashboard/Strategies.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Monthly Review Template.md"
+              "title": "Strategies.md"
             }
           },
           {
@@ -259,15 +259,22 @@
   },
   "active": "e6635e917987b839",
   "lastOpenFiles": [
-    "Templates/Market Condition Template.md.md",
+    "Dashboard/Reviews.md.md",
+    "Dashboard/Research.md.md",
+    "Dashboard/Market.md.md",
+    "Dashboard/Home.md.md",
+    "Dashboard/Decisions.md.md",
+    "Templates/Daily Note Template.md.md",
     "Templates/Trading Day Template.md.md",
     "Templates/Trade Journal Template.md.md",
+    "Templates/Backtesting Template.md.md",
+    "Templates/Monthly Review Template.md.md",
+    "Templates/Weekly Review Template.md.md",
+    "Templates/Market Condition Template.md.md",
     "Templates/Decision Log Template.md.md",
-    "Templates/Daily Note Template.md.md",
     "Templates/Research Promotion.md.md",
     "Templates/Research Item Templet.md.md",
     "Templates/Research Experiment Template.md.md",
-    "Templates/Backtesting Template.md.md",
     "Templates/SOP Template.md.md",
     "Templates/Strategy Template.md.md",
     "Trading System/Trading System.md.md",
@@ -278,13 +285,6 @@
     "Trading System/Halal Rules.md.md",
     "Trading System/Exit Rules.md.md",
     "Trading System/Entry Rules.md.md",
-    "Templates/Post -Trade Review Template.md.md",
-    "Templates/Monthly Review Template.md.md",
-    "Strategies/Breakout.md.md",
-    "Strategies/EMA20-50 Pullback.md.md",
-    "SOPs/Monthly Review SOP.md.md",
-    "SOPs/Weekly Review SOP.md.md",
-    "SOPs/Post-Market Review SOP.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
