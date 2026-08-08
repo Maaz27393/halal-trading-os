@@ -106,10 +106,9 @@ SORT file.name
 
 1. [[Trading OS]]
 2. [[Decision Log]]
-3. [[Future Roadmap]]
-4. [[Entry Rules]]
-5. [[Exit Rules]]
-6. [[Risk Management]]
+3. [[Entry Rules]]
+4. [[Exit Rules]]
+5. [[Risk Management]]
 
 ### Knowledge Base
 
@@ -144,7 +143,7 @@ SORT file.name
 - [[Exit Rules]]
 - [[Risk Management]]
 - [[Decisions Log]]
-- [[Future Roadmap]]
+
 
 ### Trade Intelligence
 - [[Trade Journal]]
