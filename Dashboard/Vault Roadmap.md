@@ -1,3 +1,12 @@
+---
+id: DASH-Vault Roadmap-001
+type: dashboard
+status: Active
+version: 1
+created: 2026-08-08
+updated: 2026-08-08
+owner: Mohammed
+---
 # Vault Roadmap
 
 ## Phase 1 ✅

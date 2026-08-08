@@ -1,3 +1,12 @@
+---
+id: DASH-Decision-001
+type: dashboard
+status: Active
+version: 1
+created: 2026-08-08
+updated: 2026-08-08
+owner: Mohammed
+---
 ## Recent Decisions
 
 ```dataview

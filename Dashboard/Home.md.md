@@ -1,3 +1,12 @@
+---
+id: DASH-HOME-001
+type: dashboard
+status: Active
+version: 1.0
+created: 2026-08-08
+updated: 2026-08-08
+owner: Mohammed
+---
 # 🏠 Halal Trading OS
 
 ---
