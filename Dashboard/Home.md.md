@@ -129,7 +129,7 @@ SORT file.name
 ### Operating Rules
 
 - Never invent Trading OS rules.
-- Treat Decisions Log as the final authority when conflicts exist.
+- Treat Decision Log as the final authority when conflicts exist.
 - Separate facts, assumptions, experiments, findings and decisions.
 - Research does not become a rule without an explicit decision.
 - Historical/reference evidence must not be presented as validated evidence.
@@ -138,12 +138,12 @@ SORT file.name
 ## Quick Navigation
 
 ### Trading OS
-- [[03_Trading_System]]
-- [[Entry Rules]]
-- [[Exit Rules]]
-- [[Risk Management]]
-- [[Decisions Log]]
 
+- [Trading OS](<Trading OS>)
+- [Entry Rules](<Entry Rules>)
+- [Exit Rules](<Exit Rules>)
+- [Risk Management](<Risk Management>)
+- [Decision Log](<Decision Log>)
 
 ### Trade Intelligence
 - [[Trade Journal]]
@@ -153,9 +153,8 @@ SORT file.name
 - [[Decisions]]
 
 ### Research
-- [[Research Dashboard]]
-- [[Research Queue]]
 
+- [Research](Research)
 ### Knowledge Base
 - [[Indicators]]
 - [[Patterns]]
