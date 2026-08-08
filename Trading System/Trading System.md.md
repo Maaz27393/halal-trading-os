@@ -7,23 +7,37 @@ created: 2026-08-08
 updated: 2026-08-08
 owner: Mohammed
 ---
-## Related Documents
+# Trading System
 
-- [[Entry Rules]]
-- [[Exit Rules]]
-- [[Risk Management]]
-- [[Market Filters]]
-- [[Halal Rules]]
-- [[EMA20-50 Pullback]]
-- [[Breakout]]
-- [[Intraday SOP]]
-- [[BTST SOP]]
-- [[Decision Log]]
--## Core Documents
+## Core Documents
 
-- [[Risk Management]]
 - [[Entry Rules]]
 - [[Exit Rules]]
 - [[Position Sizing]]
+- [[Risk Management]]
 - [[Market Filters]]
 - [[Halal Rules]]
+
+## Strategies
+
+- [[EMA20-50 Pullback]]
+- [[Breakout]]
+
+## Execution SOPs
+
+- [[Intraday SOP]]
+- [[BTST SOP]]
+- [[Swing SOP]]
+
+## Authority
+
+- [[Trading OS]]
+- [[Decision Log]]
+
+## Purpose
+
+This document serves as the central index for the active Trading System.
+
+Detailed trading rules are maintained in the linked Core Documents, while strategies and SOPs are maintained in their respective documents.
+
+The [[Trading OS]] provides the navigation and control layer, and the [[Decision Log]] is the final authority when conflicts exist.

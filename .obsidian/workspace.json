@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "Trading System/Trading System.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Trading System.md"
             }
           }
         ],
@@ -284,6 +284,8 @@
   },
   "active": "9c92e12529ca8c34",
   "lastOpenFiles": [
+    "Trading System/Trading OS.md.md",
+    "Dashboard/Home.md.md",
     "Dashboard/Vault Roadmap.md",
     "SOPs/Weekly Review SOP.md.md",
     "SOPs/Swing SOP.md.md",
@@ -293,7 +295,6 @@
     "SOPs/Daily Pre-Market SOP.md.md",
     "SOPs/BTST SOP.md.md",
     "SOPs/Backtesting SOP.md.md",
-    "Dashboard/Home.md.md",
     "Dashboard/Trade Journal.md.md",
     "Dashboard/Strategies.md.md",
     "Dashboard/Market.md.md",
@@ -309,7 +310,6 @@
     "Templates/Monthly Review Template.md.md",
     "Templates/Weekly Review Template.md.md",
     "Templates/Market Condition Template.md.md",
-    "Templates/Decision Log Template.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
