@@ -26,10 +26,13 @@ LIMIT 1
 
 ```dataview
 TABLE
-strategy,
-status,
-date
+    date AS Date,
+    symbol AS Symbol,
+    strategy AS Strategy,
+    status AS Status,
+    R
 FROM "Trade Journal"
+WHERE type = "trade"
 SORT date DESC
 LIMIT 10
 ```
@@ -40,10 +43,12 @@ LIMIT 10
 
 ```dataview
 TABLE
-status,
-date
+    decision_date AS Date,
+    decision AS Decision,
+    status AS Status
 FROM "Decision Log"
-SORT file.mtime DESC
+WHERE type = "decision"
+SORT decision_date DESC
 LIMIT 5
 ```
 
@@ -53,10 +58,13 @@ LIMIT 5
 
 ```dataview
 TABLE
-status,
-version
-FROM "Strategies"
-SORT file.name
+    status AS Status,
+    version AS Version,
+    style AS Style,
+    timeframe AS Timeframe
+FROM "Trading System"
+WHERE type = "strategy"
+SORT file.name ASC
 ```
 
 ---
@@ -96,8 +104,8 @@ SORT file.name
 
 ### Primary Authority
 
-1. [[03_Trading_System]]
-2. [[Decisions Log]]
+1. [[Trading OS]]
+2. [[Decision Log]]
 3. [[Future Roadmap]]
 4. [[Entry Rules]]
 5. [[Exit Rules]]
