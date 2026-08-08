@@ -1,24 +1,21 @@
 ---
+id: STRAT-{{date}}
 type: strategy
-status: Active
-style: Intraday
+status: Draft
+version: 1.0
+created: {{date}}
+updated: {{date}}
+owner: Mohammed
 
-linked_sops:
-  - [[Intraday SOP]]
+style:
+timeframe:
+market: NSE
+asset: Equity
+halal: true
 
-linked_rules:
-  - [[Entry Rules]]
-  - [[Exit Rules]]
-  - [[Risk Management]]
-
-market_conditions:
-  - [[Trend Day]]
-  - [[India VIX]]
-
-tags:
-  - strategy
+risk_per_trade: 1%
+target: 1.5R
 ---
-
 # EMA20-50 Pullback
 
 ## Entry Criteria
