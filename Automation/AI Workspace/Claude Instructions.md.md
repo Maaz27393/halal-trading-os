@@ -1,3 +1,6 @@
+type: ai_instructions
+id: AI-001
+status: active
 ## Obsidian Trading OS Operating Rules
 
 ### Source Priority

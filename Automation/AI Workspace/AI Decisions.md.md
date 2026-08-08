@@ -1,3 +1,6 @@
+type: ai_decision_log
+id: AI-002
+status: active
 # AI Decisions
 
 This note records AI-assisted decisions, recommendations, and approvals related to the Trading OS.

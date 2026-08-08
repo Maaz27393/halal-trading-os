@@ -1,3 +1,6 @@
+type: prompt_library
+id: AI-003
+status: active
 # Trading OS Prompts
 
 ## Purpose

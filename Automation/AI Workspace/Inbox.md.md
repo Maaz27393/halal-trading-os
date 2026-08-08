@@ -1,3 +1,6 @@
+type: ai_inbox
+id: AI-004
+status: active
 # AI Inbox
 
 Temporary capture area for AI-generated ideas, observations, research leads, and items requiring review.
