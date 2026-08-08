@@ -18,7 +18,6 @@ owner: Mohammed
 
 ## Position-Sizing Formula
 
-```text
 qty = math.max(1, math.floor(riskAmount / riskPerShare))
 
 Where:

@@ -50,7 +50,6 @@ Research findings do not automatically become Trading OS rules.
 
 The approved change path is:
 
-```text
 Observation
 → Hypothesis
 → Research

@@ -46,7 +46,7 @@ If taken:
 
 ## Risk Calculation
 
-```text
+
 riskAmount = applicableCapital × 1%
 
 riskPerShare = Entry Price − Stop-Loss Price

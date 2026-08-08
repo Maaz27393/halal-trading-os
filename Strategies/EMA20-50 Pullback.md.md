@@ -1,7 +1,3 @@
-
-
----
----
 ---
 id: STRAT-001
 type: strategy
@@ -19,10 +15,6 @@ halal: true
 
 risk_per_trade: 1%
 target: 1.5R
----
----
----
-
 ---
 # EMA20-50 Pullback
 
