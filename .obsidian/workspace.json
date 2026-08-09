@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Automation/AI Workspace/Inbox.md.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Inbox.md"
+              "title": "Home.md"
             }
           }
         ],
