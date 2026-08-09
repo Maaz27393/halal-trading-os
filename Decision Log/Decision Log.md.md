@@ -1,67 +1,30 @@
 ---
 type: decision
-date:
-status:
+id: DEC-001
+decision_date:
+status: active
 strategy:
----# Decision 001
-
-Date:
-
-Related Strategy:
-[[EMA20-50 Pullback]]
-
-Related SOP:
-[[Intraday SOP]]
-
-Reason
-
-Outcome
-
-Action Taken
-# Decisions
-Related:
-
-[[Entry Rules]]
-
-[[Exit Rules]]
-
-[[Risk Management]]
-
-[[EMA20-50 Pullback]]
-
-[[Breakout]]
-
-# Research Decisions
-
-```dataview
-TABLE
-status AS "Status",
-strategy AS "Strategy",
-decision_date AS "Date",
-file.link AS "Research"
-FROM "Research"
-WHERE type = "research"
-AND decision != null
-SORT decision_date DESC
-
-
 ---
 
-### 2. Update `Research Promotion.md`
+# Decision 001
 
-Replace the current **Decision Record** section with:
+## Decision
 
-```markdown
-## 10. Decision Record
+### Observation
 
-### Decision Required
+### Evidence
 
-- [ ] Continue research
-- [ ] Reject
-- [ ] Accept for Paper Trading
-- [ ] Accept for Validation
-- [ ] Recommend for Trading System consideration
+### Change
 
-### Decision Log
+### Effective From
 
-[[Decision Log]]
+## Related Documents
+
+- [[Entry Rules]]
+- [[Exit Rules]]
+- [[Risk Management]]
+- [[EMA20-50 Pullback]]
+- [[Breakout]]
+- [[Intraday SOP]]
+
+## Notes
