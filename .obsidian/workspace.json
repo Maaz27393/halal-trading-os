@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Research/Research Dashboard.md.md",
+                "file": "Templates/Research Promotion Template.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,7 +124,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Research Dashboard.md"
+              "title": "Research Promotion Template.md"
             }
           }
         ],
@@ -308,8 +308,8 @@
   },
   "active": "f077eb487df2c323",
   "lastOpenFiles": [
-    "Dashboard/Research.md.md",
     "Research/Research Dashboard.md.md",
+    "Dashboard/Research.md.md",
     "Dashboard/Trade Journal.md.md",
     "Templates/Post -Trade Review Template.md.md",
     "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
