@@ -25,7 +25,7 @@ SORT created DESC
 
 ---
 
-## 01 — Ideas
+##  Ideas
 
 ```dataview
 TABLE
@@ -33,13 +33,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/01 Ideas"
+FROM "Research/Ideas"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 02 — Hypotheses
+##  Hypotheses
 
 ```dataview
 TABLE
@@ -47,13 +47,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/02 Hypotheses"
+FROM "Research/Hypotheses"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 03 — Experiments
+##  Experiments
 
 ```dataview
 TABLE
@@ -61,13 +61,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/03 Experiments"
+FROM "Research/Experiments"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 04 — Backtests
+## Backtests
 
 ```dataview
 TABLE
@@ -75,13 +75,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/04 Backtests"
+FROM "Research/Backtests"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 05 — Paper Trading
+## Paper Trading
 
 ```dataview
 TABLE
@@ -89,13 +89,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/05 Paper Trading"
+FROM "Research/Paper Trading"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 06 — Validation
+##  Validation
 
 ```dataview
 TABLE
@@ -103,13 +103,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/06 Validation"
+FROM "Research/Validation"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 07 — Accepted
+## Accepted
 
 ```dataview
 TABLE
@@ -117,13 +117,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/07 Accepted"
+FROM "Research/Accepted"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 08 — Rejected
+##  Rejected
 
 ```dataview
 TABLE
@@ -131,13 +131,13 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/08 Rejected"
+FROM "Research/Rejected"
 SORT file.mtime DESC
 ```
 
 ---
 
-## 99 — Archive
+##  Archive
 
 ```dataview
 TABLE
@@ -145,7 +145,7 @@ status AS "Status",
 strategy AS "Strategy",
 created AS "Created",
 file.link AS "Research"
-FROM "Research/99 Archive"
+FROM "Research/Archive"
 SORT file.mtime DESC
 ```
 

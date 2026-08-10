@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Trade Journal.md.md",
+                "file": "Research/Research Dashboard.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,7 +124,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Trade Journal.md"
+              "title": "Research Dashboard.md"
             }
           }
         ],
@@ -308,6 +308,9 @@
   },
   "active": "f077eb487df2c323",
   "lastOpenFiles": [
+    "Dashboard/Research.md.md",
+    "Research/Research Dashboard.md.md",
+    "Dashboard/Trade Journal.md.md",
     "Templates/Post -Trade Review Template.md.md",
     "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Dashboard/Home.md.md",
@@ -318,7 +321,6 @@
     "Automation/AI Workspace/Draft.md.md",
     "Templates/Research Item Templet.md.md",
     "Dashboard/Vault Roadmap.md",
-    "Dashboard/Trade Journal.md.md",
     "Knowledge Base/Candlesticks/Candlesticks.md.md",
     "README.md",
     "Trading System/Trading System.md.md",
@@ -332,8 +334,6 @@
     "SOPs/BTST SOP.md.md",
     "SOPs/Backtesting SOP.md.md",
     "Dashboard/Strategies.md.md",
-    "Dashboard/Market.md.md",
-    "Dashboard/Decisions.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
