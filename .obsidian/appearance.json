@@ -1,4 +1,5 @@
 {
-  "theme": "moonstone",
-  "showRibbon": true
+  "theme": "system",
+  "showRibbon": true,
+  "cssTheme": "Minimal"
 }

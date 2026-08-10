@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Research Promotion Template.md.md",
+                "file": "Dashboard/Home.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,7 +124,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Research Promotion Template.md"
+              "title": "Home.md"
             }
           }
         ],
@@ -308,6 +308,7 @@
   },
   "active": "f077eb487df2c323",
   "lastOpenFiles": [
+    "Templates/Research Promotion Template.md.md",
     "Research/Research Dashboard.md.md",
     "Dashboard/Research.md.md",
     "Dashboard/Trade Journal.md.md",
@@ -333,7 +334,6 @@
     "SOPs/Daily Pre-Market SOP.md.md",
     "SOPs/BTST SOP.md.md",
     "SOPs/Backtesting SOP.md.md",
-    "Dashboard/Strategies.md.md",
     "Trade Journal/Post-Trade Reviews",
     "Trade Journal/2026/August",
     "Trade Journal/2026",
