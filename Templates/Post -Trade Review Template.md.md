@@ -1,6 +1,6 @@
 ---
+id:
 type: review
-
 date:
 symbol:
 
@@ -16,6 +16,7 @@ research_required: false
 
 decision:
 ---
+
 # Trade Review
 
 ## Trade
@@ -60,8 +61,7 @@ decision:
 
 ## Research Required
 
-- [ ] No
-- [ ] Yes
+Set the `research_required` property in the frontmatter above (true/false). This section is informational only — the frontmatter property is the sole source read by the Dashboard.
 
 ## Decision
 

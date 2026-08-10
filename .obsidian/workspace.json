@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Post -Trade Review Template.md.md",
+                "file": "Dashboard/Trade Journal.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -124,7 +124,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Post -Trade Review Template.md"
+              "title": "Trade Journal.md"
             }
           }
         ],
@@ -308,6 +308,8 @@
   },
   "active": "f077eb487df2c323",
   "lastOpenFiles": [
+    "Templates/Post -Trade Review Template.md.md",
+    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
     "Dashboard/Home.md.md",
     "Automation/AI Workspace/Prompts.md.md",
     "Automation/AI Workspace/AI Decisions.md.md",
@@ -317,8 +319,6 @@
     "Templates/Research Item Templet.md.md",
     "Dashboard/Vault Roadmap.md",
     "Dashboard/Trade Journal.md.md",
-    "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
-    "Templates/Post -Trade Review Template.md.md",
     "Knowledge Base/Candlesticks/Candlesticks.md.md",
     "README.md",
     "Trading System/Trading System.md.md",

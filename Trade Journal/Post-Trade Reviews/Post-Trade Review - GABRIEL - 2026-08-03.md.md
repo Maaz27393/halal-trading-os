@@ -21,7 +21,9 @@ decision:
 
 result: "Target Hit, +1.51R"
 review_status: Complete
+research_required: true
 ---
+
 # Post-Trade Review — GABRIEL
 
 ## Trade
@@ -86,9 +88,3 @@ Pre-market: NSE A/D favorable, India VIX 11.94, Nifty trend positive, Stock EMA2
 - [ ] No
 - [x] Research required
 - [ ] Decision Log required
-
-decision:
-  - "[[Decision Log]]"
-
-research_required: True
-
