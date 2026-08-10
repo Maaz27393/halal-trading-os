@@ -126,9 +126,33 @@
               "icon": "lucide-file",
               "title": "Home.md"
             }
+          },
+          {
+            "id": "aed378323d039553",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dashboard/Home.md.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Home.md"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -306,15 +330,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "f077eb487df2c323",
+  "active": "aed378323d039553",
   "lastOpenFiles": [
+    "Dashboard/Home.md.md",
     "Templates/Research Promotion Template.md.md",
     "Research/Research Dashboard.md.md",
     "Dashboard/Research.md.md",
     "Dashboard/Trade Journal.md.md",
     "Templates/Post -Trade Review Template.md.md",
     "Trade Journal/Post-Trade Reviews/Post-Trade Review - GABRIEL - 2026-08-03.md.md",
-    "Dashboard/Home.md.md",
     "Automation/AI Workspace/Prompts.md.md",
     "Automation/AI Workspace/AI Decisions.md.md",
     "Automation/AI Workspace/Claude Instructions.md.md",
