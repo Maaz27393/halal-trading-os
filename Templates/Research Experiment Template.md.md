@@ -1,28 +1,14 @@
 ---
-type: research
-status:
-priority:
----
----
 id: RES-{{date}}
 type: research
 status: Idea
+priority: Medium
 created: {{date}}
-
 strategy:
 sector:
 market_condition:
-
 hypothesis:
-
 related_concepts:
-  - 
-
-evidence:
-  - 
-
-result:
-decision:
 ---
 
 # {{title}}

@@ -133,7 +133,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard/Home.md.md",
+                "file": "Templates/Research Experiment Template.md.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -148,7 +148,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home.md"
+              "title": "Research Experiment Template.md"
             }
           }
         ],
@@ -332,6 +332,7 @@
   },
   "active": "aed378323d039553",
   "lastOpenFiles": [
+    "Templates/Research Item Templet.md.md",
     "Dashboard/Home.md.md",
     "Templates/Research Promotion Template.md.md",
     "Research/Research Dashboard.md.md",
@@ -344,7 +345,6 @@
     "Automation/AI Workspace/Claude Instructions.md.md",
     "Automation/AI Workspace/Inbox.md.md",
     "Automation/AI Workspace/Draft.md.md",
-    "Templates/Research Item Templet.md.md",
     "Dashboard/Vault Roadmap.md",
     "Knowledge Base/Candlesticks/Candlesticks.md.md",
     "README.md",
