@@ -1,0 +1,66 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "description": "Authority hierarchy and memory boundary rules for Halal Trading OS Agent Runtime",
+  "layers": {
+    "L0_SYSTEM": {
+      "authority_rank": 1,
+      "name": "System / Authority",
+      "description": "Trading OS rules, Decision Log, governance, risk constraints, and active strategy limits.",
+      "paths": [
+        "Trading System/*",
+        "Decision Log/*"
+      ],
+      "read_permission": "ALLOW",
+      "write_permission": "HUMAN_MANUAL_ONLY",
+      "can_override": ["L1_KNOWLEDGE", "L2_SESSION", "L3_PERSISTENT"]
+    },
+    "L1_KNOWLEDGE": {
+      "authority_rank": 2,
+      "name": "Knowledge Vault",
+      "description": "SOPs, strategy playbooks, indicators, research papers, and execution journals.",
+      "paths": [
+        "SOPs/*",
+        "Strategies/*",
+        "Research/*",
+        "Knowledge Base/*",
+        "Psychology/*"
+      ],
+      "read_permission": "ALLOW_VIA_VAULT_SEARCH",
+      "write_permission": "VALIDATED_VAULT_COMMIT",
+      "can_override": ["L2_SESSION", "L3_PERSISTENT"]
+    },
+    "L2_SESSION": {
+      "authority_rank": 3,
+      "name": "Session / Conversation Context",
+      "description": "Current prompt, intermediate tool outputs, active turn context, and execution trace.",
+      "paths": [
+        "memory/session_memory.py"
+      ],
+      "read_permission": "ACTIVE_TURN_ONLY",
+      "write_permission": "RUNTIME_EPHEMERAL",
+      "can_override": ["L3_PERSISTENT"]
+    },
+    "L3_PERSISTENT": {
+      "authority_rank": 4,
+      "name": "Persistent Agent Memory",
+      "description": "User interaction preferences, workflow state, and recurring pattern history.",
+      "paths": [
+        "memory/persistent_memory.json"
+      ],
+      "read_permission": "ALLOW",
+      "write_permission": "AGENT_LOCAL_WRITE",
+      "can_override": []
+    }
+  },
+  "conflict_resolution": {
+    "formula": "min(authority_rank_A, authority_rank_B)",
+    "enforcement": "STRICT_HALT_ON_L0_VIOLATION",
+    "description": "If lower rank context contradicts a higher rank rule, lower rank is discarded as noise."
+  },
+  "promotion_constraints": {
+    "L3_to_L0_promotion": "STRICTLY_PROHIBITED",
+    "L3_to_L1_promotion": "REQUIRES_DECISION_LOG_ENTRY",
+    "L2_to_L3_promotion": "AUTOMATIC_FOR_USER_PREFERENCES_ONLY"
+  }
+}

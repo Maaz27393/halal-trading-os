@@ -1,0 +1,23 @@
+﻿{
+  "name": "halal-trading-orchestrator",
+  "description": "Master Orchestrator Agent for Halal Trading OS coordinating routing, tools, and Qwen local synthesis.",
+  "mode": "primary",
+  "authority_rank": 1,
+  "permissions": {
+    "tools": {
+      "halal-trading-vault_vault_search": "allow",
+      "rule_compliance_skill": "allow",
+      "capability_registry": "allow",
+      "memory_writer": "allow"
+    },
+    "allowed_layers": [
+      "01_RULES_AND_RISK",
+      "02_STRATEGIES",
+      "03_SOPS",
+      "04_GOVERNANCE",
+      "05_JOURNAL",
+      "06_RESEARCH"
+    ]
+  },
+  "system_instructions": "Coordinate multi-step execution plans across router, firewall, skills, and memory layers. Perform grounded synthesis via local Qwen engine."
+}

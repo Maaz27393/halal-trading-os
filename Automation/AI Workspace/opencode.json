@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcpServers": {
+    "halal-trading-vault": {
+      "command": "python",
+      "args": [
+        "D:\\OBSIDIAN VAULT\\halal-trading-os\\Automation\\AI Workspace\\Retrieval\\mcp_server.py"
+      ]
+    }
+  }
+}
