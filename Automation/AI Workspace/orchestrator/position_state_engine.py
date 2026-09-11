@@ -1,113 +1,74 @@
 ﻿from typing import Dict, Any, Optional
 
 class Position:
-    """Represents an active long equity position."""
     def __init__(self, ticker: str, qty: int, entry_price: float, stop_loss: float, target_price: float):
-        self.ticker = ticker.upper()
+        self.ticker = ticker
         self.qty = qty
         self.entry_price = entry_price
+        self.current_price = entry_price
         self.stop_loss = stop_loss
         self.target_price = target_price
-        self.current_price = entry_price
+        self.unrealized_pnl = 0.0
+        self.current_value = qty * entry_price
 
-    @property
-    def invested_capital(self) -> float:
-        return round(self.qty * self.entry_price, 2)
-
-    @property
-    def current_value(self) -> float:
-        return round(self.qty * self.current_price, 2)
-
-    @property
-    def unrealized_pnl(self) -> float:
-        return round(self.current_value - self.invested_capital, 2)
-
-    @property
-    def unrealized_pnl_pct(self) -> float:
-        if self.invested_capital == 0:
-            return 0.0
-        return round((self.unrealized_pnl / self.invested_capital) * 100.0, 2)
-
-    def to_dict(self) -> Dict[str, Any]:
-        return {
-            "ticker": self.ticker,
-            "qty": self.qty,
-            "entry_price": self.entry_price,
-            "stop_loss": self.stop_loss,
-            "target_price": self.target_price,
-            "current_price": self.current_price,
-            "invested_capital": self.invested_capital,
-            "current_value": self.current_value,
-            "unrealized_pnl": self.unrealized_pnl,
-            "unrealized_pnl_pct": self.unrealized_pnl_pct
-        }
+    def update_price(self, price: float):
+        self.current_price = price
+        self.current_value = self.qty * price
+        self.unrealized_pnl = round((price - self.entry_price) * self.qty, 2)
 
 class PositionStateEngine:
     """
     Phase 9B: Position State Engine
-    Tracks cash reserves, active open positions, mark-to-market adjustments,
-    and handles position liquidation & realized PnL calculations.
+    Tracks live position holdings, capital allocation, stop-loss/target bounds,
+    and portfolio mark-to-market valuations.
     """
-    def __init__(self, initial_capital: float = 100000.0):
-        self.total_capital = initial_capital
+    def __init__(self, initial_capital: float = 200000.0):
+        self.initial_capital = initial_capital
         self.available_capital = initial_capital
         self.positions: Dict[str, Position] = {}
-        self.closed_positions_pnl: float = 0.0
+        self.realized_pnl = 0.0
 
     def open_position(self, ticker: str, qty: int, entry_price: float, stop_loss: float, target_price: float) -> Dict[str, Any]:
-        ticker = ticker.upper()
-        if ticker in self.positions:
-            return {"success": False, "reason": f"Position already open for {ticker}"}
-
         cost = qty * entry_price
         if cost > self.available_capital:
-            return {"success": False, "reason": f"Insufficient capital: required {cost:.2f}, available {self.available_capital:.2f}"}
-
-        # Long position parameter validation
-        if stop_loss >= entry_price or target_price <= entry_price:
-            return {"success": False, "reason": "Invalid Risk/Reward boundary: Stop Loss must be < Entry and Target > Entry"}
-
-        pos = Position(ticker, qty, entry_price, stop_loss, target_price)
-        self.positions[ticker] = pos
-        self.available_capital -= cost
-
-        return {"success": True, "position": pos.to_dict()}
-
-    def update_market_price(self, ticker: str, current_price: float):
-        ticker = ticker.upper()
+            return {"success": False, "reason": f"Insufficient capital: required {cost}, available {self.available_capital}"}
+        
         if ticker in self.positions:
-            self.positions[ticker].current_price = current_price
+            pos = self.positions[ticker]
+            total_qty = pos.qty + qty
+            pos.entry_price = round(((pos.qty * pos.entry_price) + cost) / total_qty, 2)
+            pos.qty = total_qty
+            pos.update_price(entry_price)
+        else:
+            self.positions[ticker] = Position(ticker, qty, entry_price, stop_loss, target_price)
+
+        self.available_capital -= cost
+        return {"success": True, "position": self.positions[ticker]}
 
     def close_position(self, ticker: str, exit_price: float) -> Dict[str, Any]:
-        ticker = ticker.upper()
         if ticker not in self.positions:
-            return {"success": False, "reason": f"No active position for {ticker}"}
+            return {"success": False, "reason": f"No open position found for {ticker}"}
 
         pos = self.positions.pop(ticker)
         proceeds = pos.qty * exit_price
-        pnl = proceeds - pos.invested_capital
-
+        pnl = round((exit_price - pos.entry_price) * pos.qty, 2)
         self.available_capital += proceeds
-        self.closed_positions_pnl += pnl
+        self.realized_pnl += pnl
 
-        return {
-            "success": True,
-            "ticker": ticker,
-            "entry_price": pos.entry_price,
-            "exit_price": exit_price,
-            "realized_pnl": round(pnl, 2),
-            "available_capital": round(self.available_capital, 2)
-        }
+        return {"success": True, "realized_pnl": pnl, "proceeds": proceeds}
 
-    def get_summary(self) -> Dict[str, Any]:
-        unrealized = sum(p.unrealized_pnl for p in self.positions.values())
-        allocated = sum(p.invested_capital for p in self.positions.values())
-        portfolio_value = self.available_capital + allocated + unrealized
+    def update_market_price(self, ticker: str, price: float):
+        if ticker in self.positions:
+            self.positions[ticker].update_price(price)
+
+    def get_portfolio_summary(self) -> Dict[str, Any]:
+        total_unrealized = sum(p.unrealized_pnl for p in self.positions.values())
+        total_position_val = sum(p.current_value for p in self.positions.values())
         return {
-            "total_portfolio_value": round(portfolio_value, 2),
-            "available_capital": round(self.available_capital, 2),
-            "allocated_capital": round(allocated, 2),
-            "active_positions_count": len(self.positions),
-            "unrealized_pnl": round(unrealized, 2),
-            "realized_pnl": round(self.closed_positions_pnl, 2)
+            "initial_capital": self.initial_capital,
+            "available_capital": self.available_capital,
+            "open_positions_count": len(self.positions),
+            "total_unrealized_pnl": total_unrealized,
+            "total_realized_pnl": self.realized_pnl,
+            "total_equity": round(self.available_capital + total_position_val, 2)
         }
