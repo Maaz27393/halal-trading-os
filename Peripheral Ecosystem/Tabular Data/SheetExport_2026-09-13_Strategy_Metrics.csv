@@ -1,0 +1,3 @@
+symbol,strategy,win_rate,sharpe_ratio,max_drawdown
+NIFTY_50,EMA_Pullback,0.62,1.45,-0.045
+BANKNIFTY,VWAP_Reversion,0.58,1.28,-0.062
