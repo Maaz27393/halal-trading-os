@@ -1,0 +1,48 @@
+[
+    {
+        "date": "2026-09-15",
+        "start_time": "2026-09-15 00:54:11",
+        "status": "SUCCESS",
+        "halal_universe_count": 3,
+        "technical_candidates_count": 2,
+        "error": null
+    },
+    {
+        "date": "2026-09-15",
+        "start_time": "2026-09-15 19:06:07",
+        "status": "SUCCESS",
+        "halal_universe_count": 3,
+        "technical_candidates_count": 2,
+        "error": null
+    },
+    {
+        "date": "2026-09-15",
+        "start_time": "2026-09-15 19:27:08",
+        "status": "SUCCESS",
+        "screener_provenance": "FALLBACK",
+        "chartink_provenance": "LIVE",
+        "halal_universe_count": 3,
+        "technical_candidates_count": 0,
+        "error": null
+    },
+    {
+        "date": "2026-09-15",
+        "start_time": "2026-09-15 20:35:46",
+        "status": "SUCCESS",
+        "screener_provenance": "FALLBACK",
+        "chartink_provenance": "LIVE_PUBLIC",
+        "halal_universe_count": 3,
+        "technical_candidates_count": 0,
+        "error": null
+    },
+    {
+        "date": "2026-09-17",
+        "start_time": "2026-09-17 08:45:02",
+        "status": "FAILED",
+        "screener_provenance": "FALLBACK",
+        "chartink_provenance": "FALLBACK",
+        "halal_universe_count": 3,
+        "technical_candidates_count": 0,
+        "error": "ChartinkScannerConnector.__init__() takes from 1 to 2 positional arguments but 3 were given"
+    }
+]

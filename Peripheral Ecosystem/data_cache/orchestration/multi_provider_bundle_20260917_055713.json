@@ -1,0 +1,823 @@
+{
+  "orchestration_timestamp": "2026-09-17 05:57:13",
+  "governance": {
+    "READ_ONLY": true,
+    "LIVE_AUTO_EXECUTION": false,
+    "ORDER_CAPABILITY": "NONE",
+    "EXECUTION_AUTHORITY": "NONE"
+  },
+  "providers": {
+    "nse": {
+      "source": "NSE_MARKET_REST_V1_1",
+      "retrieved_at": "2026-09-17 05:56:33",
+      "status": "SUCCESS",
+      "read_only": true,
+      "data": {
+        "market_status": {
+          "source": "LIVE_NSE_PUBLIC_REST",
+          "capability": "market_status",
+          "status": "OK",
+          "read_only": true,
+          "data": {
+            "marketState": [
+              {
+                "index": "NIFTY 50"
+              },
+              {
+                "index": ""
+              },
+              {
+                "index": ""
+              },
+              {
+                "index": ""
+              },
+              {
+                "index": "NIFTY50 USD",
+                "timestamp": "16-Sep-2026 15:39"
+              },
+              {
+                "index": ""
+              }
+            ],
+            "marketcap": {
+              "timeStamp": "16-Sep-2026",
+              "marketCapinTRDollars": 4.92,
+              "marketCapinLACCRRupees": 472.2905896226099,
+              "marketCapinCRRupees": 47229058.96,
+              "marketCapinCRRupeesFormatted": "47,229,058.96",
+              "marketCapinLACCRRupeesFormatted": "472.29",
+              "underlying": "Market Cap"
+            },
+            "indicativenifty50": {
+              "status": "CLOSE"
+            },
+            "giftnifty": {
+              "CONTRACTSTRADED": 62434,
+              "DAYCHANGE": -141,
+              "EXPIRYDATE": "29-Sep-2026",
+              "INSTRUMENTTYPE": "FUTIDX",
+              "LASTPRICE": 23126,
+              "OPTIONTYPE": "-",
+              "PERCHANGE": -0.61,
+              "STRIKEPRICE": 0,
+              "SYMBOL": "NIFTY",
+              "TIMESTMP": "17-Sep-2026 02:29",
+              "id": "1/NIFTYFUTIDX29-Sep-2026--"
+            },
+            "niftyusd": {
+              "index": "NIFTY50 USD",
+              "timestamp": "16-Sep-2026 15:39"
+            }
+          }
+        },
+        "index_vitals": {
+          "source": "LIVE_NSE_PUBLIC_REST",
+          "capability": "index_vitals",
+          "status": "OK",
+          "read_only": true,
+          "index": "NIFTY 50",
+          "timestamp": "16-Sep-2026 15:30",
+          "data": {
+            "index": "NIFTY 50"
+          }
+        },
+        "india_vix": {
+          "source": "LIVE_NSE_PUBLIC_REST",
+          "capability": "index_vitals",
+          "status": "OK",
+          "read_only": true,
+          "index": "INDIA VIX",
+          "timestamp": "16-Sep-2026 15:30",
+          "data": {
+            "index": "INDIA VIX"
+          }
+        },
+        "capital_market_snapshot": {
+          "source": "LIVE_NSE_PUBLIC_REST",
+          "capability": "capital_market_snapshot",
+          "status": "OK",
+          "read_only": true,
+          "timestamp": null,
+          "data": {
+            "index": "NIFTY 50"
+          }
+        },
+        "advance_decline": {
+          "source": "LIVE_NSE_PUBLIC_REST",
+          "capability": "advance_decline",
+          "status": "OK",
+          "read_only": true,
+          "timestamp": "16-Sep-2026 15:30",
+          "data": {
+            "aggregate_breadth": {
+              "advances": 4803,
+              "declines": 4700,
+              "unchanged": 116
+            },
+            "nifty_500_breadth": {
+              "index": "NIFTY 500"
+            }
+          }
+        }
+      }
+    },
+    "chartink": {
+      "source": "CHARTINK_SCANNER_M3",
+      "retrieved_at": "2026-09-17 05:57:12",
+      "status": "SUCCESS",
+      "read_only": true,
+      "provider_payload_reference": "D:\\OBSIDIAN VAULT\\halal-trading-os\\Peripheral Ecosystem\\Canonical Universe\\scanner_registry.yaml",
+      "data": {
+        "candidate_count": 14,
+        "candidates": [
+          {
+            "symbol": "FOSECOIND",
+            "scanner_count": 4,
+            "scanners": [
+              "120day high breakout",
+              "Breakout Confirmation",
+              "RSI above 60",
+              "Real Time Institution Surge"
+            ],
+            "observations": [
+              {
+                "symbol": "FOSECOIND",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Foseco India Limited",
+                "close": 6846.5,
+                "volume": 178685,
+                "pct_change": 0.0,
+                "scanner_name": "Real Time Institution Surge",
+                "scanner_id": "SCAN_01"
+              },
+              {
+                "symbol": "FOSECOIND",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Foseco India Limited",
+                "close": 6846.5,
+                "volume": 178685,
+                "pct_change": 0.0,
+                "scanner_name": "RSI above 60",
+                "scanner_id": "SCAN_02"
+              },
+              {
+                "symbol": "FOSECOIND",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Foseco India Limited",
+                "close": 6846.5,
+                "volume": 178685,
+                "pct_change": 0.0,
+                "scanner_name": "Breakout Confirmation",
+                "scanner_id": "SCAN_04"
+              },
+              {
+                "symbol": "FOSECOIND",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Foseco India Limited",
+                "close": 6846.5,
+                "volume": 178685,
+                "pct_change": 0.0,
+                "scanner_name": "120day high breakout",
+                "scanner_id": "SCAN_PRE_07"
+              }
+            ]
+          },
+          {
+            "symbol": "ANTELOPUS",
+            "scanner_count": 1,
+            "scanners": [
+              "RSI above 60"
+            ],
+            "observations": [
+              {
+                "symbol": "ANTELOPUS",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Antelopus Selan Energy Ltd",
+                "close": 1170.95,
+                "volume": 4319113,
+                "pct_change": 0.0,
+                "scanner_name": "RSI above 60",
+                "scanner_id": "SCAN_02"
+              }
+            ]
+          },
+          {
+            "symbol": "IPCALAB",
+            "scanner_count": 1,
+            "scanners": [
+              "Institution Accumulation"
+            ],
+            "observations": [
+              {
+                "symbol": "IPCALAB",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Ipca Laboratories Limited",
+                "close": 1950.7,
+                "volume": 337123,
+                "pct_change": 0.0,
+                "scanner_name": "Institution Accumulation",
+                "scanner_id": "SCAN_PRE_03"
+              }
+            ]
+          },
+          {
+            "symbol": "COLPAL",
+            "scanner_count": 1,
+            "scanners": [
+              "Breakout Confirmation"
+            ],
+            "observations": [
+              {
+                "symbol": "COLPAL",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Colgate Palmolive (india) Limited",
+                "close": 1860.0,
+                "volume": 1465224,
+                "pct_change": 0.0,
+                "scanner_name": "Breakout Confirmation",
+                "scanner_id": "SCAN_04"
+              }
+            ]
+          },
+          {
+            "symbol": "DIVISLAB",
+            "scanner_count": 1,
+            "scanners": [
+              "RANGE CONTRACTION -BREAKOUT SCANS"
+            ],
+            "observations": [
+              {
+                "symbol": "DIVISLAB",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Divi's Laboratories Limited",
+                "close": 9158.0,
+                "volume": 878300,
+                "pct_change": 0.0,
+                "scanner_name": "RANGE CONTRACTION -BREAKOUT SCANS",
+                "scanner_id": "SCAN_PRE_09"
+              }
+            ]
+          },
+          {
+            "symbol": "CAPLIPOINT",
+            "scanner_count": 1,
+            "scanners": [
+              "RANGE CONTRACTION -BREAKOUT SCANS"
+            ],
+            "observations": [
+              {
+                "symbol": "CAPLIPOINT",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Caplin Point Laboratories Limited",
+                "close": 2583.0,
+                "volume": 212393,
+                "pct_change": 0.0,
+                "scanner_name": "RANGE CONTRACTION -BREAKOUT SCANS",
+                "scanner_id": "SCAN_PRE_09"
+              }
+            ]
+          },
+          {
+            "symbol": "WABAG",
+            "scanner_count": 1,
+            "scanners": [
+              "RANGE CONTRACTION -BREAKOUT SCANS"
+            ],
+            "observations": [
+              {
+                "symbol": "WABAG",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Va Tech Wabag Limited",
+                "close": 2055.8,
+                "volume": 874393,
+                "pct_change": 0.0,
+                "scanner_name": "RANGE CONTRACTION -BREAKOUT SCANS",
+                "scanner_id": "SCAN_PRE_09"
+              }
+            ]
+          },
+          {
+            "symbol": "SAILIFE",
+            "scanner_count": 1,
+            "scanners": [
+              "RANGE CONTRACTION -BREAKOUT SCANS"
+            ],
+            "observations": [
+              {
+                "symbol": "SAILIFE",
+                "provenance": "LIVE_AUTHENTICATED_PLAYWRIGHT",
+                "company": "Sai Life Sciences Ltd",
+                "close": 1539.1,
+                "volume": 801004,
+                "pct_change": 0.0,
+                "scanner_name": "RANGE CONTRACTION -BREAKOUT SCANS",
+                "scanner_id": "SCAN_PRE_09"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "screener": {
+      "source": "SCREENER_IN_PERSONAL_VIEW",
+      "retrieved_at": "2026-09-17 05:57:12",
+      "status": "SUCCESS",
+      "read_only": true,
+      "provider_payload_reference": "D:\\OBSIDIAN VAULT\\halal-trading-os\\Peripheral Ecosystem\\data_cache\\screener",
+      "data": {
+        "profiles": [
+          {
+            "symbol": "FOSECOIND",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "FOSECOIND",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "FOSECOIND",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "FOSECOIND",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "FOSECOIND",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          },
+          {
+            "symbol": "ANTELOPUS",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "ANTELOPUS",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "ANTELOPUS",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "ANTELOPUS",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "ANTELOPUS",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          },
+          {
+            "symbol": "IPCALAB",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "IPCALAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "IPCALAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "IPCALAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "IPCALAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          },
+          {
+            "symbol": "COLPAL",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "COLPAL",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "COLPAL",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "COLPAL",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "COLPAL",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          },
+          {
+            "symbol": "DIVISLAB",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "DIVISLAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "DIVISLAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "DIVISLAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "DIVISLAB",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          },
+          {
+            "symbol": "CAPLIPOINT",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "CAPLIPOINT",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "CAPLIPOINT",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "CAPLIPOINT",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "CAPLIPOINT",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          },
+          {
+            "symbol": "WABAG",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "WABAG",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "WABAG",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "WABAG",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "WABAG",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          },
+          {
+            "symbol": "SAILIFE",
+            "fundamentals": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "SAILIFE",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "financial_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "SAILIFE",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "quarterly_results": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "SAILIFE",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            },
+            "balance_sheet_summary": {
+              "source": "SCREENER_IN_PERSONAL_VIEW",
+              "status": "FAIL_CLOSED",
+              "read_only": true,
+              "symbol": "SAILIFE",
+              "retrieved_at": "2026-09-17 05:57:12",
+              "provider_payload_reference": "",
+              "data": {},
+              "error": "No authorized local Screener export found."
+            }
+          }
+        ]
+      }
+    },
+    "vault": {
+      "source": "OBSIDIAN_VAULT_RETRIEVAL",
+      "retrieved_at": "2026-09-17 05:57:13",
+      "status": "SUCCESS",
+      "read_only": true,
+      "data": {
+        "api_version": "1.0",
+        "retrieval_version": "3.6",
+        "query": "current trading rules, market go no-go conditions, risk limits, entry conditions, approved halal trading workflow",
+        "intent": "change_control",
+        "topics": [
+          "entry",
+          "halal",
+          "risk"
+        ],
+        "confidence": 0.9,
+        "match_quality": "high",
+        "result_count": 15,
+        "structured_evidence": {
+          "ACTUAL CONFLICT": [],
+          "DECISION REQUIRED": [
+            {
+              "title": "Monthly Review SOP",
+              "path": "SOPs\\Monthly Review SOP.md",
+              "score": 263
+            },
+            {
+              "title": "Research Dashboard",
+              "path": "Research\\Research Dashboard.md",
+              "score": 114
+            },
+            {
+              "title": "Research Item Templet",
+              "path": "Templates\\Research Item Templet.md",
+              "score": 116
+            },
+            {
+              "title": "Trading Day Template",
+              "path": "Templates\\Trading Day Template.md",
+              "score": 156
+            },
+            {
+              "title": "Post-Trade Review - GABRIEL - 2026-08-03",
+              "path": "Trade Journal\\Post-Trade Reviews\\Post-Trade Review - GABRIEL - 2026-08-03.md",
+              "score": 152
+            },
+            {
+              "title": "RES-20260807-VWAP-PIVOT-001",
+              "path": "Research\\Hypotheses\\RES-20260807-VWAP-PIVOT-001.md",
+              "score": 120
+            }
+          ],
+          "FINAL DECISION AUTHORITY": [
+            {
+              "title": "Decision Log",
+              "path": "Decision Log\\Decision Log.md",
+              "score": 286
+            },
+            {
+              "title": "Decision Log Template",
+              "path": "Templates\\Decision Log Template.md",
+              "score": 200
+            }
+          ],
+          "CHANGE CONTROL / GOVERNANCE": [
+            {
+              "title": "Trading OS",
+              "path": "Trading System\\Trading OS.md",
+              "score": 231
+            }
+          ],
+          "ACTIVE RULE": [
+            {
+              "title": "Entry Rules",
+              "path": "Trading System\\Entry Rules.md",
+              "score": 214
+            },
+            {
+              "title": "Position Sizing",
+              "path": "Trading System\\Position Sizing.md",
+              "score": 214
+            },
+            {
+              "title": "Risk Management",
+              "path": "Trading System\\Risk Management.md",
+              "score": 212
+            }
+          ],
+          "STRATEGY": [
+            {
+              "title": "Breakout",
+              "path": "Strategies\\Breakout.md",
+              "score": 231
+            },
+            {
+              "title": "EMA20-50 Pullback",
+              "path": "Strategies\\EMA20-50 Pullback.md",
+              "score": 215
+            }
+          ],
+          "RESEARCH ITEM": [],
+          "SUPPORTING DOCUMENT": [
+            {
+              "title": "Daily Pre-Market SOP",
+              "path": "SOPs\\Daily Pre-Market SOP.md",
+              "score": 197
+            }
+          ],
+          "TEMPLATE": []
+        },
+        "results": [
+          {
+            "status": "active"
+          },
+          {
+            "status": "active"
+          },
+          {
+            "status": "active"
+          },
+          {
+            "status": "active"
+          },
+          {
+            "status": "active"
+          },
+          {
+            "status": "active"
+          },
+          {
+            "status": "active"
+          },
+          {
+            "status": "active"
+          }
+        ],
+        "vault_status": {
+          "vault_root": "D:\\OBSIDIAN VAULT\\halal-trading-os",
+          "files_seen": 93,
+          "files_loaded": 93,
+          "files_skipped": 0,
+          "skipped_files": []
+        }
+      }
+    }
+  }
+}

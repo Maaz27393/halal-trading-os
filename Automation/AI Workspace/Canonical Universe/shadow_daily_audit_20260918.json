@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-09-18T07:44:21.897959+00:00",
+  "system": "Halal Trading OS",
+  "mode": "SHADOW",
+  "universe_file": "D:\\OBSIDIAN VAULT\\halal-trading-os\\Automation\\AI Workspace\\Canonical Universe\\halal_universe_177.json",
+  "universe_count": 173,
+  "account_equity": 50000.0,
+  "max_risk_per_trade": 500.0,
+  "max_trades_per_day": 2,
+  "max_slippage_pct": 0.5,
+  "min_rr_ratio": 1.5,
+  "statistics": {
+    "universe_total": 173,
+    "scanned": 173,
+    "data_received": 155,
+    "strategy_valid": 66,
+    "governance_passed": 66,
+    "risk_passed": 2,
+    "shadow_executed": 2,
+    "rejected": 171,
+    "errors": 0,
+    "provider_unresolved": 0,
+    "provider_unavailable": 18
+  },
+  "phase12_telemetry": {
+    "total_signals_processed": 2,
+    "shadow_orders_filled": 2,
+    "orders_rejected_or_aborted": 0,
+    "avg_latency_ms": 0.013
+  },
+  "elapsed_seconds": 56.294,
+  "live_orders_submitted": 0,
+  "live_execution_enabled": false,
+  "kill_switch_active": false,
+  "system_status": "SHADOW_COMPLETE"
+}

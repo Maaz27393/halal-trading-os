@@ -1,0 +1,108 @@
+{
+  "marketState": [
+    {
+      "market": "Capital Market",
+      "marketStatus": "Closed",
+      "tradeDate": "16-Sep-2026 15:30",
+      "index": "NIFTY 50",
+      "last": 23217.6,
+      "variation": 99,
+      "percentChange": 0.43,
+      "marketStatusMessage": "Normal Market has Closed"
+    },
+    {
+      "market": "Currency",
+      "marketStatus": "Closed",
+      "tradeDate": "16-Sep-2026",
+      "index": "",
+      "last": "",
+      "variation": "",
+      "percentChange": "",
+      "marketStatusMessage": "Market is Closed"
+    },
+    {
+      "market": "Commodity",
+      "marketStatus": "Open",
+      "tradeDate": "16-Sep-2026",
+      "index": "",
+      "last": "",
+      "variation": "",
+      "percentChange": "",
+      "marketStatusMessage": "Market is Open"
+    },
+    {
+      "market": "Debt",
+      "marketStatus": "Closed",
+      "tradeDate": "16-Sep-2026",
+      "index": "",
+      "last": "",
+      "variation": "",
+      "percentChange": "",
+      "marketStatusMessage": "Market is Closed"
+    },
+    {
+      "index": "NIFTY50 USD",
+      "last": 8385.75,
+      "change": 37.909999999999854,
+      "percentChange": 0.45,
+      "timestamp": "16-Sep-2026 15:39"
+    },
+    {
+      "market": "currencyfuture",
+      "marketStatus": "Closed",
+      "tradeDate": "16-Sep-2026",
+      "index": "",
+      "last": "95.9450",
+      "variation": "",
+      "percentChange": "",
+      "marketStatusMessage": "Market is Closed",
+      "expiryDate": "28-Sep-2026",
+      "underlying": "USDINR",
+      "updated_time": "16-Sep-2026 17:00",
+      "tradeDateFormatted": "16-Sep-2026 17:00",
+      "slickclass": "slick-item"
+    }
+  ],
+  "marketcap": {
+    "timeStamp": "16-Sep-2026",
+    "marketCapinTRDollars": 4.92,
+    "marketCapinLACCRRupees": 472.2905896226099,
+    "marketCapinCRRupees": 47229058.96,
+    "marketCapinCRRupeesFormatted": "47,229,058.96",
+    "marketCapinLACCRRupeesFormatted": "472.29",
+    "underlying": "Market Cap"
+  },
+  "indicativenifty50": {
+    "change": 99.01,
+    "closingValue": 23217.6,
+    "dateTime": "16-Sep-2026 15:30",
+    "finalClosingValue": 23217.6,
+    "indexLast": null,
+    "indexName": "NIFTY 50",
+    "indexPercChange": null,
+    "indexTimeVal": null,
+    "indicativeTime": null,
+    "perChange": 0.43,
+    "status": "CLOSE"
+  },
+  "giftnifty": {
+    "CONTRACTSTRADED": 58621,
+    "DAYCHANGE": -0.5,
+    "EXPIRYDATE": "29-Sep-2026",
+    "INSTRUMENTTYPE": "FUTIDX",
+    "LASTPRICE": 23266.5,
+    "OPTIONTYPE": "-",
+    "PERCHANGE": 0,
+    "STRIKEPRICE": 0,
+    "SYMBOL": "NIFTY",
+    "TIMESTMP": "16-Sep-2026 23:08",
+    "id": "1/NIFTYFUTIDX29-Sep-2026--"
+  },
+  "niftyusd": {
+    "index": "NIFTY50 USD",
+    "last": 8385.75,
+    "change": 37.909999999999854,
+    "percentChange": 0.45,
+    "timestamp": "16-Sep-2026 15:39"
+  }
+}

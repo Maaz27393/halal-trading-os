@@ -1,0 +1,629 @@
+2026-09-15 13:35:57,202 [INFO] ShadowDailyRunner: Initializing Shadow Daily Runner for Canonical Watchlist (174 stocks)...
+2026-09-15 13:35:57,203 [INFO] ShadowDailyRunner: Canonical universe loaded: 173 symbols
+2026-09-15 13:35:57,204 [ERROR] ShadowDailyRunner: FATAL SHADOW RUNNER ERROR: CANONICAL_UNIVERSE_COUNT_MISMATCH: expected 174, received 173
+Traceback (most recent call last):
+  File "D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\orchestrator\shadow_daily_runner.py", line 1192, in <module>
+    runner.run()
+    ~~~~~~~~~~^^
+  File "D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\orchestrator\shadow_daily_runner.py", line 605, in run
+    symbols = load_canonical_universe()
+  File "D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\orchestrator\shadow_daily_runner.py", line 212, in load_canonical_universe
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: CANONICAL_UNIVERSE_COUNT_MISMATCH: expected 174, received 173
+2026-09-15 13:47:49,518 [INFO] ShadowDailyRunner: Initializing Shadow Daily Runner for canonical universe...
+2026-09-15 13:47:49,519 [INFO] ShadowDailyRunner: Canonical universe loaded: 173 symbols
+2026-09-15 13:47:49,519 [INFO] ShadowDailyRunner: Universe name: Updated Halal Stocks-June 2026
+2026-09-15 13:47:49,519 [INFO] ShadowDailyRunner: Source rows: 177 | Compliant rows: 176 | Dynamic verification rows: 1
+2026-09-15 13:47:49,519 [INFO] ShadowDailyRunner: Account Equity : ₹50000.00
+2026-09-15 13:47:49,520 [INFO] ShadowDailyRunner: Max Risk/Trade : ₹500.00
+2026-09-15 13:47:49,520 [INFO] ShadowDailyRunner: Max Trades/Day : 2
+2026-09-15 13:47:49,520 [INFO] ShadowDailyRunner: Max Slippage   : 0.50%
+2026-09-15 13:47:49,520 [INFO] ShadowDailyRunner: Minimum R:R    : 1.50
+2026-09-15 13:47:49,520 [INFO] ShadowDailyRunner: System Mode    : SHADOW
+2026-09-15 13:47:49,520 [INFO] ShadowDailyRunner: [1/173] Processing COLPAL
+2026-09-15 13:47:50,813 [INFO] ShadowDailyRunner: [2/173] Processing SANOFI
+2026-09-15 13:47:50,992 [INFO] ShadowDailyRunner: [3/173] Processing WAAREERTL
+2026-09-15 13:47:51,160 [INFO] ShadowDailyRunner: [4/173] Processing PGHL
+2026-09-15 13:47:51,351 [INFO] ShadowDailyRunner: [5/173] Processing GEPIL
+2026-09-15 13:47:53,377 [ERROR] ShadowDailyRunner: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GEPIL.NS"}}}
+2026-09-15 13:47:54,581 [ERROR] ShadowDailyRunner: $GEPIL.NS: No data found, symbol may be delisted
+2026-09-15 13:47:54,583 [INFO] ShadowDailyRunner: [6/173] Processing GVT&D
+2026-09-15 13:47:54,867 [INFO] ShadowDailyRunner: [7/173] Processing JEENASIKHO
+2026-09-15 13:47:56,752 [ERROR] ShadowDailyRunner: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: JEENASIKHO.NS"}}}
+2026-09-15 13:47:58,106 [ERROR] ShadowDailyRunner: $JEENASIKHO.NS: No data found, symbol may be delisted
+2026-09-15 13:47:58,107 [INFO] ShadowDailyRunner: [8/173] Processing SIEMENS
+2026-09-15 13:47:58,290 [INFO] ShadowDailyRunner: [9/173] Processing ESABINDIA
+2026-09-15 13:47:58,601 [INFO] ShadowDailyRunner: [10/173] Processing TENNECO
+2026-09-15 13:48:00,301 [ERROR] ShadowDailyRunner: $TENNECO.NS: No data found, symbol may be delisted
+2026-09-15 13:48:00,303 [INFO] ShadowDailyRunner: [11/173] Processing SWARAJENG
+2026-09-15 13:48:00,483 [INFO] ShadowDailyRunner: [12/173] Processing INGERRAND
+2026-09-15 13:48:00,655 [INFO] ShadowDailyRunner: [13/173] Processing SKFINDIA
+2026-09-15 13:48:00,839 [INFO] ShadowDailyRunner: [14/173] Processing SHILCHAR
+2026-09-15 13:48:02,688 [ERROR] ShadowDailyRunner: $SHILCHAR.NS: No data found, symbol may be delisted
+2026-09-15 13:48:02,689 [INFO] ShadowDailyRunner: [15/173] Processing 3MINDIA
+2026-09-15 13:48:02,873 [INFO] ShadowDailyRunner: [16/173] Processing MARICO
+2026-09-15 13:48:03,057 [INFO] ShadowDailyRunner: [17/173] Processing ATLANTA
+2026-09-15 13:48:04,761 [ERROR] ShadowDailyRunner: $ATLANTA.NS: No data found, symbol may be delisted
+2026-09-15 13:48:04,763 [INFO] ShadowDailyRunner: [18/173] Processing ABBOTINDIA
+2026-09-15 13:48:05,044 [INFO] ShadowDailyRunner: [19/173] Processing HINDCOPPER
+2026-09-15 13:48:05,219 [INFO] ShadowDailyRunner: [20/173] Processing HAWKINCOOK
+2026-09-15 13:48:05,394 [INFO] ShadowDailyRunner: [21/173] Processing JUBLCPL
+2026-09-15 13:48:05,559 [INFO] ShadowDailyRunner: [22/173] Processing GLENMARK
+2026-09-15 13:48:05,833 [INFO] ShadowDailyRunner: [23/173] Processing CUMMINSIND
+2026-09-15 13:48:05,985 [INFO] ShadowDailyRunner: [24/173] Processing MPSLTD
+2026-09-15 13:48:06,173 [INFO] ShadowDailyRunner: [25/173] Processing HYUNDAI
+2026-09-15 13:48:06,354 [INFO] ShadowDailyRunner: [26/173] Processing INDOTECH
+2026-09-15 13:48:06,634 [INFO] ShadowDailyRunner: [27/173] Processing FORCEMOT
+2026-09-15 13:48:06,819 [INFO] ShadowDailyRunner: [28/173] Processing SHARDAMOTR
+2026-09-15 13:48:07,003 [INFO] ShadowDailyRunner: [29/173] Processing TRITURBINE
+2026-09-15 13:48:07,303 [INFO] ShadowDailyRunner: [30/173] Processing HEROMOTOCO
+2026-09-15 13:48:07,471 [INFO] ShadowDailyRunner: [31/173] Processing THYROCARE
+2026-09-15 13:48:07,652 [INFO] ShadowDailyRunner: [32/173] Processing POLYCAB
+2026-09-15 13:48:07,815 [INFO] ShadowDailyRunner: [33/173] Processing TDPOWERSYS
+2026-09-15 13:48:08,096 [INFO] ShadowDailyRunner: [34/173] Processing CRISIL
+2026-09-15 13:48:08,280 [INFO] ShadowDailyRunner: [35/173] Processing AJANTPHARM
+2026-09-15 13:48:08,468 [INFO] ShadowDailyRunner: [36/173] Processing LGE
+2026-09-15 13:48:10,301 [ERROR] ShadowDailyRunner: $LGE.NS: No data found, symbol may be delisted
+2026-09-15 13:48:10,302 [INFO] ShadowDailyRunner: [37/173] Processing ACUTAAS
+2026-09-15 13:48:10,572 [INFO] ShadowDailyRunner: [38/173] Processing QPOWER
+2026-09-15 13:48:10,769 [INFO] ShadowDailyRunner: [39/173] Processing PIDILITIND
+2026-09-15 13:48:10,979 [INFO] ShadowDailyRunner: [40/173] Processing 543619.BO
+2026-09-15 13:48:11,396 [WARNING] ShadowDailyRunner: 543619.BO provider error: 'tradingPeriods'
+2026-09-15 13:48:11,396 [INFO] ShadowDailyRunner: [41/173] Processing BAJAJCON
+2026-09-15 13:48:11,566 [INFO] ShadowDailyRunner: [42/173] Processing EICHERMOT
+2026-09-15 13:48:11,748 [INFO] ShadowDailyRunner: [43/173] Processing SHARDACROP
+2026-09-15 13:48:11,919 [INFO] ShadowDailyRunner: [44/173] Processing KIRLPNU
+2026-09-15 13:48:12,212 [INFO] ShadowDailyRunner: [45/173] Processing LUPIN
+2026-09-15 13:48:12,387 [INFO] ShadowDailyRunner: [46/173] Processing RAGHAV
+2026-09-15 13:48:14,255 [ERROR] ShadowDailyRunner: $RAGHAV.NS: No data found, symbol may be delisted
+2026-09-15 13:48:14,256 [INFO] ShadowDailyRunner: [47/173] Processing TATAELXSI
+2026-09-15 13:48:14,450 [INFO] ShadowDailyRunner: [48/173] Processing ABB
+2026-09-15 13:48:14,624 [INFO] ShadowDailyRunner: [49/173] Processing FIEMIND
+2026-09-15 13:48:14,808 [INFO] ShadowDailyRunner: [50/173] Processing BAYERCROP
+2026-09-15 13:48:15,026 [INFO] ShadowDailyRunner: [51/173] Processing POWERINDIA
+2026-09-15 13:48:15,185 [INFO] ShadowDailyRunner: [52/173] Processing SJS
+2026-09-15 13:48:15,382 [INFO] ShadowDailyRunner: [53/173] Processing RUBICON
+2026-09-15 13:48:15,674 [INFO] ShadowDailyRunner: [54/173] Processing LALPATHLAB
+2026-09-15 13:48:15,860 [INFO] ShadowDailyRunner: [55/173] Processing SUDEEP
+2026-09-15 13:48:17,704 [ERROR] ShadowDailyRunner: $SUDEEP.NS: No data found, symbol may be delisted
+2026-09-15 13:48:17,706 [INFO] ShadowDailyRunner: [56/173] Processing SCHAEFFLER
+2026-09-15 13:48:17,901 [INFO] ShadowDailyRunner: [57/173] Processing AIMTRON
+2026-09-15 13:48:18,044 [WARNING] ShadowDailyRunner: AIMTRON.NS provider error: 'tradingPeriods'
+2026-09-15 13:48:18,044 [INFO] ShadowDailyRunner: [58/173] Processing JSWDULUX
+2026-09-15 13:48:18,202 [INFO] ShadowDailyRunner: [59/173] Processing CGPOWER
+2026-09-15 13:48:18,395 [INFO] ShadowDailyRunner: [60/173] Processing GABRIEL
+2026-09-15 13:48:18,594 [INFO] ShadowDailyRunner: [61/173] Processing STYLAMIND
+2026-09-15 13:48:18,782 [INFO] ShadowDailyRunner: [62/173] Processing SBCL
+2026-09-15 13:48:18,963 [INFO] ShadowDailyRunner: [63/173] Processing LTTS
+2026-09-15 13:48:19,119 [INFO] ShadowDailyRunner: [64/173] Processing NEULANDLAB
+2026-09-15 13:48:19,399 [INFO] ShadowDailyRunner: [65/173] Processing ASIANPAINT
+2026-09-15 13:48:19,590 [INFO] ShadowDailyRunner: [66/173] Processing TANLA
+2026-09-15 13:48:19,771 [INFO] ShadowDailyRunner: [67/173] Processing RPGLIFE
+2026-09-15 13:48:19,938 [INFO] ShadowDailyRunner: [68/173] Processing JBCHEPHARM
+2026-09-15 13:48:20,093 [ERROR] ShadowDailyRunner: $JBCHEPHARM.NS: possibly delisted; no price data found  (period=5d)
+2026-09-15 13:48:20,095 [INFO] ShadowDailyRunner: [69/173] Processing BORORENEW
+2026-09-15 13:48:20,255 [INFO] ShadowDailyRunner: [70/173] Processing VIMTALABS
+2026-09-15 13:48:20,542 [INFO] ShadowDailyRunner: [71/173] Processing SUPRIYA
+2026-09-15 13:48:20,725 [INFO] ShadowDailyRunner: [72/173] Processing ALIVUS
+2026-09-15 13:48:20,901 [INFO] ShadowDailyRunner: [73/173] Processing MAYURUNIQ
+2026-09-15 13:48:21,091 [INFO] ShadowDailyRunner: [74/173] Processing KSB
+2026-09-15 13:48:21,251 [INFO] ShadowDailyRunner: [75/173] Processing CAPLIPOINT
+2026-09-15 13:48:21,422 [INFO] ShadowDailyRunner: [76/173] Processing VEEDOL
+2026-09-15 13:48:21,618 [INFO] ShadowDailyRunner: [77/173] Processing VOLTAMP
+2026-09-15 13:48:21,896 [INFO] ShadowDailyRunner: [78/173] Processing DHANUKA
+2026-09-15 13:48:22,185 [INFO] ShadowDailyRunner: [79/173] Processing POCL
+2026-09-15 13:48:22,399 [INFO] ShadowDailyRunner: [80/173] Processing AJAXENGG
+2026-09-15 13:48:22,590 [INFO] ShadowDailyRunner: [81/173] Processing ELGIEQUIP
+2026-09-15 13:48:22,775 [INFO] ShadowDailyRunner: [82/173] Processing SHAKTIPUMP
+2026-09-15 13:48:22,975 [INFO] ShadowDailyRunner: [83/173] Processing TANFACIND
+2026-09-15 13:48:23,126 [ERROR] ShadowDailyRunner: $TANFACIND.NS: possibly delisted; no price data found  (period=5d)
+2026-09-15 13:48:23,128 [INFO] ShadowDailyRunner: [84/173] Processing KAJARIACER
+2026-09-15 13:48:23,325 [INFO] ShadowDailyRunner: [85/173] Processing KINGFA
+2026-09-15 13:48:23,535 [INFO] ShadowDailyRunner: [86/173] Processing INTERARCH
+2026-09-15 13:48:23,715 [INFO] ShadowDailyRunner: [87/173] Processing STUDDS
+2026-09-15 13:48:23,904 [INFO] ShadowDailyRunner: [88/173] Processing GRINDWELL
+2026-09-15 13:48:24,078 [INFO] ShadowDailyRunner: [89/173] Processing VADILALIND
+2026-09-15 13:48:24,287 [INFO] ShadowDailyRunner: [90/173] Processing BERGEPAINT
+2026-09-15 13:48:24,481 [INFO] ShadowDailyRunner: [91/173] Processing 523323.BO
+2026-09-15 13:48:24,848 [WARNING] ShadowDailyRunner: 523323.BO provider error: 'tradingPeriods'
+2026-09-15 13:48:24,848 [INFO] ShadowDailyRunner: [92/173] Processing AUTOAXLES
+2026-09-15 13:48:25,032 [INFO] ShadowDailyRunner: [93/173] Processing HSCL
+2026-09-15 13:48:25,234 [INFO] ShadowDailyRunner: [94/173] Processing DIVISLAB
+2026-09-15 13:48:25,399 [INFO] ShadowDailyRunner: [95/173] Processing GARFIBRES
+2026-09-15 13:48:25,587 [INFO] ShadowDailyRunner: [96/173] Processing POWERMECH
+2026-09-15 13:48:25,963 [INFO] ShadowDailyRunner: [97/173] Processing UNIPARTS
+2026-09-15 13:48:26,162 [INFO] ShadowDailyRunner: [98/173] Processing BOSCHLTD
+2026-09-15 13:48:26,345 [INFO] ShadowDailyRunner: [99/173] Processing FINEORG
+2026-09-15 13:48:26,535 [INFO] ShadowDailyRunner: [100/173] Processing NAVINFLUOR
+2026-09-15 13:48:26,729 [INFO] ShadowDailyRunner: [101/173] Processing VINATIORGA
+2026-09-15 13:48:26,904 [INFO] ShadowDailyRunner: [102/173] Processing WABAG
+2026-09-15 13:48:27,112 [INFO] ShadowDailyRunner: [103/173] Processing ALKEM
+2026-09-15 13:48:27,275 [INFO] ShadowDailyRunner: [104/173] Processing ANTELOPUS
+2026-09-15 13:48:27,449 [INFO] ShadowDailyRunner: [105/173] Processing 500123.BO
+2026-09-15 13:48:27,842 [WARNING] ShadowDailyRunner: 500123.BO provider error: 'tradingPeriods'
+2026-09-15 13:48:27,843 [INFO] ShadowDailyRunner: [106/173] Processing OLECTRA
+2026-09-15 13:48:28,041 [INFO] ShadowDailyRunner: [107/173] Processing TATATECH
+2026-09-15 13:48:28,232 [INFO] ShadowDailyRunner: [108/173] Processing DATAMATICS
+2026-09-15 13:48:28,427 [INFO] ShadowDailyRunner: [109/173] Processing KIRLOSBROS
+2026-09-15 13:48:28,591 [INFO] ShadowDailyRunner: [110/173] Processing SUPREMEIND
+2026-09-15 13:48:28,775 [INFO] ShadowDailyRunner: [111/173] Processing ANUP
+2026-09-15 13:48:28,982 [INFO] ShadowDailyRunner: [112/173] Processing CLEAN
+2026-09-15 13:48:29,263 [INFO] ShadowDailyRunner: [113/173] Processing SUNPHARMA
+2026-09-15 13:48:29,428 [INFO] ShadowDailyRunner: [114/173] Processing AHLUCONT
+2026-09-15 13:48:29,601 [INFO] ShadowDailyRunner: [115/173] Processing KPRMILL
+2026-09-15 13:48:29,770 [INFO] ShadowDailyRunner: [116/173] Processing SIYSIL
+2026-09-15 13:48:29,952 [INFO] ShadowDailyRunner: [117/173] Processing KEI
+2026-09-15 13:48:30,133 [INFO] ShadowDailyRunner: [118/173] Processing SEAMECLTD
+2026-09-15 13:48:30,425 [INFO] ShadowDailyRunner: [119/173] Processing ZFCVINDIA
+2026-09-15 13:48:30,587 [INFO] ShadowDailyRunner: [120/173] Processing ASTRAL
+2026-09-15 13:48:30,854 [INFO] ShadowDailyRunner: [121/173] Processing LGBBROSLTD
+2026-09-15 13:48:31,031 [INFO] ShadowDailyRunner: [122/173] Processing APCOTEXIND
+2026-09-15 13:48:31,196 [INFO] ShadowDailyRunner: [123/173] Processing SUBROS
+2026-09-15 13:48:31,366 [INFO] ShadowDailyRunner: [124/173] Processing BIKAJI
+2026-09-15 13:48:31,533 [INFO] ShadowDailyRunner: [125/173] Processing SAILIFE
+2026-09-15 13:48:31,805 [INFO] ShadowDailyRunner: [126/173] Processing TCI
+2026-09-15 13:48:31,980 [INFO] ShadowDailyRunner: [127/173] Processing AVALON
+2026-09-15 13:48:32,276 [INFO] ShadowDailyRunner: [128/173] Processing SAFARI
+2026-09-15 13:48:32,435 [INFO] ShadowDailyRunner: [129/173] Processing CERA
+2026-09-15 13:48:32,760 [INFO] ShadowDailyRunner: [130/173] Processing RAMCOSYS
+2026-09-15 13:48:32,945 [INFO] ShadowDailyRunner: [131/173] Processing SUPPETRO
+2026-09-15 13:48:35,123 [ERROR] ShadowDailyRunner: $SUPPETRO.NS: No data found, symbol may be delisted
+2026-09-15 13:48:35,125 [INFO] ShadowDailyRunner: [132/173] Processing INDGN
+2026-09-15 13:48:35,295 [INFO] ShadowDailyRunner: [133/173] Processing CONCORDBIO
+2026-09-15 13:48:35,473 [INFO] ShadowDailyRunner: [134/173] Processing ENDURANCE
+2026-09-15 13:48:35,675 [INFO] ShadowDailyRunner: [135/173] Processing TIMKEN
+2026-09-15 13:48:35,863 [INFO] ShadowDailyRunner: [136/173] Processing GALLANTT
+2026-09-15 13:48:36,036 [INFO] ShadowDailyRunner: [137/173] Processing HAPPYFORGE
+2026-09-15 13:48:36,209 [INFO] ShadowDailyRunner: [138/173] Processing MASTEK
+2026-09-15 13:48:36,400 [INFO] ShadowDailyRunner: [139/173] Processing DODLA
+2026-09-15 13:48:36,600 [INFO] ShadowDailyRunner: [140/173] Processing INDIGOPNTS
+2026-09-15 13:48:36,816 [INFO] ShadowDailyRunner: [141/173] Processing RATNAMANI
+2026-09-15 13:48:36,992 [INFO] ShadowDailyRunner: [142/173] Processing METROPOLIS
+2026-09-15 13:48:37,195 [INFO] ShadowDailyRunner: [143/173] Processing SUNDRMFAST
+2026-09-15 13:48:37,395 [INFO] ShadowDailyRunner: [144/173] Processing 505890.BO
+2026-09-15 13:48:39,034 [ERROR] ShadowDailyRunner: $505890.BO: No data found, symbol may be delisted
+2026-09-15 13:48:39,035 [INFO] ShadowDailyRunner: [145/173] Processing BHARATRAS
+2026-09-15 13:48:39,217 [INFO] ShadowDailyRunner: [146/173] Processing FOSECOIND
+2026-09-15 13:48:39,422 [INFO] ShadowDailyRunner: [147/173] Processing IPCALAB
+2026-09-15 13:48:39,615 [INFO] ShadowDailyRunner: [148/173] Processing ROUTE
+2026-09-15 13:48:39,887 [INFO] ShadowDailyRunner: [149/173] Processing NATCOPHARM
+2026-09-15 13:48:40,077 [INFO] ShadowDailyRunner: [150/173] Processing MEDANTA
+2026-09-15 13:48:40,375 [INFO] ShadowDailyRunner: [151/173] Processing GRAVITA
+2026-09-15 13:48:40,578 [INFO] ShadowDailyRunner: [152/173] Processing HONAUT
+2026-09-15 13:48:40,858 [INFO] ShadowDailyRunner: [153/173] Processing SYRMA
+2026-09-15 13:48:41,067 [INFO] ShadowDailyRunner: [154/173] Processing ALKYLAMINE
+2026-09-15 13:48:41,239 [INFO] ShadowDailyRunner: [155/173] Processing FINCABLES
+2026-09-15 13:48:41,419 [INFO] ShadowDailyRunner: [156/173] Processing SONACOMS
+2026-09-15 13:48:41,711 [INFO] ShadowDailyRunner: [157/173] Processing MRF
+2026-09-15 13:48:41,911 [INFO] ShadowDailyRunner: [158/173] Processing ESCORTS
+2026-09-15 13:48:42,334 [INFO] ShadowDailyRunner: [159/173] Processing SOTL
+2026-09-15 13:48:42,514 [INFO] ShadowDailyRunner: [160/173] Processing CIPLA
+2026-09-15 13:48:42,709 [INFO] ShadowDailyRunner: [161/173] Processing TEAMLEASE
+2026-09-15 13:48:42,922 [INFO] ShadowDailyRunner: [162/173] Processing ORKLA
+2026-09-15 13:48:44,360 [ERROR] ShadowDailyRunner: $ORKLA.NS: No data found, symbol may be delisted
+2026-09-15 13:48:44,360 [INFO] ShadowDailyRunner: [163/173] Processing STYRENIX
+2026-09-15 13:48:44,541 [INFO] ShadowDailyRunner: [164/173] Processing INNOVA
+2026-09-15 13:48:46,333 [ERROR] ShadowDailyRunner: $INNOVA.NS: No data found, symbol may be delisted
+2026-09-15 13:48:46,335 [INFO] ShadowDailyRunner: [165/173] Processing ATUL
+2026-09-15 13:48:46,535 [INFO] ShadowDailyRunner: [166/173] Processing TECHNOE
+2026-09-15 13:48:46,729 [INFO] ShadowDailyRunner: [167/173] Processing PIIND
+2026-09-15 13:48:47,011 [INFO] ShadowDailyRunner: [168/173] Processing KSL
+2026-09-15 13:48:47,194 [INFO] ShadowDailyRunner: [169/173] Processing RISHABH
+2026-09-15 13:48:47,413 [INFO] ShadowDailyRunner: [170/173] Processing SANSERA
+2026-09-15 13:48:47,710 [INFO] ShadowDailyRunner: [171/173] Processing POLYMED
+2026-09-15 13:48:47,898 [INFO] ShadowDailyRunner: [172/173] Processing DRREDDY
+2026-09-15 13:48:48,120 [INFO] ShadowDailyRunner: [173/173] Processing ANANTRAJ
+2026-09-15 13:48:48,331 [INFO] ShadowDailyRunner: Detailed results saved: D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\orchestrator\logs\shadow_daily_results_20260915.json
+2026-09-15 13:48:48,332 [INFO] ShadowDailyRunner: Daily audit saved: D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\Canonical Universe\shadow_daily_audit_20260915.json
+2026-09-17 09:27:20,407 [INFO] ShadowDailyRunner: Initializing Shadow Daily Runner for canonical universe...
+2026-09-17 09:27:20,414 [INFO] ShadowDailyRunner: Canonical universe loaded: 173 symbols
+2026-09-17 09:27:20,414 [INFO] ShadowDailyRunner: Universe name: Updated Halal Stocks-June 2026
+2026-09-17 09:27:20,414 [INFO] ShadowDailyRunner: Source rows: 177 | Compliant rows: 176 | Dynamic verification rows: 1
+2026-09-17 09:27:20,414 [INFO] ShadowDailyRunner: Account Equity : ₹50000.00
+2026-09-17 09:27:20,414 [INFO] ShadowDailyRunner: Max Risk/Trade : ₹500.00
+2026-09-17 09:27:20,415 [INFO] ShadowDailyRunner: Max Trades/Day : 2
+2026-09-17 09:27:20,415 [INFO] ShadowDailyRunner: Max Slippage   : 0.50%
+2026-09-17 09:27:20,415 [INFO] ShadowDailyRunner: Minimum R:R    : 1.50
+2026-09-17 09:27:20,415 [INFO] ShadowDailyRunner: System Mode    : SHADOW
+2026-09-17 09:27:20,415 [INFO] ShadowDailyRunner: [1/173] Processing COLPAL
+2026-09-17 09:27:23,500 [INFO] ShadowDailyRunner: [2/173] Processing SANOFI
+2026-09-17 09:27:23,640 [INFO] ShadowDailyRunner: [3/173] Processing WAAREERTL
+2026-09-17 09:27:23,804 [INFO] ShadowDailyRunner: [4/173] Processing PGHL
+2026-09-17 09:27:23,958 [INFO] ShadowDailyRunner: [5/173] Processing GEPIL
+2026-09-17 09:27:25,957 [ERROR] ShadowDailyRunner: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GEPIL.NS"}}}
+2026-09-17 09:27:27,686 [ERROR] ShadowDailyRunner: $GEPIL.NS: No data found, symbol may be delisted
+2026-09-17 09:27:27,688 [INFO] ShadowDailyRunner: [6/173] Processing GVT&D
+2026-09-17 09:27:27,831 [INFO] ShadowDailyRunner: [7/173] Processing JEENASIKHO
+2026-09-17 09:27:29,533 [ERROR] ShadowDailyRunner: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: JEENASIKHO.NS"}}}
+2026-09-17 09:27:30,586 [ERROR] ShadowDailyRunner: $JEENASIKHO.NS: No data found, symbol may be delisted
+2026-09-17 09:27:30,588 [INFO] ShadowDailyRunner: [8/173] Processing SIEMENS
+2026-09-17 09:27:30,750 [INFO] ShadowDailyRunner: [9/173] Processing ESABINDIA
+2026-09-17 09:27:30,925 [INFO] ShadowDailyRunner: [10/173] Processing TENNECO
+2026-09-17 09:27:32,480 [ERROR] ShadowDailyRunner: $TENNECO.NS: No data found, symbol may be delisted
+2026-09-17 09:27:32,482 [INFO] ShadowDailyRunner: [11/173] Processing SWARAJENG
+2026-09-17 09:27:32,652 [INFO] ShadowDailyRunner: [12/173] Processing INGERRAND
+2026-09-17 09:27:32,819 [INFO] ShadowDailyRunner: [13/173] Processing SKFINDIA
+2026-09-17 09:27:32,991 [INFO] ShadowDailyRunner: [14/173] Processing SHILCHAR
+2026-09-17 09:27:34,524 [ERROR] ShadowDailyRunner: $SHILCHAR.NS: No data found, symbol may be delisted
+2026-09-17 09:27:34,526 [INFO] ShadowDailyRunner: [15/173] Processing 3MINDIA
+2026-09-17 09:27:34,753 [INFO] ShadowDailyRunner: [16/173] Processing MARICO
+2026-09-17 09:27:34,922 [INFO] ShadowDailyRunner: [17/173] Processing ATLANTA
+2026-09-17 09:27:36,345 [ERROR] ShadowDailyRunner: $ATLANTA.NS: No data found, symbol may be delisted
+2026-09-17 09:27:36,346 [INFO] ShadowDailyRunner: [18/173] Processing ABBOTINDIA
+2026-09-17 09:27:36,504 [INFO] ShadowDailyRunner: [19/173] Processing HINDCOPPER
+2026-09-17 09:27:36,677 [INFO] ShadowDailyRunner: [20/173] Processing HAWKINCOOK
+2026-09-17 09:27:36,829 [INFO] ShadowDailyRunner: [21/173] Processing JUBLCPL
+2026-09-17 09:27:36,973 [INFO] ShadowDailyRunner: [22/173] Processing GLENMARK
+2026-09-17 09:27:37,126 [INFO] ShadowDailyRunner: [23/173] Processing CUMMINSIND
+2026-09-17 09:27:37,303 [INFO] ShadowDailyRunner: [24/173] Processing MPSLTD
+2026-09-17 09:27:37,574 [INFO] ShadowDailyRunner: [25/173] Processing HYUNDAI
+2026-09-17 09:27:37,748 [INFO] ShadowDailyRunner: [26/173] Processing INDOTECH
+2026-09-17 09:27:37,896 [INFO] ShadowDailyRunner: [27/173] Processing FORCEMOT
+2026-09-17 09:27:38,044 [INFO] ShadowDailyRunner: [28/173] Processing SHARDAMOTR
+2026-09-17 09:27:38,188 [INFO] ShadowDailyRunner: [29/173] Processing TRITURBINE
+2026-09-17 09:27:38,348 [INFO] ShadowDailyRunner: [30/173] Processing HEROMOTOCO
+2026-09-17 09:27:38,521 [INFO] ShadowDailyRunner: [31/173] Processing THYROCARE
+2026-09-17 09:27:38,792 [INFO] ShadowDailyRunner: [32/173] Processing POLYCAB
+2026-09-17 09:27:38,930 [INFO] ShadowDailyRunner: [33/173] Processing TDPOWERSYS
+2026-09-17 09:27:39,214 [INFO] ShadowDailyRunner: [34/173] Processing CRISIL
+2026-09-17 09:27:39,371 [INFO] ShadowDailyRunner: [35/173] Processing AJANTPHARM
+2026-09-17 09:27:39,617 [INFO] ShadowDailyRunner: [36/173] Processing LGE
+2026-09-17 09:27:41,396 [ERROR] ShadowDailyRunner: $LGE.NS: No data found, symbol may be delisted
+2026-09-17 09:27:41,396 [INFO] ShadowDailyRunner: [37/173] Processing ACUTAAS
+2026-09-17 09:27:41,554 [INFO] ShadowDailyRunner: [38/173] Processing QPOWER
+2026-09-17 09:27:41,711 [INFO] ShadowDailyRunner: [39/173] Processing PIDILITIND
+2026-09-17 09:27:41,869 [INFO] ShadowDailyRunner: [40/173] Processing 543619.BO
+2026-09-17 09:27:41,998 [WARNING] ShadowDailyRunner: 543619.BO provider error: 'tradingPeriods'
+2026-09-17 09:27:41,999 [INFO] ShadowDailyRunner: [41/173] Processing BAJAJCON
+2026-09-17 09:27:42,262 [INFO] ShadowDailyRunner: [42/173] Processing EICHERMOT
+2026-09-17 09:27:42,410 [INFO] ShadowDailyRunner: [43/173] Processing SHARDACROP
+2026-09-17 09:27:42,559 [INFO] ShadowDailyRunner: [44/173] Processing KIRLPNU
+2026-09-17 09:27:42,739 [INFO] ShadowDailyRunner: [45/173] Processing LUPIN
+2026-09-17 09:27:42,909 [INFO] ShadowDailyRunner: [46/173] Processing RAGHAV
+2026-09-17 09:27:44,411 [ERROR] ShadowDailyRunner: $RAGHAV.NS: No data found, symbol may be delisted
+2026-09-17 09:27:44,412 [INFO] ShadowDailyRunner: [47/173] Processing TATAELXSI
+2026-09-17 09:27:44,562 [INFO] ShadowDailyRunner: [48/173] Processing ABB
+2026-09-17 09:27:44,729 [INFO] ShadowDailyRunner: [49/173] Processing FIEMIND
+2026-09-17 09:27:44,889 [INFO] ShadowDailyRunner: [50/173] Processing BAYERCROP
+2026-09-17 09:27:45,038 [INFO] ShadowDailyRunner: [51/173] Processing POWERINDIA
+2026-09-17 09:27:45,182 [INFO] ShadowDailyRunner: [52/173] Processing SJS
+2026-09-17 09:27:45,436 [INFO] ShadowDailyRunner: [53/173] Processing RUBICON
+2026-09-17 09:27:45,689 [INFO] ShadowDailyRunner: [54/173] Processing LALPATHLAB
+2026-09-17 09:27:45,844 [INFO] ShadowDailyRunner: [55/173] Processing SUDEEP
+2026-09-17 09:27:47,161 [ERROR] ShadowDailyRunner: $SUDEEP.NS: No data found, symbol may be delisted
+2026-09-17 09:27:47,161 [INFO] ShadowDailyRunner: [56/173] Processing SCHAEFFLER
+2026-09-17 09:27:47,409 [INFO] ShadowDailyRunner: [57/173] Processing AIMTRON
+2026-09-17 09:27:47,566 [WARNING] ShadowDailyRunner: AIMTRON.NS provider error: 'tradingPeriods'
+2026-09-17 09:27:47,567 [INFO] ShadowDailyRunner: [58/173] Processing JSWDULUX
+2026-09-17 09:27:47,726 [INFO] ShadowDailyRunner: [59/173] Processing CGPOWER
+2026-09-17 09:27:47,869 [INFO] ShadowDailyRunner: [60/173] Processing GABRIEL
+2026-09-17 09:27:48,026 [INFO] ShadowDailyRunner: [61/173] Processing STYLAMIND
+2026-09-17 09:27:48,188 [INFO] ShadowDailyRunner: [62/173] Processing SBCL
+2026-09-17 09:27:48,430 [INFO] ShadowDailyRunner: [63/173] Processing LTTS
+2026-09-17 09:27:48,600 [INFO] ShadowDailyRunner: [64/173] Processing NEULANDLAB
+2026-09-17 09:27:48,773 [INFO] ShadowDailyRunner: [65/173] Processing ASIANPAINT
+2026-09-17 09:27:49,022 [INFO] ShadowDailyRunner: [66/173] Processing TANLA
+2026-09-17 09:27:49,166 [INFO] ShadowDailyRunner: [67/173] Processing RPGLIFE
+2026-09-17 09:27:49,327 [INFO] ShadowDailyRunner: [68/173] Processing JBCHEPHARM
+2026-09-17 09:27:49,457 [ERROR] ShadowDailyRunner: $JBCHEPHARM.NS: possibly delisted; no price data found  (period=5d)
+2026-09-17 09:27:49,458 [INFO] ShadowDailyRunner: [69/173] Processing BORORENEW
+2026-09-17 09:27:49,623 [INFO] ShadowDailyRunner: [70/173] Processing VIMTALABS
+2026-09-17 09:27:49,800 [INFO] ShadowDailyRunner: [71/173] Processing SUPRIYA
+2026-09-17 09:27:49,960 [INFO] ShadowDailyRunner: [72/173] Processing ALIVUS
+2026-09-17 09:27:50,138 [INFO] ShadowDailyRunner: [73/173] Processing MAYURUNIQ
+2026-09-17 09:27:50,304 [INFO] ShadowDailyRunner: [74/173] Processing KSB
+2026-09-17 09:27:50,464 [INFO] ShadowDailyRunner: [75/173] Processing CAPLIPOINT
+2026-09-17 09:27:50,602 [INFO] ShadowDailyRunner: [76/173] Processing VEEDOL
+2026-09-17 09:27:50,772 [INFO] ShadowDailyRunner: [77/173] Processing VOLTAMP
+2026-09-17 09:27:51,020 [INFO] ShadowDailyRunner: [78/173] Processing DHANUKA
+2026-09-17 09:27:51,187 [INFO] ShadowDailyRunner: [79/173] Processing POCL
+2026-09-17 09:27:51,350 [INFO] ShadowDailyRunner: [80/173] Processing AJAXENGG
+2026-09-17 09:27:51,616 [INFO] ShadowDailyRunner: [81/173] Processing ELGIEQUIP
+2026-09-17 09:27:51,790 [INFO] ShadowDailyRunner: [82/173] Processing SHAKTIPUMP
+2026-09-17 09:27:51,937 [INFO] ShadowDailyRunner: [83/173] Processing TANFACIND
+2026-09-17 09:27:52,076 [ERROR] ShadowDailyRunner: $TANFACIND.NS: possibly delisted; no price data found  (period=5d)
+2026-09-17 09:27:52,078 [INFO] ShadowDailyRunner: [84/173] Processing KAJARIACER
+2026-09-17 09:27:52,223 [INFO] ShadowDailyRunner: [85/173] Processing KINGFA
+2026-09-17 09:27:52,403 [INFO] ShadowDailyRunner: [86/173] Processing INTERARCH
+2026-09-17 09:27:52,562 [INFO] ShadowDailyRunner: [87/173] Processing STUDDS
+2026-09-17 09:27:52,710 [INFO] ShadowDailyRunner: [88/173] Processing GRINDWELL
+2026-09-17 09:27:52,869 [INFO] ShadowDailyRunner: [89/173] Processing VADILALIND
+2026-09-17 09:27:53,044 [INFO] ShadowDailyRunner: [90/173] Processing BERGEPAINT
+2026-09-17 09:27:53,214 [INFO] ShadowDailyRunner: [91/173] Processing 523323.BO
+2026-09-17 09:27:53,402 [WARNING] ShadowDailyRunner: 523323.BO provider error: 'tradingPeriods'
+2026-09-17 09:27:53,403 [INFO] ShadowDailyRunner: [92/173] Processing AUTOAXLES
+2026-09-17 09:27:53,563 [INFO] ShadowDailyRunner: [93/173] Processing HSCL
+2026-09-17 09:27:53,816 [INFO] ShadowDailyRunner: [94/173] Processing DIVISLAB
+2026-09-17 09:27:53,988 [INFO] ShadowDailyRunner: [95/173] Processing GARFIBRES
+2026-09-17 09:27:54,251 [INFO] ShadowDailyRunner: [96/173] Processing POWERMECH
+2026-09-17 09:27:54,394 [INFO] ShadowDailyRunner: [97/173] Processing UNIPARTS
+2026-09-17 09:27:54,529 [INFO] ShadowDailyRunner: [98/173] Processing BOSCHLTD
+2026-09-17 09:27:54,676 [INFO] ShadowDailyRunner: [99/173] Processing FINEORG
+2026-09-17 09:27:54,850 [INFO] ShadowDailyRunner: [100/173] Processing NAVINFLUOR
+2026-09-17 09:27:55,019 [INFO] ShadowDailyRunner: [101/173] Processing VINATIORGA
+2026-09-17 09:27:55,187 [INFO] ShadowDailyRunner: [102/173] Processing WABAG
+2026-09-17 09:27:55,330 [INFO] ShadowDailyRunner: [103/173] Processing ALKEM
+2026-09-17 09:27:55,498 [INFO] ShadowDailyRunner: [104/173] Processing ANTELOPUS
+2026-09-17 09:27:55,669 [INFO] ShadowDailyRunner: [105/173] Processing 500123.BO
+2026-09-17 09:27:55,830 [WARNING] ShadowDailyRunner: 500123.BO provider error: 'tradingPeriods'
+2026-09-17 09:27:55,830 [INFO] ShadowDailyRunner: [106/173] Processing OLECTRA
+2026-09-17 09:27:56,024 [INFO] ShadowDailyRunner: [107/173] Processing TATATECH
+2026-09-17 09:27:56,168 [INFO] ShadowDailyRunner: [108/173] Processing DATAMATICS
+2026-09-17 09:27:56,320 [INFO] ShadowDailyRunner: [109/173] Processing KIRLOSBROS
+2026-09-17 09:27:56,468 [INFO] ShadowDailyRunner: [110/173] Processing SUPREMEIND
+2026-09-17 09:27:56,714 [INFO] ShadowDailyRunner: [111/173] Processing ANUP
+2026-09-17 09:27:56,877 [INFO] ShadowDailyRunner: [112/173] Processing CLEAN
+2026-09-17 09:27:57,034 [INFO] ShadowDailyRunner: [113/173] Processing SUNPHARMA
+2026-09-17 09:27:57,206 [INFO] ShadowDailyRunner: [114/173] Processing AHLUCONT
+2026-09-17 09:27:57,363 [INFO] ShadowDailyRunner: [115/173] Processing KPRMILL
+2026-09-17 09:27:57,498 [INFO] ShadowDailyRunner: [116/173] Processing SIYSIL
+2026-09-17 09:27:57,643 [INFO] ShadowDailyRunner: [117/173] Processing KEI
+2026-09-17 09:27:57,814 [INFO] ShadowDailyRunner: [118/173] Processing SEAMECLTD
+2026-09-17 09:27:57,974 [INFO] ShadowDailyRunner: [119/173] Processing ZFCVINDIA
+2026-09-17 09:27:58,115 [INFO] ShadowDailyRunner: [120/173] Processing ASTRAL
+2026-09-17 09:27:58,252 [INFO] ShadowDailyRunner: [121/173] Processing LGBBROSLTD
+2026-09-17 09:27:58,411 [INFO] ShadowDailyRunner: [122/173] Processing APCOTEXIND
+2026-09-17 09:27:58,558 [INFO] ShadowDailyRunner: [123/173] Processing SUBROS
+2026-09-17 09:27:58,719 [INFO] ShadowDailyRunner: [124/173] Processing BIKAJI
+2026-09-17 09:27:58,880 [INFO] ShadowDailyRunner: [125/173] Processing SAILIFE
+2026-09-17 09:27:59,149 [INFO] ShadowDailyRunner: [126/173] Processing TCI
+2026-09-17 09:27:59,293 [INFO] ShadowDailyRunner: [127/173] Processing AVALON
+2026-09-17 09:27:59,451 [INFO] ShadowDailyRunner: [128/173] Processing SAFARI
+2026-09-17 09:27:59,583 [INFO] ShadowDailyRunner: [129/173] Processing CERA
+2026-09-17 09:27:59,718 [INFO] ShadowDailyRunner: [130/173] Processing RAMCOSYS
+2026-09-17 09:27:59,882 [INFO] ShadowDailyRunner: [131/173] Processing SUPPETRO
+2026-09-17 09:28:01,644 [ERROR] ShadowDailyRunner: $SUPPETRO.NS: No data found, symbol may be delisted
+2026-09-17 09:28:01,645 [INFO] ShadowDailyRunner: [132/173] Processing INDGN
+2026-09-17 09:28:01,806 [INFO] ShadowDailyRunner: [133/173] Processing CONCORDBIO
+2026-09-17 09:28:01,975 [INFO] ShadowDailyRunner: [134/173] Processing ENDURANCE
+2026-09-17 09:28:02,178 [INFO] ShadowDailyRunner: [135/173] Processing TIMKEN
+2026-09-17 09:28:02,333 [INFO] ShadowDailyRunner: [136/173] Processing GALLANTT
+2026-09-17 09:28:02,496 [INFO] ShadowDailyRunner: [137/173] Processing HAPPYFORGE
+2026-09-17 09:28:02,759 [INFO] ShadowDailyRunner: [138/173] Processing MASTEK
+2026-09-17 09:28:02,926 [INFO] ShadowDailyRunner: [139/173] Processing DODLA
+2026-09-17 09:28:03,079 [INFO] ShadowDailyRunner: [140/173] Processing INDIGOPNTS
+2026-09-17 09:28:03,336 [INFO] ShadowDailyRunner: [141/173] Processing RATNAMANI
+2026-09-17 09:28:03,500 [INFO] ShadowDailyRunner: [142/173] Processing METROPOLIS
+2026-09-17 09:28:03,633 [INFO] ShadowDailyRunner: [143/173] Processing SUNDRMFAST
+2026-09-17 09:28:03,798 [INFO] ShadowDailyRunner: [144/173] Processing 505890.BO
+2026-09-17 09:28:05,643 [ERROR] ShadowDailyRunner: $505890.BO: No data found, symbol may be delisted
+2026-09-17 09:28:05,645 [INFO] ShadowDailyRunner: [145/173] Processing BHARATRAS
+2026-09-17 09:28:05,789 [INFO] ShadowDailyRunner: [146/173] Processing FOSECOIND
+2026-09-17 09:28:06,045 [INFO] ShadowDailyRunner: [147/173] Processing IPCALAB
+2026-09-17 09:28:06,204 [INFO] ShadowDailyRunner: [148/173] Processing ROUTE
+2026-09-17 09:28:06,344 [INFO] ShadowDailyRunner: [149/173] Processing NATCOPHARM
+2026-09-17 09:28:06,594 [INFO] ShadowDailyRunner: [150/173] Processing MEDANTA
+2026-09-17 09:28:06,770 [INFO] ShadowDailyRunner: [151/173] Processing GRAVITA
+2026-09-17 09:28:06,909 [INFO] ShadowDailyRunner: [152/173] Processing HONAUT
+2026-09-17 09:28:07,062 [INFO] ShadowDailyRunner: [153/173] Processing SYRMA
+2026-09-17 09:28:07,338 [INFO] ShadowDailyRunner: [154/173] Processing ALKYLAMINE
+2026-09-17 09:28:07,490 [INFO] ShadowDailyRunner: [155/173] Processing FINCABLES
+2026-09-17 09:28:07,649 [INFO] ShadowDailyRunner: [156/173] Processing SONACOMS
+2026-09-17 09:28:07,777 [INFO] ShadowDailyRunner: [157/173] Processing MRF
+2026-09-17 09:28:07,955 [INFO] ShadowDailyRunner: [158/173] Processing ESCORTS
+2026-09-17 09:28:08,124 [INFO] ShadowDailyRunner: [159/173] Processing SOTL
+2026-09-17 09:28:08,277 [INFO] ShadowDailyRunner: [160/173] Processing CIPLA
+2026-09-17 09:28:08,426 [INFO] ShadowDailyRunner: [161/173] Processing TEAMLEASE
+2026-09-17 09:28:08,569 [INFO] ShadowDailyRunner: [162/173] Processing ORKLA
+2026-09-17 09:28:09,940 [ERROR] ShadowDailyRunner: $ORKLA.NS: No data found, symbol may be delisted
+2026-09-17 09:28:09,942 [INFO] ShadowDailyRunner: [163/173] Processing STYRENIX
+2026-09-17 09:28:10,090 [INFO] ShadowDailyRunner: [164/173] Processing INNOVA
+2026-09-17 09:28:11,543 [ERROR] ShadowDailyRunner: $INNOVA.NS: No data found, symbol may be delisted
+2026-09-17 09:28:11,544 [INFO] ShadowDailyRunner: [165/173] Processing ATUL
+2026-09-17 09:28:11,693 [INFO] ShadowDailyRunner: [166/173] Processing TECHNOE
+2026-09-17 09:28:11,866 [INFO] ShadowDailyRunner: [167/173] Processing PIIND
+2026-09-17 09:28:12,022 [INFO] ShadowDailyRunner: [168/173] Processing KSL
+2026-09-17 09:28:12,182 [INFO] ShadowDailyRunner: [169/173] Processing RISHABH
+2026-09-17 09:28:12,345 [INFO] ShadowDailyRunner: [170/173] Processing SANSERA
+2026-09-17 09:28:12,512 [INFO] ShadowDailyRunner: [171/173] Processing POLYMED
+2026-09-17 09:28:12,674 [INFO] ShadowDailyRunner: [172/173] Processing DRREDDY
+2026-09-17 09:28:12,830 [INFO] ShadowDailyRunner: [173/173] Processing ANANTRAJ
+2026-09-17 09:28:13,020 [INFO] ShadowDailyRunner: Detailed results saved: D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\orchestrator\logs\shadow_daily_results_20260917.json
+2026-09-17 09:28:13,020 [INFO] ShadowDailyRunner: Daily audit saved: D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\Canonical Universe\shadow_daily_audit_20260917.json
+2026-09-18 13:13:25,604 [INFO] ShadowDailyRunner: Initializing Shadow Daily Runner for canonical universe...
+2026-09-18 13:13:25,611 [INFO] ShadowDailyRunner: Canonical universe loaded: 173 symbols
+2026-09-18 13:13:25,612 [INFO] ShadowDailyRunner: Universe name: Updated Halal Stocks-June 2026
+2026-09-18 13:13:25,612 [INFO] ShadowDailyRunner: Source rows: 177 | Compliant rows: 176 | Dynamic verification rows: 1
+2026-09-18 13:13:25,612 [INFO] ShadowDailyRunner: Account Equity : ₹50000.00
+2026-09-18 13:13:25,613 [INFO] ShadowDailyRunner: Max Risk/Trade : ₹500.00
+2026-09-18 13:13:25,613 [INFO] ShadowDailyRunner: Max Trades/Day : 2
+2026-09-18 13:13:25,613 [INFO] ShadowDailyRunner: Max Slippage   : 0.50%
+2026-09-18 13:13:25,613 [INFO] ShadowDailyRunner: Minimum R:R    : 1.50
+2026-09-18 13:13:25,613 [INFO] ShadowDailyRunner: System Mode    : SHADOW
+2026-09-18 13:13:25,613 [INFO] ShadowDailyRunner: [1/173] Processing COLPAL
+2026-09-18 13:13:29,148 [INFO] ShadowDailyRunner: [2/173] Processing SANOFI
+2026-09-18 13:13:29,329 [INFO] ShadowDailyRunner: [3/173] Processing WAAREERTL
+2026-09-18 13:13:29,494 [INFO] ShadowDailyRunner: [4/173] Processing PGHL
+2026-09-18 13:13:29,673 [INFO] ShadowDailyRunner: [5/173] Processing GEPIL
+2026-09-18 13:13:31,005 [ERROR] ShadowDailyRunner: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GEPIL.NS"}}}
+2026-09-18 13:13:32,293 [ERROR] ShadowDailyRunner: $GEPIL.NS: No data found, symbol may be delisted
+2026-09-18 13:13:32,295 [INFO] ShadowDailyRunner: [6/173] Processing GVT&D
+2026-09-18 13:13:32,466 [INFO] ShadowDailyRunner: [7/173] Processing JEENASIKHO
+2026-09-18 13:13:34,178 [ERROR] ShadowDailyRunner: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: JEENASIKHO.NS"}}}
+2026-09-18 13:13:35,376 [ERROR] ShadowDailyRunner: $JEENASIKHO.NS: No data found, symbol may be delisted
+2026-09-18 13:13:35,378 [INFO] ShadowDailyRunner: [8/173] Processing SIEMENS
+2026-09-18 13:13:35,547 [INFO] ShadowDailyRunner: [9/173] Processing ESABINDIA
+2026-09-18 13:13:35,831 [INFO] ShadowDailyRunner: [10/173] Processing TENNECO
+2026-09-18 13:13:37,911 [ERROR] ShadowDailyRunner: $TENNECO.NS: No data found, symbol may be delisted
+2026-09-18 13:13:37,913 [INFO] ShadowDailyRunner: [11/173] Processing SWARAJENG
+2026-09-18 13:13:38,090 [INFO] ShadowDailyRunner: [12/173] Processing INGERRAND
+2026-09-18 13:13:38,268 [INFO] ShadowDailyRunner: [13/173] Processing SKFINDIA
+2026-09-18 13:13:38,439 [INFO] ShadowDailyRunner: [14/173] Processing SHILCHAR
+2026-09-18 13:13:39,908 [ERROR] ShadowDailyRunner: $SHILCHAR.NS: No data found, symbol may be delisted
+2026-09-18 13:13:39,910 [INFO] ShadowDailyRunner: [15/173] Processing 3MINDIA
+2026-09-18 13:13:40,106 [INFO] ShadowDailyRunner: [16/173] Processing MARICO
+2026-09-18 13:13:40,284 [INFO] ShadowDailyRunner: [17/173] Processing ATLANTA
+2026-09-18 13:13:42,288 [ERROR] ShadowDailyRunner: $ATLANTA.NS: No data found, symbol may be delisted
+2026-09-18 13:13:42,290 [INFO] ShadowDailyRunner: [18/173] Processing ABBOTINDIA
+2026-09-18 13:13:42,479 [INFO] ShadowDailyRunner: [19/173] Processing HINDCOPPER
+2026-09-18 13:13:42,673 [INFO] ShadowDailyRunner: [20/173] Processing HAWKINCOOK
+2026-09-18 13:13:42,856 [INFO] ShadowDailyRunner: [21/173] Processing JUBLCPL
+2026-09-18 13:13:43,138 [INFO] ShadowDailyRunner: [22/173] Processing GLENMARK
+2026-09-18 13:13:43,325 [INFO] ShadowDailyRunner: [23/173] Processing CUMMINSIND
+2026-09-18 13:13:43,500 [INFO] ShadowDailyRunner: [24/173] Processing MPSLTD
+2026-09-18 13:13:43,786 [INFO] ShadowDailyRunner: [25/173] Processing HYUNDAI
+2026-09-18 13:13:43,973 [INFO] ShadowDailyRunner: [26/173] Processing INDOTECH
+2026-09-18 13:13:44,170 [INFO] ShadowDailyRunner: [27/173] Processing FORCEMOT
+2026-09-18 13:13:44,347 [INFO] ShadowDailyRunner: [28/173] Processing SHARDAMOTR
+2026-09-18 13:13:44,547 [INFO] ShadowDailyRunner: [29/173] Processing TRITURBINE
+2026-09-18 13:13:44,719 [INFO] ShadowDailyRunner: [30/173] Processing HEROMOTOCO
+2026-09-18 13:13:44,914 [INFO] ShadowDailyRunner: [31/173] Processing THYROCARE
+2026-09-18 13:13:45,085 [INFO] ShadowDailyRunner: [32/173] Processing POLYCAB
+2026-09-18 13:13:45,266 [INFO] ShadowDailyRunner: [33/173] Processing TDPOWERSYS
+2026-09-18 13:13:45,437 [INFO] ShadowDailyRunner: [34/173] Processing CRISIL
+2026-09-18 13:13:45,613 [INFO] ShadowDailyRunner: [35/173] Processing AJANTPHARM
+2026-09-18 13:13:45,787 [INFO] ShadowDailyRunner: [36/173] Processing LGE
+2026-09-18 13:13:47,107 [ERROR] ShadowDailyRunner: $LGE.NS: No data found, symbol may be delisted
+2026-09-18 13:13:47,109 [INFO] ShadowDailyRunner: [37/173] Processing ACUTAAS
+2026-09-18 13:13:47,294 [INFO] ShadowDailyRunner: [38/173] Processing QPOWER
+2026-09-18 13:13:47,506 [INFO] ShadowDailyRunner: [39/173] Processing PIDILITIND
+2026-09-18 13:13:47,685 [INFO] ShadowDailyRunner: [40/173] Processing 543619.BO
+2026-09-18 13:13:47,815 [WARNING] ShadowDailyRunner: 543619.BO provider error: 'tradingPeriods'
+2026-09-18 13:13:47,816 [INFO] ShadowDailyRunner: [41/173] Processing BAJAJCON
+2026-09-18 13:13:48,000 [INFO] ShadowDailyRunner: [42/173] Processing EICHERMOT
+2026-09-18 13:13:48,149 [INFO] ShadowDailyRunner: [43/173] Processing SHARDACROP
+2026-09-18 13:13:48,327 [INFO] ShadowDailyRunner: [44/173] Processing KIRLPNU
+2026-09-18 13:13:48,606 [INFO] ShadowDailyRunner: [45/173] Processing LUPIN
+2026-09-18 13:13:48,780 [INFO] ShadowDailyRunner: [46/173] Processing RAGHAV
+2026-09-18 13:13:50,104 [ERROR] ShadowDailyRunner: $RAGHAV.NS: No data found, symbol may be delisted
+2026-09-18 13:13:50,105 [INFO] ShadowDailyRunner: [47/173] Processing TATAELXSI
+2026-09-18 13:13:50,354 [INFO] ShadowDailyRunner: [48/173] Processing ABB
+2026-09-18 13:13:50,593 [INFO] ShadowDailyRunner: [49/173] Processing FIEMIND
+2026-09-18 13:13:50,781 [INFO] ShadowDailyRunner: [50/173] Processing BAYERCROP
+2026-09-18 13:13:50,960 [INFO] ShadowDailyRunner: [51/173] Processing POWERINDIA
+2026-09-18 13:13:51,136 [INFO] ShadowDailyRunner: [52/173] Processing SJS
+2026-09-18 13:13:51,403 [INFO] ShadowDailyRunner: [53/173] Processing RUBICON
+2026-09-18 13:13:51,596 [INFO] ShadowDailyRunner: [54/173] Processing LALPATHLAB
+2026-09-18 13:13:51,753 [INFO] ShadowDailyRunner: [55/173] Processing SUDEEP
+2026-09-18 13:13:53,428 [ERROR] ShadowDailyRunner: $SUDEEP.NS: No data found, symbol may be delisted
+2026-09-18 13:13:53,430 [INFO] ShadowDailyRunner: [56/173] Processing SCHAEFFLER
+2026-09-18 13:13:53,602 [INFO] ShadowDailyRunner: [57/173] Processing AIMTRON
+2026-09-18 13:13:53,734 [WARNING] ShadowDailyRunner: AIMTRON.NS provider error: 'tradingPeriods'
+2026-09-18 13:13:53,734 [INFO] ShadowDailyRunner: [58/173] Processing JSWDULUX
+2026-09-18 13:13:53,938 [INFO] ShadowDailyRunner: [59/173] Processing CGPOWER
+2026-09-18 13:13:54,109 [INFO] ShadowDailyRunner: [60/173] Processing GABRIEL
+2026-09-18 13:13:54,282 [INFO] ShadowDailyRunner: [61/173] Processing STYLAMIND
+2026-09-18 13:13:54,601 [INFO] ShadowDailyRunner: [62/173] Processing SBCL
+2026-09-18 13:13:54,772 [INFO] ShadowDailyRunner: [63/173] Processing LTTS
+2026-09-18 13:13:54,965 [INFO] ShadowDailyRunner: [64/173] Processing NEULANDLAB
+2026-09-18 13:13:55,148 [INFO] ShadowDailyRunner: [65/173] Processing ASIANPAINT
+2026-09-18 13:13:55,334 [INFO] ShadowDailyRunner: [66/173] Processing TANLA
+2026-09-18 13:13:55,520 [INFO] ShadowDailyRunner: [67/173] Processing RPGLIFE
+2026-09-18 13:13:55,679 [INFO] ShadowDailyRunner: [68/173] Processing JBCHEPHARM
+2026-09-18 13:13:55,819 [ERROR] ShadowDailyRunner: $JBCHEPHARM.NS: possibly delisted; no price data found  (period=5d)
+2026-09-18 13:13:55,820 [INFO] ShadowDailyRunner: [69/173] Processing BORORENEW
+2026-09-18 13:13:56,033 [INFO] ShadowDailyRunner: [70/173] Processing VIMTALABS
+2026-09-18 13:13:56,215 [INFO] ShadowDailyRunner: [71/173] Processing SUPRIYA
+2026-09-18 13:13:56,394 [INFO] ShadowDailyRunner: [72/173] Processing ALIVUS
+2026-09-18 13:13:56,563 [INFO] ShadowDailyRunner: [73/173] Processing MAYURUNIQ
+2026-09-18 13:13:57,088 [INFO] ShadowDailyRunner: [74/173] Processing KSB
+2026-09-18 13:13:57,379 [INFO] ShadowDailyRunner: [75/173] Processing CAPLIPOINT
+2026-09-18 13:13:57,539 [INFO] ShadowDailyRunner: [76/173] Processing VEEDOL
+2026-09-18 13:13:57,733 [INFO] ShadowDailyRunner: [77/173] Processing VOLTAMP
+2026-09-18 13:13:57,912 [INFO] ShadowDailyRunner: [78/173] Processing DHANUKA
+2026-09-18 13:13:58,082 [INFO] ShadowDailyRunner: [79/173] Processing POCL
+2026-09-18 13:13:58,268 [INFO] ShadowDailyRunner: [80/173] Processing AJAXENGG
+2026-09-18 13:13:58,438 [INFO] ShadowDailyRunner: [81/173] Processing ELGIEQUIP
+2026-09-18 13:13:58,614 [INFO] ShadowDailyRunner: [82/173] Processing SHAKTIPUMP
+2026-09-18 13:13:58,780 [INFO] ShadowDailyRunner: [83/173] Processing TANFACIND
+2026-09-18 13:13:58,918 [ERROR] ShadowDailyRunner: $TANFACIND.NS: possibly delisted; no price data found  (period=5d)
+2026-09-18 13:13:58,920 [INFO] ShadowDailyRunner: [84/173] Processing KAJARIACER
+2026-09-18 13:13:59,088 [INFO] ShadowDailyRunner: [85/173] Processing KINGFA
+2026-09-18 13:13:59,266 [INFO] ShadowDailyRunner: [86/173] Processing INTERARCH
+2026-09-18 13:13:59,415 [INFO] ShadowDailyRunner: [87/173] Processing STUDDS
+2026-09-18 13:13:59,583 [INFO] ShadowDailyRunner: [88/173] Processing GRINDWELL
+2026-09-18 13:13:59,762 [INFO] ShadowDailyRunner: [89/173] Processing VADILALIND
+2026-09-18 13:13:59,972 [INFO] ShadowDailyRunner: [90/173] Processing BERGEPAINT
+2026-09-18 13:14:00,152 [INFO] ShadowDailyRunner: [91/173] Processing 523323.BO
+2026-09-18 13:14:00,353 [WARNING] ShadowDailyRunner: 523323.BO provider error: 'tradingPeriods'
+2026-09-18 13:14:00,353 [INFO] ShadowDailyRunner: [92/173] Processing AUTOAXLES
+2026-09-18 13:14:00,527 [INFO] ShadowDailyRunner: [93/173] Processing HSCL
+2026-09-18 13:14:00,700 [INFO] ShadowDailyRunner: [94/173] Processing DIVISLAB
+2026-09-18 13:14:00,907 [INFO] ShadowDailyRunner: [95/173] Processing GARFIBRES
+2026-09-18 13:14:01,056 [INFO] ShadowDailyRunner: [96/173] Processing POWERMECH
+2026-09-18 13:14:01,234 [INFO] ShadowDailyRunner: [97/173] Processing UNIPARTS
+2026-09-18 13:14:01,408 [INFO] ShadowDailyRunner: [98/173] Processing BOSCHLTD
+2026-09-18 13:14:01,585 [INFO] ShadowDailyRunner: [99/173] Processing FINEORG
+2026-09-18 13:14:01,738 [INFO] ShadowDailyRunner: [100/173] Processing NAVINFLUOR
+2026-09-18 13:14:01,910 [INFO] ShadowDailyRunner: [101/173] Processing VINATIORGA
+2026-09-18 13:14:02,149 [INFO] ShadowDailyRunner: [102/173] Processing WABAG
+2026-09-18 13:14:02,305 [INFO] ShadowDailyRunner: [103/173] Processing ALKEM
+2026-09-18 13:14:02,465 [INFO] ShadowDailyRunner: [104/173] Processing ANTELOPUS
+2026-09-18 13:14:02,604 [INFO] ShadowDailyRunner: [105/173] Processing 500123.BO
+2026-09-18 13:14:02,878 [WARNING] ShadowDailyRunner: 500123.BO provider error: 'tradingPeriods'
+2026-09-18 13:14:02,878 [INFO] ShadowDailyRunner: [106/173] Processing OLECTRA
+2026-09-18 13:14:03,039 [INFO] ShadowDailyRunner: [107/173] Processing TATATECH
+2026-09-18 13:14:03,183 [INFO] ShadowDailyRunner: [108/173] Processing DATAMATICS
+2026-09-18 13:14:03,333 [INFO] ShadowDailyRunner: [109/173] Processing KIRLOSBROS
+2026-09-18 13:14:03,495 [INFO] ShadowDailyRunner: [110/173] Processing SUPREMEIND
+2026-09-18 13:14:03,685 [INFO] ShadowDailyRunner: [111/173] Processing ANUP
+2026-09-18 13:14:03,846 [INFO] ShadowDailyRunner: [112/173] Processing CLEAN
+2026-09-18 13:14:04,098 [INFO] ShadowDailyRunner: [113/173] Processing SUNPHARMA
+2026-09-18 13:14:04,412 [INFO] ShadowDailyRunner: [114/173] Processing AHLUCONT
+2026-09-18 13:14:04,591 [INFO] ShadowDailyRunner: [115/173] Processing KPRMILL
+2026-09-18 13:14:04,852 [INFO] ShadowDailyRunner: [116/173] Processing SIYSIL
+2026-09-18 13:14:05,068 [INFO] ShadowDailyRunner: [117/173] Processing KEI
+2026-09-18 13:14:05,375 [INFO] ShadowDailyRunner: [118/173] Processing SEAMECLTD
+2026-09-18 13:14:05,564 [INFO] ShadowDailyRunner: [119/173] Processing ZFCVINDIA
+2026-09-18 13:14:05,740 [INFO] ShadowDailyRunner: [120/173] Processing ASTRAL
+2026-09-18 13:14:05,942 [INFO] ShadowDailyRunner: [121/173] Processing LGBBROSLTD
+2026-09-18 13:14:06,130 [INFO] ShadowDailyRunner: [122/173] Processing APCOTEXIND
+2026-09-18 13:14:06,315 [INFO] ShadowDailyRunner: [123/173] Processing SUBROS
+2026-09-18 13:14:06,492 [INFO] ShadowDailyRunner: [124/173] Processing BIKAJI
+2026-09-18 13:14:06,674 [INFO] ShadowDailyRunner: [125/173] Processing SAILIFE
+2026-09-18 13:14:06,911 [INFO] ShadowDailyRunner: [126/173] Processing TCI
+2026-09-18 13:14:07,184 [INFO] ShadowDailyRunner: [127/173] Processing AVALON
+2026-09-18 13:14:07,371 [INFO] ShadowDailyRunner: [128/173] Processing SAFARI
+2026-09-18 13:14:07,538 [INFO] ShadowDailyRunner: [129/173] Processing CERA
+2026-09-18 13:14:07,725 [INFO] ShadowDailyRunner: [130/173] Processing RAMCOSYS
+2026-09-18 13:14:07,897 [INFO] ShadowDailyRunner: [131/173] Processing SUPPETRO
+2026-09-18 13:14:09,671 [ERROR] ShadowDailyRunner: $SUPPETRO.NS: No data found, symbol may be delisted
+2026-09-18 13:14:09,673 [INFO] ShadowDailyRunner: [132/173] Processing INDGN
+2026-09-18 13:14:10,001 [INFO] ShadowDailyRunner: [133/173] Processing CONCORDBIO
+2026-09-18 13:14:10,172 [INFO] ShadowDailyRunner: [134/173] Processing ENDURANCE
+2026-09-18 13:14:10,344 [INFO] ShadowDailyRunner: [135/173] Processing TIMKEN
+2026-09-18 13:14:10,529 [INFO] ShadowDailyRunner: [136/173] Processing GALLANTT
+2026-09-18 13:14:10,683 [INFO] ShadowDailyRunner: [137/173] Processing HAPPYFORGE
+2026-09-18 13:14:10,849 [INFO] ShadowDailyRunner: [138/173] Processing MASTEK
+2026-09-18 13:14:11,025 [INFO] ShadowDailyRunner: [139/173] Processing DODLA
+2026-09-18 13:14:11,194 [INFO] ShadowDailyRunner: [140/173] Processing INDIGOPNTS
+2026-09-18 13:14:11,392 [INFO] ShadowDailyRunner: [141/173] Processing RATNAMANI
+2026-09-18 13:14:11,686 [INFO] ShadowDailyRunner: [142/173] Processing METROPOLIS
+2026-09-18 13:14:11,985 [INFO] ShadowDailyRunner: [143/173] Processing SUNDRMFAST
+2026-09-18 13:14:12,153 [INFO] ShadowDailyRunner: [144/173] Processing 505890.BO
+2026-09-18 13:14:13,377 [ERROR] ShadowDailyRunner: $505890.BO: No data found, symbol may be delisted
+2026-09-18 13:14:13,379 [INFO] ShadowDailyRunner: [145/173] Processing BHARATRAS
+2026-09-18 13:14:13,683 [INFO] ShadowDailyRunner: [146/173] Processing FOSECOIND
+2026-09-18 13:14:13,888 [INFO] ShadowDailyRunner: [147/173] Processing IPCALAB
+2026-09-18 13:14:14,060 [INFO] ShadowDailyRunner: [148/173] Processing ROUTE
+2026-09-18 13:14:14,273 [INFO] ShadowDailyRunner: [149/173] Processing NATCOPHARM
+2026-09-18 13:14:14,460 [INFO] ShadowDailyRunner: [150/173] Processing MEDANTA
+2026-09-18 13:14:14,626 [INFO] ShadowDailyRunner: [151/173] Processing GRAVITA
+2026-09-18 13:14:14,775 [INFO] ShadowDailyRunner: [152/173] Processing HONAUT
+2026-09-18 13:14:15,107 [INFO] ShadowDailyRunner: [153/173] Processing SYRMA
+2026-09-18 13:14:15,297 [INFO] ShadowDailyRunner: [154/173] Processing ALKYLAMINE
+2026-09-18 13:14:15,467 [INFO] ShadowDailyRunner: [155/173] Processing FINCABLES
+2026-09-18 13:14:15,656 [INFO] ShadowDailyRunner: [156/173] Processing SONACOMS
+2026-09-18 13:14:15,834 [INFO] ShadowDailyRunner: [157/173] Processing MRF
+2026-09-18 13:14:16,024 [INFO] ShadowDailyRunner: [158/173] Processing ESCORTS
+2026-09-18 13:14:16,297 [INFO] ShadowDailyRunner: [159/173] Processing SOTL
+2026-09-18 13:14:16,480 [INFO] ShadowDailyRunner: [160/173] Processing CIPLA
+2026-09-18 13:14:16,665 [INFO] ShadowDailyRunner: [161/173] Processing TEAMLEASE
+2026-09-18 13:14:16,815 [INFO] ShadowDailyRunner: [162/173] Processing ORKLA
+2026-09-18 13:14:18,367 [ERROR] ShadowDailyRunner: $ORKLA.NS: No data found, symbol may be delisted
+2026-09-18 13:14:18,369 [INFO] ShadowDailyRunner: [163/173] Processing STYRENIX
+2026-09-18 13:14:18,557 [INFO] ShadowDailyRunner: [164/173] Processing INNOVA
+2026-09-18 13:14:20,234 [ERROR] ShadowDailyRunner: $INNOVA.NS: No data found, symbol may be delisted
+2026-09-18 13:14:20,235 [INFO] ShadowDailyRunner: [165/173] Processing ATUL
+2026-09-18 13:14:20,417 [INFO] ShadowDailyRunner: [166/173] Processing TECHNOE
+2026-09-18 13:14:20,716 [INFO] ShadowDailyRunner: [167/173] Processing PIIND
+2026-09-18 13:14:20,867 [INFO] ShadowDailyRunner: [168/173] Processing KSL
+2026-09-18 13:14:21,044 [INFO] ShadowDailyRunner: [169/173] Processing RISHABH
+2026-09-18 13:14:21,230 [INFO] ShadowDailyRunner: [170/173] Processing SANSERA
+2026-09-18 13:14:21,420 [INFO] ShadowDailyRunner: [171/173] Processing POLYMED
+2026-09-18 13:14:21,590 [INFO] ShadowDailyRunner: [172/173] Processing DRREDDY
+2026-09-18 13:14:21,741 [INFO] ShadowDailyRunner: [173/173] Processing ANANTRAJ
+2026-09-18 13:14:21,913 [INFO] ShadowDailyRunner: Detailed results saved: D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\orchestrator\logs\shadow_daily_results_20260918.json
+2026-09-18 13:14:21,913 [INFO] ShadowDailyRunner: Daily audit saved: D:\OBSIDIAN VAULT\halal-trading-os\Automation\AI Workspace\Canonical Universe\shadow_daily_audit_20260918.json

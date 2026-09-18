@@ -1,0 +1,4 @@
+symbol,company_name,sector,market_cap_cr,roe,debt_to_equity,is_halal_verified,halal_source,has_execution_payload
+RELIANCE,Reliance Industries,Energy,1800000.0,15.5,0.35,True,Musaffa,False
+TCS,Tata Consultancy Services,IT,1400000.0,45.2,0.02,True,Musaffa,False
+INFY,Infosys Ltd,IT,650000.0,30.1,0.1,True,Musaffa,False

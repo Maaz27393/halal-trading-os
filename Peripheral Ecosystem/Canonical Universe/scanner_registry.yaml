@@ -1,0 +1,190 @@
+scanners:
+  - scanner_id: "SCAN_01"
+    scanner_name: "Real Time Institution Surge"
+    slug: "real_time_institution_surge"
+    scanner_url: "https://chartink.com/screener/real-time-institution-surge"
+    enabled: true
+    operational_mode: ["INTRADAY"]
+    role: ["CONFIRMATION"]
+    input_watchlist: ["HALAL_STOCKS"]
+    halal_intersection_required: true
+    contributes_to_confluence: true
+    output_purpose: ["INTRADAY_TRIGGER"]
+    priority: 1
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 1
+    attribution_label: "Real Time Institution Surge"
+    notes: "Account-owned Chartink intraday confirmation scanner."
+
+  - scanner_id: "SCAN_02"
+    scanner_name: "RSI above 60"
+    slug: "rsi_above_60"
+    scanner_url: "https://chartink.com/screener/rsi-above-60-28034650"
+    enabled: true
+    operational_mode: ["INTRADAY"]
+    role: ["CONFIRMATION"]
+    input_watchlist: ["HALAL_STOCKS"]
+    halal_intersection_required: true
+    contributes_to_confluence: true
+    output_purpose: ["INTRADAY_TRIGGER"]
+    priority: 2
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 1
+    attribution_label: "RSI above 60"
+    notes: "Account-owned Chartink intraday confirmation scanner."
+
+  - scanner_id: "SCAN_PRE_03"
+    scanner_name: "Institution Accumulation"
+    slug: "institution_accumulation"
+    scanner_url: "https://chartink.com/screener/vcp-smart-money-breakout-hunter"
+    enabled: true
+    operational_mode: ["PRE_MARKET"]
+    role: ["STRUCTURAL"]
+    input_watchlist: ["HALAL_STOCKS"]
+    halal_intersection_required: true
+    contributes_to_confluence: true
+    output_purpose: ["HALAL_DISCOVERY"]
+    priority: 3
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 1
+    attribution_label: "Institution Accumulation"
+    notes: "Account-owned Chartink structural scanner."
+
+  - scanner_id: "SCAN_04"
+    scanner_name: "Breakout Confirmation"
+    slug: "breakout_confirmation"
+    scanner_url: "https://chartink.com/screener/vcp-smart-money-breakout"
+    enabled: true
+    operational_mode: ["INTRADAY"]
+    role: ["CONFIRMATION"]
+    input_watchlist: ["BREAKOUT_CONFIRMATION"]
+    halal_intersection_required: true
+    contributes_to_confluence: true
+    output_purpose: ["INTRADAY_TRIGGER"]
+    priority: 4
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 1
+    attribution_label: "Breakout Confirmation"
+    notes: "Account-owned Chartink intraday confirmation scanner."
+
+  - scanner_id: "SCAN_05"
+    scanner_name: "Copy - ANKUR'S VOLUME SCAN"
+    slug: "ankurs_volume_scan"
+    scanner_url: "https://chartink.com/screener/copy-ankur-s-volume-scan-24263941"
+    enabled: false
+    operational_mode: ["RESEARCH"]
+    role: ["RESEARCH"]
+    input_watchlist: ["CUSTOM"]
+    halal_intersection_required: true
+    contributes_to_confluence: false
+    output_purpose: ["RESEARCH"]
+    priority: 5
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 0
+    attribution_label: "ANKUR Volume Scan"
+    notes: "Registered account-owned scanner; intentionally disabled."
+
+  - scanner_id: "SCAN_06"
+    scanner_name: "Bullish RSI CCI Keltner"
+    slug: "bullish_rsi_cci_keltner"
+    scanner_url: "https://chartink.com/screener/copy-bullish-rsi-cci-keltner-yt-2"
+    enabled: false
+    operational_mode: ["RESEARCH"]
+    role: ["RESEARCH"]
+    input_watchlist: ["CUSTOM"]
+    halal_intersection_required: true
+    contributes_to_confluence: false
+    output_purpose: ["RESEARCH"]
+    priority: 6
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 0
+    attribution_label: "Bullish RSI CCI Keltner"
+    notes: "Registered account-owned scanner; intentionally disabled."
+
+  - scanner_id: "SCAN_PRE_07"
+    scanner_name: "120day high breakout"
+    slug: "120_day_high_breakout"
+    scanner_url: "https://chartink.com/screener/copy-120day-high-breakout-26093257"
+    enabled: true
+    operational_mode: ["PRE_MARKET"]
+    role: ["STRUCTURAL"]
+    input_watchlist: ["HALAL_STOCKS"]
+    halal_intersection_required: true
+    contributes_to_confluence: true
+    output_purpose: ["HALAL_DISCOVERY"]
+    priority: 7
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 1
+    attribution_label: "120-Day High Breakout"
+    notes: "Account-owned Chartink structural scanner."
+
+  - scanner_id: "SCAN_08"
+    scanner_name: "IPO BASE SCAN"
+    slug: "ipo_base_scan"
+    scanner_url: "https://chartink.com/screener/copy-ipo-base-scan-5214"
+    enabled: false
+    operational_mode: ["RESEARCH"]
+    role: ["RESEARCH"]
+    input_watchlist: ["CUSTOM"]
+    halal_intersection_required: true
+    contributes_to_confluence: false
+    output_purpose: ["RESEARCH"]
+    priority: 8
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 0
+    attribution_label: "IPO Base Scan"
+    notes: "Registered account-owned scanner; intentionally disabled."
+
+  - scanner_id: "SCAN_PRE_09"
+    scanner_name: "RANGE CONTRACTION -BREAKOUT SCANS"
+    slug: "range_contraction_breakout"
+    scanner_url: "https://chartink.com/screener/copy-ankur-s-breakout-scans-4680"
+    enabled: true
+    operational_mode: ["PRE_MARKET"]
+    role: ["STRUCTURAL"]
+    input_watchlist: ["HALAL_STOCKS"]
+    halal_intersection_required: true
+    contributes_to_confluence: true
+    output_purpose: ["HALAL_DISCOVERY"]
+    priority: 9
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 1
+    attribution_label: "Range Contraction Breakout"
+    notes: "Account-owned Chartink structural scanner."
+
+  - scanner_id: "SCAN_PRE_10"
+    scanner_name: "RANGE EXPANSION -VOLUME SCAN"
+    slug: "range_expansion_volume"
+    scanner_url: "https://chartink.com/screener/copy-ankur-s-volume-scan-24263633"
+    enabled: true
+    operational_mode: ["PRE_MARKET"]
+    role: ["STRUCTURAL"]
+    input_watchlist: ["HALAL_STOCKS"]
+    halal_intersection_required: true
+    contributes_to_confluence: true
+    output_purpose: ["HALAL_DISCOVERY"]
+    priority: 10
+    execution_window:
+      start: null
+      end: null
+    minimum_confluence_contribution: 1
+    attribution_label: "Range Expansion Volume"
+    notes: "Account-owned Chartink structural scanner."

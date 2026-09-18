@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "halal-trading-vault": {
+      "command": "python",
+      "args": [
+        "D:\\OBSIDIAN VAULT\\halal-trading-os\\Automation\\AI Workspace\\Retrieval\\vault_search.py"
+      ]
+    },
+    "nse-market-data-v1": {
+      "command": "python",
+      "args": [
+        "D:\\OBSIDIAN VAULT\\halal-trading-os\\Peripheral Ecosystem\\operational_layer\\nse_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "D:\\OBSIDIAN VAULT\\halal-trading-os;D:\\OBSIDIAN VAULT\\halal-trading-os\\Peripheral Ecosystem"
+      }
+    }
+  }
+}
