@@ -1,0 +1,24 @@
+{
+  "alert_id": "c374a1ac",
+  "investigation_id": "inv-48711f85",
+  "severity": "WARNING",
+  "event_type": "PROVIDER_DEGRADATION_WARNING",
+  "timestamp": "2026-09-22T21:43:31.424004Z",
+  "summary": "System health warning detected during automated audit.",
+  "report_reference": "Peripheral Ecosystem/investigation_reporting/reports/inv-48711f85.json",
+  "provenance": "Phase28InvestigationEngine",
+  "delivery_policy": {
+    "action": "NOTIFY_AND_ARCHIVE",
+    "channels": [
+      "local_drop",
+      "webhook"
+    ]
+  },
+  "security_boundary": {
+    "notification_capability": true,
+    "execution_capability": "NONE",
+    "order_capability": "NONE",
+    "live_auto_execution": false,
+    "outbound_only": true
+  }
+}

@@ -44,5 +44,15 @@
         "halal_universe_count": 3,
         "technical_candidates_count": 0,
         "error": "ChartinkScannerConnector.__init__() takes from 1 to 2 positional arguments but 3 were given"
+    },
+    {
+        "date": "2026-09-20",
+        "start_time": "2026-09-20 08:45:02",
+        "status": "FAILED",
+        "screener_provenance": "FALLBACK",
+        "chartink_provenance": "FALLBACK",
+        "halal_universe_count": 3,
+        "technical_candidates_count": 0,
+        "error": "ChartinkScannerConnector.__init__() takes from 1 to 2 positional arguments but 3 were given"
     }
 ]

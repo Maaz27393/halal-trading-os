@@ -1,0 +1,27 @@
+[
+  {
+    "provider_name": "NSE",
+    "status": "HEALTHY",
+    "snapshot_timestamp": "2026-09-22T21:46:20.448768+00:00"
+  },
+  {
+    "provider_name": "Screener",
+    "status": "HEALTHY",
+    "snapshot_timestamp": "2026-09-22T21:46:20.448768+00:00"
+  },
+  {
+    "provider_name": "Chartink",
+    "status": "HEALTHY",
+    "snapshot_timestamp": "2026-09-22T21:46:20.448768+00:00"
+  },
+  {
+    "provider_name": "TradingView",
+    "status": "HEALTHY",
+    "snapshot_timestamp": "2026-09-22T21:46:20.448768+00:00"
+  },
+  {
+    "provider_name": "Kite",
+    "status": "HEALTHY",
+    "snapshot_timestamp": "2026-09-22T21:46:20.448768+00:00"
+  }
+]

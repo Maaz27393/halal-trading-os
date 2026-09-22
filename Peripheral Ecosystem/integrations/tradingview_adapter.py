@@ -1,4 +1,4 @@
-import logging
+﻿import logging
 from typing import Any, Dict, List, Optional
 from connectors.base import BaseConnector
 from contracts import TradingSignal, BaseCanonicalModel
@@ -37,7 +37,7 @@ class TradingViewAdapter(BaseConnector):
         if not self._is_connected:
             self.connect()
         logger.info(f"Processing TradingView alert/indicator for: {identifier}")
-        
+
         # Simulated incoming webhook/indicator JSON payload
         return {
             "symbol": identifier.upper(),
@@ -60,10 +60,15 @@ class TradingViewAdapter(BaseConnector):
     def normalize(self, raw_data: Any, target_model: type[BaseCanonicalModel]) -> BaseCanonicalModel:
         """Normalize raw provider payload into canonical Pydantic model."""
         if target_model == TradingSignal:
+            signal_type = raw_data.get("signal_type", "NEUTRAL")
             return TradingSignal(
                 source_provider=self.provider_name,
                 symbol=raw_data.get("symbol"),
-                signal_type=raw_data.get("signal_type", "NEUTRAL")
+                strategy_name=signal_type,
+                direction="BUY" if "BULLISH" in signal_type else "NEUTRAL",
+                confidence=0.85,
+                trigger_price=raw_data.get("indicator_values", {}).get("ema_20", 0.0),
+                indicators_snapshot=raw_data.get("indicator_values", {})
             )
         raise ValueError(f"TradingViewAdapter cannot normalize raw data to target model {target_model}")
 

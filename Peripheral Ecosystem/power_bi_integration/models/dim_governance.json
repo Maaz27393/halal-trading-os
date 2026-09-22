@@ -1,0 +1,9 @@
+[
+  {
+    "governance_mode": "READ_ONLY",
+    "live_auto_execution": false,
+    "order_capability": "NONE",
+    "execution_authority": "NONE",
+    "snapshot_timestamp": "2026-09-22T21:46:20.448768+00:00"
+  }
+]

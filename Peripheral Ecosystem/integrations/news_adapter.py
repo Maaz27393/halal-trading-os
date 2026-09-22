@@ -1,4 +1,4 @@
-import logging
+﻿import logging
 from typing import Any, Dict, List, Optional
 from connectors.base import BaseConnector
 from contracts import NewsItem, BaseCanonicalModel
@@ -37,10 +37,10 @@ class NewsAdapter(BaseConnector):
         if not self._is_connected:
             self.connect()
         logger.info(f"Fetching news item for identifier: {identifier}")
-        
-        # Simulated raw article payload
+
+        # Simulated raw article payload mapped to canonical fields
         return {
-            "title": f"Market Update: Strong momentum in IT and Banking sectors for {identifier.upper()}",
+            "headline": f"Market Update: Strong momentum in IT and Banking sectors for {identifier.upper()}",
             "summary": f"Analysts highlight robust quarterly projections and institutional inflows for {identifier.upper()}.",
             "url": f"https://financial-news.local/articles/{identifier.lower()}-rally",
             "sentiment_score": 0.85,
@@ -54,7 +54,7 @@ class NewsAdapter(BaseConnector):
         logger.info(f"Searching news feeds for query: '{query}'")
         return [
             {
-                "title": f"Breaking: {query.upper()} sector outlook positive",
+                "headline": f"Breaking: {query.upper()} sector outlook positive",
                 "summary": f"Recent data indicates favorable conditions for {query}.",
                 "url": f"https://financial-news.local/search?q={query}"
             }
@@ -65,8 +65,11 @@ class NewsAdapter(BaseConnector):
         if target_model == NewsItem:
             return NewsItem(
                 source_provider=self.provider_name,
-                title=raw_data.get("title", "Untitled News"),
-                summary=raw_data.get("summary", "")
+                headline=raw_data.get("headline", "Untitled News"),
+                summary=raw_data.get("summary", ""),
+                url=raw_data.get("url"),
+                sentiment_score=raw_data.get("sentiment_score"),
+                tags=raw_data.get("tags", [])
             )
         raise ValueError(f"NewsAdapter cannot normalize raw data to target model {target_model}")
 

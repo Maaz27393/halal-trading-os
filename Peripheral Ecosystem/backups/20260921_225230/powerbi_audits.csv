@@ -1,0 +1,7 @@
+﻿AuditID,OpportunityID,Timestamp,Component,AuditType,Rule,Decision,Result,Severity,Reason,InputSource,Model,ReadOnly,LiveAutoExecution,OrderCapability,ExecutionAuthority
+AUD-OPP-20260920-001,OPP-20260920-001,2026-09-20 23:33:44,RiskEngine,GOVERNANCE_CHECK,MAX_RISK_2_PERCENT,APPROVED,PASS,LOW,Within capital limits,LocalOS,Deterministic,True,False,,Manual
+AUD-OPP-20260921-001,OPP-20260921-001,2026-09-21 20:46:19,RiskEngine,GOVERNANCE_CHECK,MAX_RISK_2_PERCENT,APPROVED,PASS,LOW,Within capital and risk parameters,LocalOS,Qwen-Advisory,True,False,,
+AUD-OPP-20260921-002,OPP-20260921-002,2026-09-21 21:33:29,RiskEngine,GOVERNANCE_CHECK,MAX_RISK_2_PERCENT,RECEIVED,PASS,LOW,Chartink webhook processed for Volume Breakout 20D,LocalOS,Qwen-Advisory,True,False,,
+AUD-OPP-20260921-003,OPP-20260921-003,2026-09-21 21:38:23,RiskEngine,GOVERNANCE_CHECK,MAX_RISK_2_PERCENT,RECEIVED,PASS,LOW,Chartink webhook processed for Volume Breakout 20D,LocalOS,Qwen-Advisory,True,False,,
+AUD-OPP-20260921-004,OPP-20260921-004,2026-09-21 21:41:09,RiskEngine,GOVERNANCE_CHECK,MAX_RISK_2_PERCENT,RECEIVED,PASS,LOW,Chartink webhook processed for 120-Day High Breakout,LocalOS,Qwen-Advisory,True,False,,
+AUD-OPP-20260921-005,OPP-20260921-005,2026-09-21 21:53:42,RiskEngine,GOVERNANCE_CHECK,MAX_RISK_2_PERCENT,RECEIVED,PASS,LOW,Chartink webhook processed for Volume Breakout 20D,LocalOS,Qwen-Advisory,True,False,None,None

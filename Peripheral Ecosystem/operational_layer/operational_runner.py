@@ -1,4 +1,4 @@
-import os
+﻿import os
 import sys
 import logging
 from datetime import datetime
@@ -110,7 +110,7 @@ class MultiModeOperationalRunner:
             )
 
         # ----------------------------------------------------
-        # Existing M3.3 Chartink adapter
+        # Registry-governed Chartink adapter
         # ----------------------------------------------------
 
         self.chartink_adapter = ChartinkOperationalAdapter(
@@ -492,7 +492,7 @@ class MultiModeOperationalRunner:
         )
 
         lines = [
-            f"# Pre-Market Structural Briefing — "
+            f"# Pre-Market Structural Briefing â€” "
             f"{today_str}",
             "",
             "> [!NOTE]",
@@ -533,7 +533,7 @@ class MultiModeOperationalRunner:
                 "",
                 "## Structural Universe Confluence Ranking",
                 "",
-                "| Rank | Symbol | Company | Close (₹) "
+                "| Rank | Symbol | Company | Close (â‚¹) "
                 "| Volume | % Chg | Score | Provenance "
                 "| Scanners Triggered |",
                 "|:---:|:---|:---|---:|---:|---:|---:|---|---|"
@@ -546,8 +546,8 @@ class MultiModeOperationalRunner:
         ):
 
             triggers = (
-                "<br>• "
-                + "<br>• ".join(
+                "<br>â€¢ "
+                + "<br>â€¢ ".join(
                     candidate["triggers"]
                 )
             )

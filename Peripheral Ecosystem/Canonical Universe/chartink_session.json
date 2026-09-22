@@ -1,7 +1,7 @@
 [
   {
     "domain": ".chartink.com",
-    "expirationDate": 1824164086.475068,
+    "expirationDate": 1824585668.823773,
     "hostOnly": false,
     "httpOnly": false,
     "name": "_ga",
@@ -36,7 +36,7 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "ID=50574285f88f3248:T=1789482145:RT=1789604086:S=ALNI_Mauga39qRjPhguvu120PE-vkjIuxQ"
+    "value": "ID=50574285f88f3248:T=1789482145:RT=1790025670:S=ALNI_Mauga39qRjPhguvu120PE-vkjIuxQ"
   },
   {
     "domain": ".chartink.com",
@@ -49,7 +49,7 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "UID=00001571f8f29653:T=1789482145:RT=1789604086:S=ALNI_MYZECZ0OMsmJsIuHnALT-DxSaBMiA"
+    "value": "UID=00001571f8f29653:T=1789482145:RT=1790025670:S=ALNI_MYZECZ0OMsmJsIuHnALT-DxSaBMiA"
   },
   {
     "domain": ".chartink.com",
@@ -62,11 +62,11 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "ID=154d55e9279760ce:T=1789482145:RT=1789604086:S=AA-AfjYJgCJ9_mK6hQ5InRNrWecE"
+    "value": "ID=154d55e9279760ce:T=1789482145:RT=1790025670:S=AA-AfjYJgCJ9_mK6hQ5InRNrWecE"
   },
   {
     "domain": ".chartink.com",
-    "expirationDate": 1824164087.456446,
+    "expirationDate": 1824585670.923,
     "hostOnly": false,
     "httpOnly": false,
     "name": "_ga_7P3KPC3ZPP",
@@ -75,32 +75,6 @@
     "secure": false,
     "session": false,
     "storeId": "0",
-    "value": "GS2.1.s1789604081$o9$g1$t1789604087$j54$l0$h0"
-  },
-  {
-    "domain": "chartink.com",
-    "expirationDate": 1789611287.778249,
-    "hostOnly": true,
-    "httpOnly": false,
-    "name": "XSRF-TOKEN",
-    "path": "/",
-    "sameSite": "unspecified",
-    "secure": false,
-    "session": false,
-    "storeId": "0",
-    "value": "eyJpdiI6Ijc2YzBmMVlSVS9TMmplRXhHSmRJalE9PSIsInZhbHVlIjoiUXBFZVY0Q3luQ01QckthVzQ1dHljRWFFbUNaNXN1bWpqQVF5SnkrNk1LdThPVHpKbDZqbXlEOFB2VmN2c0ZpZU1TL3h5YmxGRXN3U0R2Q3hoQzBwWjlyeFhNRjQreTRNbXBIU0VXTnB1OUFJeFBUZXByd0R2dmZOWTJsSHR4NjMiLCJtYWMiOiI1MWYyMWQ3OTcyNWI0N2RjNGU5ZWIzYzFiMDNhZGUyZjBjMWFmYzMxZGI1ZWM0ZjZjNmY5NmM0YjZlMGQ5MGJhIiwidGFnIjoiIn0%3D"
-  },
-  {
-    "domain": "chartink.com",
-    "expirationDate": 1789611287.778691,
-    "hostOnly": true,
-    "httpOnly": true,
-    "name": "ci_session",
-    "path": "/",
-    "sameSite": "unspecified",
-    "secure": false,
-    "session": false,
-    "storeId": "0",
-    "value": "eyJpdiI6IlZkK0ZpMTZMR3BpdnFzVU41Um9Od0E9PSIsInZhbHVlIjoiYi9YT1duV3gyemdhNkMrV2RwRnQrTlJZWnplNFZuQVlScSs5YTlYYmRtVnFQSGJ3cEtLa0MzR2JlSlhnVnNXS0wrdFRZVFZ1dDhuZTAzQmJ6cWMydGlmVXY0N1dJaVNTQm14N3ZuUXhxZ0FxUFpndEpOWmkwaFZWbnRzSmxrWEQiLCJtYWMiOiJlNzk5OTlhYjFkYjEyNjhlOTQ0NzFjZjE1NWFmZmNkMTkyNDVhMjFmZWQwMWNiMDNlZWMyMmM1ZWY0NmVkY2VmIiwidGFnIjoiIn0%3D"
+    "value": "GS2.1.s1790025654$o11$g1$t1790025670$j44$l0$h0"
   }
 ]

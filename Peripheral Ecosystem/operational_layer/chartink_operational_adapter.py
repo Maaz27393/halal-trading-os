@@ -1,23 +1,21 @@
-import logging
+﻿import logging
 import os
 import sys
 from typing import List, Dict, Any
 
 VAULT_ROOT = r"D:\OBSIDIAN VAULT\halal-trading-os"
 ECOSYSTEM_DIR = rf"{VAULT_ROOT}\Peripheral Ecosystem"
-PROVIDER_DIR = rf"{ECOSYSTEM_DIR}\provider_connectors"
 
 for path in [
     VAULT_ROOT,
     ECOSYSTEM_DIR,
-    PROVIDER_DIR,
 ]:
     if path not in sys.path:
         sys.path.insert(0, path)
 
-from security.gateway import PermissionGateway
-from provider_connectors.step2_chartink_scanner import (
-    ChartinkScannerConnector,
+from operational_layer.chartink_registry_adapter import (
+    build_chartink_resolver,
+    ChartinkRegistryAdapter,
 )
 
 
@@ -28,34 +26,29 @@ logger = logging.getLogger(
 
 class ChartinkOperationalAdapter:
     """
-    Operational adapter for the locked Chartink scanner connector.
+    Registry-governed operational adapter for Chartink.
 
     Contract:
-        Connector
-            ->
-        TechnicalCandidate objects
-            +
-        provenance
-            +
-        meta_info
-            ->
-        List[Dict[str, Any]]
 
-    The adapter does not alter scanner queries or provider logic.
+        Operational Runner
+            ->
+        CapabilityResolver
+            ->
+        ChartinkRegistryAdapter
+            ->
+        Production ChartinkScannerConnector
+
+    The public fetch_and_adapt_scan() contract is preserved so
+    existing operational-runner behavior remains unchanged.
     """
 
     def __init__(
         self,
         vault_path: str = VAULT_ROOT,
-        gateway: PermissionGateway = None,
     ):
         self.vault_path = vault_path
 
-        self.gateway = (
-            gateway
-            if gateway is not None
-            else PermissionGateway()
-        )
+        self.resolver = build_chartink_resolver()
 
         self.provenance = ""
         self.last_meta_info: Dict[str, Any] = {}
@@ -66,158 +59,95 @@ class ChartinkOperationalAdapter:
         halal_symbols: set,
     ) -> List[Dict[str, Any]]:
         """
-        Execute a live Chartink scan and return the stable
-        operational-layer contract expected by operational_runner.py.
+        Execute the registered authenticated Chartink provider
+        and return the stable operational-layer contract.
 
-        Return format:
-
-        [
-            {
-                "symbol": "...",
-                "company": "...",
-                "close": 0.0,
-                "volume": 0,
-                "pct_change": 0.0,
-                "provenance": "...",
-                "meta_info": {...}
-            }
-        ]
+        The provider remains responsible for:
+            - authenticated session
+            - exact saved scanner query
+            - CSRF
+            - Chartink request
+            - Halal intersection
+            - execution safety
         """
 
         logger.info(
-            "Adapter connecting to Chartink scanner: %s",
+            "Registry dispatch to Chartink: %s",
             scanner_url,
         )
 
         try:
 
-            with ChartinkScannerConnector(
-                self.gateway
-            ) as connector:
+            records = self.resolver.execute_via_capability(
+                namespace=ChartinkRegistryAdapter.NAMESPACE,
+                method_name="fetch_and_adapt_scan",
+                required_operation="READ",
+                scanner_url=scanner_url,
+                halal_symbols=halal_symbols,
+            )
 
-                (
-                    candidates,
-                    provenance,
-                    meta_info,
-                ) = connector.run_saved_scan(
-                    halal_symbols,
-                    scanner_url,
+            if not isinstance(records, list):
+                raise RuntimeError(
+                    "Chartink registry adapter returned an "
+                    "invalid records object."
                 )
 
-                self.provenance = provenance
-                self.last_meta_info = (
-                    meta_info
-                    if isinstance(
-                        meta_info,
-                        dict,
-                    )
-                    else {}
-                )
+            adapter = self.resolver.resolve_adapter(
+                ChartinkRegistryAdapter.NAMESPACE
+            )
 
-                if not isinstance(
-                    candidates,
-                    list,
-                ):
-                    raise RuntimeError(
-                        "Chartink connector returned an "
-                        "invalid candidates object."
-                    )
+            self.provenance = getattr(
+                adapter,
+                "provenance",
+                "LIVE_AUTHENTICATED",
+            )
 
-                adapted_records: List[
-                    Dict[str, Any]
-                ] = []
+            self.last_meta_info = getattr(
+                adapter,
+                "last_meta_info",
+                {},
+            )
 
-                for candidate in candidates:
+            if not isinstance(
+                self.last_meta_info,
+                dict,
+            ):
+                self.last_meta_info = {}
 
-                    record = {
-                        "symbol": str(
-                            getattr(
-                                candidate,
-                                "symbol",
-                                "",
-                            )
-                        ).upper().strip(),
+            logger.info(
+                "Chartink operational registry dispatch "
+                "completed | Provider=%s | Raw=%s | "
+                "Parsed=%s | Halal=%s | Retained=%s",
+                ChartinkRegistryAdapter.PROVIDER_ID,
+                self.last_meta_info.get(
+                    "raw_count",
+                    "N/A",
+                ),
+                self.last_meta_info.get(
+                    "parsed_count",
+                    "N/A",
+                ),
+                self.last_meta_info.get(
+                    "halal_match_count",
+                    "N/A",
+                ),
+                self.last_meta_info.get(
+                    "retained_count",
+                    len(records),
+                ),
+            )
 
-                        "company": str(
-                            getattr(
-                                candidate,
-                                "company_name",
-                                "",
-                            )
-                        ),
-
-                        "close": float(
-                            getattr(
-                                candidate,
-                                "close_price",
-                                0.0,
-                            )
-                        ),
-
-                        "volume": int(
-                            getattr(
-                                candidate,
-                                "volume",
-                                0,
-                            )
-                        ),
-
-                        "pct_change": float(
-                            getattr(
-                                candidate,
-                                "per_change",
-                                0.0,
-                            )
-                        ),
-
-                        "provenance": provenance,
-
-                        "meta_info": (
-                            self.last_meta_info
-                        ),
-                    }
-
-                    adapted_records.append(
-                        record
-                    )
-
-                logger.info(
-                    "Chartink scan completed "
-                    "[Provenance: %s] | "
-                    "Raw: %s | "
-                    "Parsed: %s | "
-                    "Halal Matched: %s | "
-                    "Retained: %s",
-                    provenance,
-                    self.last_meta_info.get(
-                        "raw_count",
-                        "N/A",
-                    ),
-                    self.last_meta_info.get(
-                        "parsed_count",
-                        "N/A",
-                    ),
-                    self.last_meta_info.get(
-                        "halal_match_count",
-                        "N/A",
-                    ),
-                    self.last_meta_info.get(
-                        "retained_count",
-                        len(adapted_records),
-                    ),
-                )
-
-                return adapted_records
+            return records
 
         except Exception as exc:
 
             logger.error(
-                "Chartink adapter failure for %s: %s",
+                "Chartink registry adapter failure for %s: %s",
                 scanner_url,
                 exc,
             )
 
             raise RuntimeError(
-                f"Connector failure for "
-                f"{scanner_url}: {exc}"
+                f"Chartink registry dispatch failure "
+                f"for {scanner_url}: {exc}"
             ) from exc

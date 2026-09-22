@@ -1,0 +1,11 @@
+﻿TradeID,TradeDate,StockName,Sector,Shariah_Compliant,Screening_Source,TradeType,EntryPrice,StopLoss,Target,ExitPrice,Quantity,CapitalUsed,Brokerage,PnL,PnL_%,OtherIncome_%,HoldingDays,Strategy,RiskReward,Emotion,Mistake,SL_Hit,Target_Hit,Journal_Notes
+T001,2026-01-01,TCS,IT,Yes,NSE Shariah,Buy,3600,3520,3750,3720,5,18000,40,560,3.1,0.03,5,Swing,1:2,Calm,No,No,Yes,Followed plan perfectly
+T002,2026-01-03,INFY,IT,Yes,Zerodha Varsity,Buy,1480,1450,1520,1450,10,14800,40,-340,-2.3,0.025,3,Swing,1:1.5,Fear,Yes,Yes,No,Exited early due to fear
+T003,2026-01-06,HDFCLIFE,Finance,Yes,NSE Shariah,Buy,620,600,680,655,15,9300,35,490,5.2,0.05,7,Positional,1:3,Calm,No,No,Yes,Good RR trade
+T004,2026-01-08,TATAPOWER,Energy,Yes,Manual Check,Buy,345,330,365,330,20,6900,30,-330,-4.8,0.04,2,Intraday,1:1,Greed,Yes,Yes,No,Overtraded
+T005,2026-01-10,RELINFRA,Infra,Yes,NSE Shariah,Buy,255,245,275,270,25,6375,30,345,5.4,0.05,4,Swing,1:2,Confident,No,No,Yes,Clean breakout
+T006,2026-01-12,LT,Infra,Yes,NSE Shariah,Buy,3450,3380,3600,3520,2,6900,35,105,1.5,0.015,6,Positional,1:2,Calm,No,No,No,Partial target achieved
+T007,2026-01-15,WIPRO,IT,Yes,Zerodha Varsity,Buy,475,460,510,460,20,9500,30,-330,-3.4,0.03,3,Swing,1:1,Fear,Yes,Yes,No,Did not trust setup
+T008,2026-01-18,SUNPHARMA,Pharma,Yes,NSE Shariah,Buy,1320,1280,1400,1380,8,10560,35,445,4.2,0.042,5,Swing,1:2,Calm,No,No,Yes,Textbook swing
+T009,2026-01-20,ASIANPAINT,Consumer,Yes,NSE Shariah,Buy,3100,3000,3250,3180,3,9300,35,205,2.2,0.022,6,Positional,1:2.5,Calm,No,No,No,Slow mover
+T010,2026-01-22,PIDILITIND,Consumer,Yes,Manual Check,Buy,2800,2700,2950,2720,3,8400,35,-275,-3.3,0.03,4,Swing,1:1.5,Impatient,Yes,Yes,No,Entered late

@@ -1,47 +1,49 @@
-import sys
+﻿import sys
 import os
 
 VAULT_ROOT = r"D:\OBSIDIAN VAULT\halal-trading-os"
 ECOSYSTEM_DIR = rf"{VAULT_ROOT}\Peripheral Ecosystem"
-PROVIDER_DIR = rf"{ECOSYSTEM_DIR}\provider_connectors"
 
-for path in [VAULT_ROOT, ECOSYSTEM_DIR, PROVIDER_DIR]:
-    if path not in sys.path:
-        sys.path.insert(0, path)
+if ECOSYSTEM_DIR not in sys.path:
+    sys.path.insert(0, ECOSYSTEM_DIR)
 
 from security.gateway import PermissionGateway
-from nse_connector import NSEConnector
+from registry.resolver import CapabilityResolver
+from registry.models import ProviderRegistration
+from integrations.nse_adapter import NSEAdapter
+from contracts import MarketQuote
 
-def verify_snapshot():
+def run_snapshot_verification():
     print("=" * 60)
-    print("NSE CONNECTOR: MARKET SNAPSHOT & BREADTH VERIFICATION")
+    print("NSE SNAPSHOT & NORMALIZATION VERIFICATION (Batch 3)")
     print("=" * 60)
 
-    # Instantiate the mandatory permission gateway
     gateway = PermissionGateway()
-    connector = NSEConnector(gateway)
+    resolver = CapabilityResolver()
+    nse_adapter = NSEAdapter(config={"gateway": gateway})
 
-    print("\n[1] Initializing session handshake...")
-    connected = connector.connect()
-    print(f"Session initialized: {connected}")
+    resolver.register_provider(ProviderRegistration(
+        provider_id="nse_live",
+        namespace="market.quotes",
+        adapter_instance=nse_adapter,
+        priority=10
+    ))
 
-    print("\n[2] Probing market breadth / advance-decline via indices payload...")
+    symbol = "INFY"
+    print(f"\nFetching snapshot for {symbol} via P2 CapabilityResolver...")
     try:
-        # Fetch all indices which carries comprehensive market vitals and advance/decline metrics
-        market_data = connector.fetch_index_vitals("NIFTY 50")
-        print("Successfully retrieved Nifty 50 market context.")
-        print(f"Timestamp: {market_data.get('timestamp')}")
-        
-        # Check market status as well
-        status = connector.fetch_market_status()
-        print(f"Market Status Feed: OK (Keys: {list(status.get('data', {}).keys())})")
+        raw_data = resolver.execute_via_capability(
+            namespace="market.quotes",
+            method_name="read",
+            required_operation="READ",
+            identifier=symbol
+        )
+        canonical_quote = nse_adapter.normalize(raw_data, MarketQuote)
+        print("Snapshot Normalized Successfully:")
+        print(canonical_quote.model_dump_json(indent=2))
+        print("\n[Success] verify_nse_snapshot.py passed!")
     except Exception as e:
-        print(f"Snapshot probe warning: {e}")
-
-    print("\n[3] Validating structural contract & governance guards...")
-    print(f"Connector Read-Only Mode  : {connector.READ_ONLY}")
-    print(f"LIVE_AUTO_EXECUTION       : {connector.LIVE_AUTO_EXECUTION}")
-    print("Verification script completed cleanly.")
+        print(f"[Error] Snapshot verification failed: {e}")
 
 if __name__ == "__main__":
-    verify_snapshot()
+    run_snapshot_verification()

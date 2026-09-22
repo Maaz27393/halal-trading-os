@@ -33,7 +33,7 @@ class TestM33RegistryAndConfluence(unittest.TestCase):
         
         self.assertNotIn("breakout-confirmation", pm_slugs)
         self.assertNotIn("rsi-above-60", pm_slugs)
-        self.assertIn("breakout-confirmation", id_slugs)
+        self.assertIn("breakout_confirmation", id_slugs)
 
     def test_confluence_and_halal_filtering(self):
         runner = MultiModeOperationalRunner(self.vault_path)
