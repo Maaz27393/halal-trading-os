@@ -1,0 +1,2 @@
+strategy_id,symbol,net_pnl,outcome,r_multiple,mae_abs,mfe_abs
+TEST,RELIANCE,1500.0,WIN,1.5,100.0,1600.0

@@ -1,0 +1,26 @@
+{
+  "mode": "B_graphify_ast",
+  "model": "qwen3:4b",
+  "prompt_size_chars": 12538,
+  "latency_ms": 287813.92569991294,
+  "eval_count": 2994,
+  "score": {
+    "total_score": 7,
+    "breakdown": {
+      "required_symbols_4pt": 3,
+      "correct_path_2pt": 1,
+      "additional_funcs_2pt": 1,
+      "no_unsupported_1pt": 1,
+      "provenance_1pt": 1
+    },
+    "symbol_hits": [
+      "rank_document",
+      "score_term_matches",
+      "tokenize"
+    ],
+    "additional_hits": [
+      "score_phrase_matches"
+    ]
+  },
+  "raw_response": "# Document Ranking Process in the System\n\nWhen a retrieval query is executed, the system follows this process:\n\n1. The `search()` function is triggered (this appears to be the main entry point)\n2. `search()` calls `rank_document()`\n3. `rank_document()` loads documents and calculates scores using multiple functions\n\n## Tokenization Process\nThe system uses the following tokenization pipeline:\n- `tokenize()` processes text\n- `tokenize()` calls `normalize_text()` to preprocess the text (this is the text normalization step)\n\n## Scoring Functions Used in Ranking\nThe ranking process uses these key scoring functions:\n\n1. **`calculate_match_quality()`** - The primary scoring function that evaluates how well documents match the query\n2. **`calculate_confidence()`** - Scores the confidence level of document relevance\n3. **`score_term_matches()`** - Evaluates term-level matches between query and documents\n4. **`score_phrase_matches()`** - Evaluates phrase-level matches between query and documents\n\nThe ranking process involves analyzing documents through multiple functions (like `detect_intent()`, `detect_topics()`, and others) before applying these scoring functions to determine the final ranked results. This comprehensive approach allows the system to evaluate both the relevance and confidence of documents in the ranking process."
+}

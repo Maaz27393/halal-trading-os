@@ -1,0 +1,2 @@
+﻿strategy_id,symbol,direction,signal_bar,entry_bar,entry_time,entry_price,stop_loss,target_price,exit_time,exit_price,reason,quantity,gross_pnl,costs,net_pnl
+SMA_Crossover_Parity,RELIANCE,BUY,2026-06-01 09:30:00,2026-06-01 09:45:00,2026-06-01 09:45:00,2430.0,2380.0,2480.0,2026-06-01 10:15:00,2375.0,STOP_LOSS,100,-5500.0,40.0,-5540.0

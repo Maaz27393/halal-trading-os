@@ -1,0 +1,26 @@
+{
+  "mode": "C_fused_hybrid",
+  "model": "qwen3:4b",
+  "prompt_size_chars": 15231,
+  "latency_ms": 245781.96469997056,
+  "eval_count": 2962,
+  "score": {
+    "total_score": 6,
+    "breakdown": {
+      "required_symbols_4pt": 3,
+      "correct_path_2pt": 0,
+      "additional_funcs_2pt": 1,
+      "no_unsupported_1pt": 1,
+      "provenance_1pt": 1
+    },
+    "symbol_hits": [
+      "query_retrieval_api",
+      "score_term_matches",
+      "tokenize"
+    ],
+    "additional_hits": [
+      "score_phrase_matches"
+    ]
+  },
+  "raw_response": "# Document Ranking Process in the Retrieval System\n\nBased on the provided call graph, I can explain how the system ranks documents when a retrieval query is executed, along with the tokenization and scoring functions involved.\n\n## Overall Ranking Process\n\nWhen a retrieval query is executed, the system follows this flow:\n\n1. The main entry point is `search()` (at `Retrieval/vault_search.py:L1889`)\n2. This function calls several critical components for ranking:\n   - `calculate_match_quality()` (at `Retrieval/vault_search.py:L1461`)\n   - `calculate_confidence()` (at `Retrieval/vault_search.py:L1467`)\n   - `detect_intent()`, `detect_topics()`, and `is_authority_candidate()`\n   - `load_documents()` which processes the document collection\n\n3. The ranking is ultimately determined by the `calculate_match_quality()` function, which is called both by the main search process and by the API layer (`query_retrieval_api()` at `Retrieval/retrieval_adapter.py:L44`)\n\n## Tokenization Process\n\nThe system uses the following tokenization workflow:\n\n- **Primary tokenization function**: `tokenize()` (at `Retrieval/vault_search.py:L534`)\n- **How it's used**:\n  - Called by `score_term_matches()` (at `Retrieval/vault_search.py:L881`)\n  - Called by `score_phrase_matches()` (at `Retrieval/vault_search.py:L908`)\n  - Called by `make_snippet()` (at `Retrieval/vault_search.py:L1222`)\n- **Tokenization flow**: The system appears to first normalize text before tokenizing, as `tokenize()` calls `normalize_text()`\n\n## Scoring Functions for Ranking\n\nThe system uses multiple scoring functions to determine document relevance:\n\n1. **Term-level scoring**: `score_term_matches()` (at `Retrieval/vault_search.py:L881`)\n   - Scores matches at the individual word level\n   - Calls both `normalize_text()` and `tokenize()`\n\n2. **Phrase-level scoring**: `score_phrase_matches()` (at `Retrieval/vault_search.py:L908`)\n   - Scores matches at the phrase level\n   - Calls `normalize_text()`\n\n3. **Overall match quality**: `calculate_match_quality()` (at `Retrieval/vault_search.py:L1146`)\n   - This is the core ranking function\n   - Combines term and phrase scoring results\n   - Called by both the main search process and the API layer\n\n4. **Confidence scoring**: `calculate_confidence()` (at `Retrieval/vault_search.py:L1194`)\n   - Determines how confident the system is in the match quality\n   - Calls `calculate_match_quality()`\n\n## How Ranking Works\n\nThe system ranks documents by:\n1. First loading and processing documents through `load_documents()`\n2. Classifying evidence from these documents\n3. Calculating term and phrase matches\n4. Combining these scores into an overall match quality score\n5. Using this match quality score to determine the final ranking\n\nThe final ranking output is generated through `public_result()` (at `Retrieval/retrieval_adapter.py:L47`), which uses the calculated match quality and confidence scores to present the ranked results.\n\nThis architecture allows the system to handle both precise term matching and more contextual phrase matching, with the final ranking determined by the comprehensive `calculate_match_quality()` function."
+}

@@ -1,0 +1,2 @@
+strategy_id,symbol,direction,entry_time,entry_price,exit_time,exit_price,reason,pnl
+SMA_Crossover_Parity,TEST_SYM,BUY,2026-01-02 09:30:00,100.1,2026-01-02 10:00:00,95.0,STOP_LOSS,-5.1
