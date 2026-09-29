@@ -1,0 +1,72 @@
+﻿from __future__ import annotations
+
+import pandas as pd
+from typing import Dict, Any, Optional, List
+from src.backtesting_engine import StrategyContract
+from src.backtest_dataset import BacktestDataset
+
+class PullbackStrategy(StrategyContract):
+    """
+    Pillar 4.4 Pullback Strategy (Version 1.0)
+    Implements Context (EMA alignment), Swing Structure, and VWAP Pullback/Reclaim rules.
+    """
+    def __init__(self, stop_loss_pct: float = 0.02, target_pct: float = 0.04):
+        self._stop_loss_pct = stop_loss_pct
+        self._target_pct = target_pct
+        self._dataset: Optional[BacktestDataset] = None
+        self._signals_count = 0
+        self._bars_seen = 0
+        self._history: List[pd.Series] = []
+
+    @property
+    def name(self) -> str:
+        return "pullback_strategy_v1.0"
+
+    def on_start(self, dataset: BacktestDataset) -> None:
+        if not isinstance(dataset, BacktestDataset):
+            raise TypeError("PullbackStrategy requires a verified BacktestDataset instance.")
+        self._dataset = dataset
+        self._signals_count = 0
+        self._bars_seen = 0
+        self._history.clear()
+
+    def on_bar(self, bar_index: int, row: pd.Series) -> dict:
+        self._bars_seen += 1
+        self._history.append(row)
+
+        close = float(row.get('close', 0.0))
+        vwap = float(row.get('vwap', close))
+        ema_9 = row.get('ema_9', None)
+        ema_21 = row.get('ema_21', None)
+
+        # Context Check (P02-P04): EMA trend alignment if columns exist
+        trend_aligned = True
+        if ema_9 is not None and ema_21 is not None and not pd.isna(ema_9) and not pd.isna(ema_21):
+            if float(ema_9) <= float(ema_21):
+                trend_aligned = False
+
+        # VWAP Reclaim Logic (P08-P12)
+        signal = {"action": "HOLD"}
+        if trend_aligned and len(self._history) >= 2:
+            prev_row = self._history[-2]
+            prev_close = float(prev_row.get('close', prev_row.get('low', 0.0)))
+            prev_vwap = float(prev_row.get('vwap', vwap))
+
+            # Reclaim condition: previous bar touched/fell below VWAP, current bar reclaims above VWAP
+            if prev_close <= prev_vwap and close > vwap:
+                self._signals_count += 1
+                signal = {
+                    "action": "BUY",
+                    "price": close,
+                    "stop_loss": close * (1.0 - self._stop_loss_pct),
+                    "target": close * (1.0 + self._target_pct)
+                }
+
+        return signal
+
+    def on_finish(self) -> dict:
+        return {
+            "status": "COMPLETED",
+            "bars_processed": self._bars_seen,
+            "signals": self._signals_count
+        }

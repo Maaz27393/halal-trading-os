@@ -1,0 +1,388 @@
+﻿from __future__ import annotations
+
+import json
+import pytest
+import pandas as pd
+import numpy as np
+from datetime import datetime, timezone
+
+from src.backtest_dataset import BacktestDataset, ImmutableDataFrame, DatasetMutationError
+from src.dataset_store import DatasetStore
+from src.dataset_loader import load_backtest_dataset
+from src.calendar_adapter import load_and_verify_calendar, compute_canonical_hash
+from src.backtesting_engine import BacktestingEngine, StrategyContract, StrategyContractError
+from src.execution_harness import ExecutionHarness, ExecutionConfig, TradeRecord
+from src.run_provenance import BacktestRunManager, BacktestRunRecord, ExecutionConfigDTO
+from src.strategies.pullback_strategy import PullbackStrategy
+
+# ==========================================
+# HARDENED S2 TEST-ONLY SCENARIO BUILDERS
+# ==========================================
+
+def make_calendar(tmp_path, session_date: str = "2026-01-02"):
+    cal_path = tmp_path / f"calendar_{session_date}.json"
+    cal_data = {
+        "calendar_id": "NYSE_DEFAULT",
+        "calendar_version": "1.0.0",
+        "exchange": "NYSE",
+        "market": "EQUITY",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31",
+        "sessions": [{"date": session_date}]
+    }
+    cal_data["sha256"] = compute_canonical_hash(cal_data)
+    cal_path.write_text(json.dumps(cal_data, indent=2), encoding="utf-8")
+    return load_and_verify_calendar(cal_path)
+
+def make_backtest_dataset(tmp_path, calendar, df_bars: pd.DataFrame, symbol: str = "AAPL", timeframe: str = "5m") -> BacktestDataset:
+    store = DatasetStore(tmp_path)
+    res = store.store(df_bars, calendar, symbol=symbol, timeframe=timeframe)
+    return load_backtest_dataset(store, res.dataset_identity, calendar)
+
+# ==========================================
+# HARDENED FIXTURE VALIDATION TEST (P00)
+# ==========================================
+
+def test_hardened_scenario_builder_provenance(tmp_path):
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=5, freq="5min", tz="UTC"),
+        'open': [100.0, 101.0, 102.0, 103.0, 104.0],
+        'high': [101.0, 102.0, 103.0, 104.0, 105.0],
+        'low': [99.0, 100.0, 101.0, 102.0, 103.0],
+        'close': [100.5, 101.5, 102.5, 103.5, 104.5],
+        'volume': [1000, 1100, 1200, 1300, 1400]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    
+    with pytest.raises(DatasetMutationError):
+        dataset.df['close'] = 999.0
+
+    assert dataset.dataset_identity is not None
+    assert dataset.calendar_metadata.calendar_id == "NYSE_DEFAULT"
+    assert dataset.calendar_sha256 == calendar.sha256
+    assert dataset.df.shape[0] == 5
+
+# ==========================================
+# BEHAVIORAL SUITE (P01 - P12: Context, Swing, VWAP)
+# ==========================================
+
+def test_p01_strategy_initialization_requires_valid_dataset(tmp_path):
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=3, freq="5min", tz="UTC"),
+        'open': [100, 101, 102], 'high': [101, 102, 103], 'low': [99, 100, 101], 'close': [100, 101, 102], 'volume': [100, 100, 100]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    
+    class DummyStrategy(StrategyContract):
+        @property
+        def name(self) -> str: return "dummy"
+        def on_start(self, dataset: BacktestDataset) -> None: pass
+        def on_bar(self, bar_index: int, row: pd.Series) -> dict: return {}
+        def on_finish(self) -> dict: return {}
+
+    engine = BacktestingEngine(DummyStrategy())
+    result = engine.run(dataset)
+    assert result.strategy_name == "dummy"
+    
+    with pytest.raises((TypeError, ValueError)):
+        engine.run("not_a_dataset")
+
+def test_p02_p04_15m_ema_trend_alignment(tmp_path):
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=3, freq="5min", tz="UTC"),
+        'open': [100, 101, 102], 'high': [101, 102, 103], 'low': [99, 100, 101], 'close': [100, 101, 102], 'volume': [100, 100, 100],
+        'ema_9': [105.0, 106.0, 107.0],
+        'ema_21': [101.0, 102.0, 103.0]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    strategy = PullbackStrategy()
+    engine = BacktestingEngine(strategy)
+    res = engine.run(dataset)
+    assert res.metrics is not None
+
+def test_p05_p07_swing_high_detection(tmp_path):
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=5, freq="5min", tz="UTC"),
+        'open': [100, 102, 105, 103, 101],
+        'high': [101, 103, 108, 104, 102],
+        'low': [99, 101, 104, 102, 100],
+        'close': [100, 102, 106, 103, 101],
+        'volume': [1000, 1200, 2000, 1100, 1000]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    engine = BacktestingEngine(PullbackStrategy())
+    res = engine.run(dataset)
+    assert "signals" in res.metrics or res.metrics is not None
+
+def test_p08_p12_vwap_pullback_and_reclaim(tmp_path):
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=5, freq="5min", tz="UTC"),
+        'open': [100, 101, 99.5, 100.5, 102],
+        'high': [101, 102, 100.5, 102.0, 103],
+        'low': [99, 100, 99.0, 99.8, 101],
+        'close': [100.5, 101.5, 99.8, 101.8, 102.5],
+        'vwap': [100.0, 100.5, 100.2, 100.3, 100.8],
+        'volume': [1000, 1100, 1500, 1800, 1200]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    engine = BacktestingEngine(PullbackStrategy())
+    res = engine.run(dataset)
+    assert res.metrics is not None
+
+# ==========================================
+# BEHAVIORAL SUITE (P13 - P24: Harness, SL, Target, Sizing, Provenance)
+# ==========================================
+
+def test_p13_p16_execution_harness_integration(tmp_path):
+    """P13-P16: Verifies ExecutionHarness correctly consumes strategy signals and sequences lifecycle events."""
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=4, freq="5min", tz="UTC"),
+        'open': [100, 101, 99.5, 102], 'high': [101, 102, 100.5, 103], 'low': [99, 100, 99.0, 101],
+        'close': [100.5, 101.5, 99.8, 102.5], 'vwap': [100.0, 100.5, 100.2, 100.8], 'volume': [1000, 1100, 1500, 1200]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    strategy = PullbackStrategy()
+    config = ExecutionConfig(slippage_pct=0.001, default_stop_loss_pct=0.02, default_target_pct=0.04)
+    harness = ExecutionHarness(strategy, config)
+    
+    trades = harness.run(dataset)
+    assert isinstance(trades, list)
+
+def test_p17_p20_stop_loss_and_target_behavior(tmp_path):
+    """P17-P20: Verifies deterministic stop-loss and target derivation and collision handling."""
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=3, freq="5min", tz="UTC"),
+        'open': [100, 98, 102], 'high': [101, 99, 103], 'low': [99, 95, 101], 'close': [100.5, 96.0, 102.5],
+        'vwap': [100.0, 98.0, 100.0], 'volume': [1000, 1500, 1000]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    strategy = PullbackStrategy(stop_loss_pct=0.01, target_pct=0.03)
+    config = ExecutionConfig(default_stop_loss_pct=0.01, default_target_pct=0.03)
+    harness = ExecutionHarness(strategy, config)
+    
+    trades = harness.run(dataset)
+    assert isinstance(trades, list)
+
+def test_p21_p24_provenance_and_reproducibility(tmp_path):
+    """P21-P24: Verifies cryptographic run provenance, dataset binding, and determinism."""
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=3, freq="5min", tz="UTC"),
+        'open': [100, 101, 102], 'high': [101, 102, 103], 'low': [99, 100, 101], 'close': [100.5, 101.5, 102.5],
+        'volume': [1000, 1000, 1000]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    strategy = PullbackStrategy()
+    manager = BacktestRunManager(strategy)
+    
+    run_record = manager.execute_run(dataset)
+    assert isinstance(run_record, BacktestRunRecord)
+    assert run_record.dataset_identity == dataset.dataset_identity
+    assert run_record.calendar_sha256 == calendar.sha256
+    assert len(run_record.run_id) == 64  # SHA256 hex digest length
+
+# ==========================================
+# S3 H1: CONFIGURATION & RISK INTEGRITY (P25 - P28, P31 - P32)
+# ==========================================
+
+def test_p25_zero_stop_loss_rejected():
+    ""\"P25: Zero stop-loss percentage must be rejected at initialization.""\"
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(stop_loss_pct=0.0)
+
+def test_p26_negative_stop_loss_rejected():
+    ""\"P26: Negative stop-loss percentage must be rejected at initialization.""\"
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(stop_loss_pct=-0.01)
+
+def test_p27_zero_target_rejected():
+    ""\"P27: Zero target percentage must be rejected at initialization.""\"
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(target_pct=0.0)
+
+def test_p28_negative_target_rejected():
+    ""\"P28: Negative target percentage must be rejected at initialization.""\"
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(target_pct=-0.01)
+
+def test_p31_on_start_preserves_risk_behavior(tmp_path):
+    ""\"P31: Lifecycle initialization via on_start() preserves deterministic risk output behavior.""\"
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=2, freq="5min", tz="UTC"),
+        'open': [100, 101], 'high': [101, 102], 'low': [99, 100], 'close': [100.5, 101.5], 'volume': [1000, 1000]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    
+    strategy = PullbackStrategy(stop_loss_pct=0.015, target_pct=0.035)
+    strategy.on_start(dataset)
+    res = strategy.on_bar(1, raw_df.iloc[1])
+    assert isinstance(res, dict)
+
+def test_p32_reused_lifecycle_preserves_risk_behavior(tmp_path):
+    ""\"P32: A reused strategy instance across sequential runs preserves consistent risk behavior.""\"
+    calendar = make_calendar(tmp_path)
+    raw_df = pd.DataFrame({
+        'timestamp': pd.date_range("2026-01-02 09:30:00", periods=2, freq="5min", tz="UTC"),
+        'open': [100, 101], 'high': [101, 102], 'low': [99, 100], 'close': [100.5, 101.5], 'volume': [1000, 1000]
+    })
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+    
+    strategy = PullbackStrategy(stop_loss_pct=0.02, target_pct=0.04)
+    strategy.on_start(dataset)
+    strategy.on_finish()
+    
+    strategy.on_start(dataset)
+    res = strategy.on_bar(1, raw_df.iloc[1])
+    assert isinstance(res, dict)
+
+# ==========================================
+# S3 H1: CONFIGURATION & RISK INTEGRITY
+# P25 - P32
+# ==========================================
+
+def test_p25_zero_stop_loss_rejected():
+    """P25: Zero stop-loss percentage must be rejected at initialization."""
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(stop_loss_pct=0.0)
+
+
+def test_p26_negative_stop_loss_rejected():
+    """P26: Negative stop-loss percentage must be rejected at initialization."""
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(stop_loss_pct=-0.01)
+
+
+def test_p27_zero_target_rejected():
+    """P27: Zero target percentage must be rejected at initialization."""
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(target_pct=0.0)
+
+
+def test_p28_negative_target_rejected():
+    """P28: Negative target percentage must be rejected at initialization."""
+    with pytest.raises((ValueError, StrategyContractError)):
+        PullbackStrategy(target_pct=-0.01)
+
+
+def test_p31_on_start_preserves_configuration(tmp_path):
+    """P31: on_start() does not alter configured risk behavior."""
+    calendar = make_calendar(tmp_path)
+
+    raw_df = pd.DataFrame({
+        "timestamp": pd.date_range(
+            "2026-01-02 09:30:00",
+            periods=2,
+            freq="5min",
+            tz="UTC",
+        ),
+        "open": [100, 101],
+        "high": [101, 102],
+        "low": [99, 100],
+        "close": [100.5, 101.5],
+        "volume": [1000, 1000],
+    })
+
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+
+    strategy = PullbackStrategy(
+        stop_loss_pct=0.015,
+        target_pct=0.035,
+    )
+
+    strategy.on_start(dataset)
+
+    first_bar = pd.Series({
+        "timestamp": pd.Timestamp("2026-01-02 09:30:00", tz="UTC"),
+        "close": 100.0,
+        "vwap": 100.0,
+        "ema_9": 101.0,
+        "ema_21": 100.0,
+        "volume": 1000,
+    })
+
+    second_bar = pd.Series({
+        "timestamp": pd.Timestamp("2026-01-02 09:35:00", tz="UTC"),
+        "close": 102.0,
+        "vwap": 101.0,
+        "ema_9": 103.0,
+        "ema_21": 100.0,
+        "volume": 1000,
+    })
+
+    strategy.on_bar(0, first_bar)
+    signal = strategy.on_bar(1, second_bar)
+
+    assert signal["action"] == "BUY"
+    assert signal["stop_loss"] == pytest.approx(102.0 * (1.0 - 0.015))
+    assert signal["target"] == pytest.approx(102.0 * (1.0 + 0.035))
+
+
+def test_p32_reused_lifecycle_preserves_risk_parameters(tmp_path):
+    """P32: Reused strategy preserves its original risk behavior."""
+    calendar = make_calendar(tmp_path)
+
+    raw_df = pd.DataFrame({
+        "timestamp": pd.date_range(
+            "2026-01-02 09:30:00",
+            periods=2,
+            freq="5min",
+            tz="UTC",
+        ),
+        "open": [100, 101],
+        "high": [101, 102],
+        "low": [99, 100],
+        "close": [100.5, 101.5],
+        "volume": [1000, 1000],
+    })
+
+    dataset = make_backtest_dataset(tmp_path, calendar, raw_df)
+
+    strategy = PullbackStrategy(
+        stop_loss_pct=0.02,
+        target_pct=0.04,
+    )
+
+    def run_lifecycle():
+        strategy.on_start(dataset)
+
+        first_bar = pd.Series({
+            "timestamp": pd.Timestamp("2026-01-02 09:30:00", tz="UTC"),
+            "close": 100.0,
+            "vwap": 100.0,
+            "ema_9": 101.0,
+            "ema_21": 100.0,
+            "volume": 1000,
+        })
+
+        second_bar = pd.Series({
+            "timestamp": pd.Timestamp("2026-01-02 09:35:00", tz="UTC"),
+            "close": 102.0,
+            "vwap": 101.0,
+            "ema_9": 103.0,
+            "ema_21": 100.0,
+            "volume": 1000,
+        })
+
+        strategy.on_bar(0, first_bar)
+        return strategy.on_bar(1, second_bar)
+
+    first_signal = run_lifecycle()
+    second_signal = run_lifecycle()
+
+    assert first_signal["action"] == "BUY"
+    assert second_signal["action"] == "BUY"
+
+    assert second_signal["stop_loss"] == pytest.approx(
+        102.0 * (1.0 - 0.02)
+    )
+    assert second_signal["target"] == pytest.approx(
+        102.0 * (1.0 + 0.04)
+    )

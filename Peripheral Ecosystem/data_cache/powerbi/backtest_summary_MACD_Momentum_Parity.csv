@@ -1,2 +1,2 @@
 strategy_id,total_trades,net_pnl,win_rate,expectancy
-SMA_Crossover_Parity,2,1420.0,50.0,710.0
+MACD_Momentum_Parity,2,1420.0,50.0,710.0

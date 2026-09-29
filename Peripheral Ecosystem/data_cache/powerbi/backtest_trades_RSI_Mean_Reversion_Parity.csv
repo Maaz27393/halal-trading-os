@@ -1,0 +1,3 @@
+strategy_id,symbol,direction,entry_time,entry_price,stop_loss,target_price,exit_time,exit_price,reason,quantity,gross_pnl,costs,pnl,initial_risk,r_multiple,risk_status,outcome,exit_classification,trade_duration_minutes
+RSI_Mean_Reversion_Parity,TCS,BUY,2026-06-01 09:45:00,2430.0,2380.0,2480.0,2026-06-01 10:15:00,2490.0,TARGET_HIT,100,6000.0,40.0,5960.0,50.0,1.2,VALID,WIN,TARGET_HIT,30.0
+RSI_Mean_Reversion_Parity,TCS,BUY,2026-06-02 11:00:00,2450.0,2410.0,2510.0,2026-06-02 11:45:00,2405.0,STOP_LOSS,100,-4500.0,40.0,-4540.0,40.0,-1.125,VALID,LOSS,STOP_LOSS_HIT,45.0
