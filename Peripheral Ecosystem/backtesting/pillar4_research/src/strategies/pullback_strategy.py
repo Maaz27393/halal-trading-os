@@ -78,7 +78,12 @@ class PullbackStrategy(StrategyContract):
                     "action": "BUY",
                     "price": close,
                     "stop_loss": close * (1.0 - self._stop_loss_pct),
-                    "target": close * (1.0 + self._target_pct)
+                    "target": close * (1.0 + self._target_pct),
+                    "metadata": {
+                        "reclaim_distance": float(close) - float(vwap),
+                        "pullback_depth": float(vwap) - float(row.get('low', close)),
+                        "swing_reference_price": float(row.get('high', close))
+                    }
                 }
 
         return signal
