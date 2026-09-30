@@ -1,8 +1,23 @@
 {
   "calendar_id": "NYSE_DEFAULT",
+  "calendar_version": "1.0.0",
+  "exchange": "NYSE",
+  "market": "US_EQUITY",
+  "effective_from": "2026-01-01",
+  "effective_to": "2026-12-31",
   "sessions": [
-    "2026-01-02T09:30:00Z",
-    "2026-01-05T09:30:00Z"
+    {
+      "date": "2026-01-02",
+      "open": "09:30:00",
+      "close": "16:00:00",
+      "is_trading_day": true
+    },
+    {
+      "date": "2026-01-05",
+      "open": "09:30:00",
+      "close": "16:00:00",
+      "is_trading_day": true
+    }
   ],
-  "sha256": "2a30779557c0b120a24329e78a32cc237580aa27c027bca6abda2560685226a6"
+  "sha256": "27910b9c34b72d6f461ab44a46e976586596ef4eb0711381f3fd622cee41cfe6"
 }
