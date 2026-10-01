@@ -6,7 +6,7 @@ from src.performance_engine import PerformanceEngine, PerformanceInput, Allocati
 def test_tc_p3_01_severe_equity_erosion_boundary():
     """TC-P3-01: Severe drawdown with an active trade under positive closing price erodes equity precisely without bankruptcy."""
     contract = AllocationContract(sizing_mode="FIXED_CAPITAL", allocation_value=10000.0)
-    trade = TradeRecord(entry_time=pd.Timestamp("2023-01-03", tz="UTC"), exit_time=pd.Timestamp("2023-01-04", tz="UTC"), entry_price=100.0, exit_price=0.01, pnl=-99.99, exit_reason="STOP")
+    trade = TradeRecord(direction="LONG", entry_timestamp=pd.Timestamp("2023-01-03", tz="UTC"), exit_timestamp=pd.Timestamp("2023-01-04", tz="UTC"), entry_price=100.0, exit_price=0.01, pnl=-99.99, exit_reason="STOP")
     bars = (
         ValuationBar(timestamp=pd.Timestamp("2023-01-03 00:00:00", tz="UTC"), close=100.0),
         ValuationBar(timestamp=pd.Timestamp("2023-01-04 00:00:00", tz="UTC"), close=0.01)
@@ -34,7 +34,7 @@ def test_tc_p3_02_utc_timestamp_alignment():
 def test_tc_p3_03_first_return_numerical_assertion():
     """TC-P3-03: First return calculation numerically matches E1/E0 - 1 with an active trade."""
     contract = AllocationContract(sizing_mode="FIXED_CAPITAL", allocation_value=10000.0)
-    trade = TradeRecord(entry_time=pd.Timestamp("2023-01-03", tz="UTC"), exit_time=pd.Timestamp("2023-01-04", tz="UTC"), entry_price=100.0, exit_price=105.0, pnl=5.0, exit_reason="TARGET")
+    trade = TradeRecord(direction="LONG", entry_timestamp=pd.Timestamp("2023-01-03", tz="UTC"), exit_timestamp=pd.Timestamp("2023-01-04", tz="UTC"), entry_price=100.0, exit_price=105.0, pnl=5.0, exit_reason="TARGET")
     bars = (
         ValuationBar(timestamp=pd.Timestamp("2023-01-03 00:00:00", tz="UTC"), close=100.0),
         ValuationBar(timestamp=pd.Timestamp("2023-01-04 00:00:00", tz="UTC"), close=105.0)

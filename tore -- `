@@ -1,0 +1,57 @@
+warning: in the working copy of 'Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_allocation.py', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_drawdown.py', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_equity.py', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_invariants.py', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_metrics.py', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_returns.py', CRLF will be replaced by LF the next time Git touches it
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/__init__.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/acquisition_service.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/cache.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/contracts.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/qualification.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/source.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/staging.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/historical_acquisition/__pycache__/yfinance_adapter.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/backtest_dataset.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/backtesting_engine.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/calendar_adapter.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/dataset_loader.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/dataset_preparation.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/dataset_store.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/execution_harness.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/run_provenance.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/__pycache__/validator.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/historical_acquisition/__pycache__/yfinance_adapter.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/src/strategies/__pycache__/pullback_strategy.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_b3_integration.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_b47_acquisition_service.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_b49_local_cache.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_backtest_dataset.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_backtesting_engine.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_calendar_adapter.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_calendar_integration.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_dataset_loader.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_dataset_store.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_execution_harness.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_historical_acquisition.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_performance_allocation.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_performance_drawdown.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_performance_equity.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_performance_invariants.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_performance_metrics.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_performance_returns.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_pillar4_acquisition_contract.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_pillar4_acquisition_contract.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_preparation.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_provider_adapter.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_provider_qualification_integration.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_pullback_strategy.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_pullback_strategy.cpython-313.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_run_provenance.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/__pycache__/test_strategy_isolation.cpython-313-pytest-9.1.1.pyc
+Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_allocation.py
+Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_drawdown.py
+Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_equity.py
+Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_invariants.py
+Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_metrics.py
+Peripheral Ecosystem/backtesting/pillar4_research/tests/test_performance_returns.py
